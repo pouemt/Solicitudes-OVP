@@ -1,0 +1,35 @@
+name: Actualizacion Automatica OVP
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Ejecuta automáticamente todos los días a las 06:00 UTC
+  workflow_dispatch: # Permite ejecutar el proceso manualmente desde la web de GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Instalar GDAL / OGR en el servidor
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-gdal gdal-bin
+
+      - name: Ejecutar script de actualización
+        run: python main.py
+
+      - name: Guardar y publicar archivos actualizados (.ics y .kml)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Actualización automática de ICS y KML" || exit 0
+          git push
