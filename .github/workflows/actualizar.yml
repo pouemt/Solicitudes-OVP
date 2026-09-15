@@ -2,8 +2,8 @@ name: Actualizacion Automatica OVP
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Ejecuta automáticamente todos los días a las 06:00 UTC
-  workflow_dispatch: # Permite ejecutar el proceso manualmente desde la web de GitHub
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,7 +21,8 @@ jobs:
       - name: Instalar GDAL / OGR en el servidor
         run: |
           sudo apt-get update
-          sudo apt-get install -y python3-gdal gdal-bin
+          sudo apt-get install -y libgdal-dev gdal-bin
+          pip install GDAL==$(gdal-config --version)
 
       - name: Ejecutar script de actualización
         run: python main.py
