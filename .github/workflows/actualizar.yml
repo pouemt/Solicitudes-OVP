@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Permite que el bot guarde cambios con git push
 
     steps:
       - name: Descargar repositorio
