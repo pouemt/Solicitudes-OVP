@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ayuntamiento Movilidad//Ocupaciones Via Publica//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ocupacion-1
+SUMMARY:AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires
+DESCRIPTION:Revisión de tuberías, con cámara.-Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.-INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA UN APARCAMIENTO DEL LADO TIERRA
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261110
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-2
+SUMMARY:JOAN ALCOVER, 1
+DESCRIPTION:Zanja cruce completo calle--Inicio a partir de las 9:30, avance por fases para mantener el paso de vehiculos en todo momento
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260913
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-3
+SUMMARY:C/ARXIDUC LLUIS SALVADOR, 1
+DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTES AL TRÁFICO.-Montaje de elementos de Navidad, guirnaldas árboles. Ocupación zona aparcamientos, con corte al tráfico en la zona indicada de 8:00 a 15:00 h, en plano aperece los tramos con fechas y horarios. Afectan a líneas de bus de la EMT.-Ocupación (ver plano). Es probable hacerlo en un día.
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260919
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-4
+SUMMARY:JOAN MIRÓ 243
+DESCRIPTION:CARGA Y DESCARGA-Beach club Cala Major-Inicio a partir de las 9:30, paso alterno con señalista
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260919
+END:VEVENT
+END:VCALENDAR
