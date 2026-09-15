@@ -352,13 +352,10 @@ def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
 
 
 # --- RUTAS DE EJECUCIÓN ---
-ruta_csv = "I:/varis/Pedro Pourtau/QGIS/OVP/BD OCUPACION VIA PUBLICA.csv"
-ruta_ics = "I:/varis/Pedro Pourtau/QGIS/OVP/OCUPACION VIA PUBLICA.ics"
-ruta_ics_sharepoint = (
-    "C:/Users/a05120/OneDrive - Ajuntament de Palma/OCUPACION VIA PUBLICA.ics"
-)
-ruta_gpkg = "I:/varis/Pedro Pourtau/QGIS/OVP/OCUPACION VIA PUBLICA.gpkg"
-ruta_kml = "I:/varis/Pedro Pourtau/QGIS/OVP/OCUPACION_VIA_PUBLICA.kml"
+ruta_csv = "BD_OCUPACION_VIA_PUBLICA.csv"
+ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
+ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
+ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
 
-rutas_destino = [ruta_ics, ruta_ics_sharepoint]
+rutas_destino = [ruta_ics]
 csv_to_ics_gpkg(ruta_csv, rutas_destino, ruta_gpkg)
