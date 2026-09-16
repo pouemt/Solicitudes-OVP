@@ -2,17 +2,17 @@ name: Actualizacion Automatica OVP
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Ejecuta automáticamente todos los días a las 06:00 UTC
-  workflow_dispatch: # Permite la ejecución manual desde la interfaz web de GitHub
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/osgeo/gdal:ubuntu-small-latest # Entorno liviano con GDAL, OGR y Python preinstalados
+      image: ghcr.io/osgeo/gdal:ubuntu-small-latest
 
     permissions:
-      contents: write # Permite al flujo hacer git push de los cambios al repositorio
+      contents: write
 
     steps:
       - name: Descargar repositorio
@@ -23,6 +23,8 @@ jobs:
 
       - name: Guardar y publicar archivos actualizados (.ics y .kml)
         run: |
+          apt-get update && apt-get install -y git
+          git config --global --add safe.directory "*"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
