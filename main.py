@@ -352,9 +352,9 @@ def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
 
 
 # --- RUTAS DE EJECUCIÓN ---
-ruta_csv = "BD OCUPACION VIA PUBLICA.csv"
-ruta_ics = "OCUPACION VIA PUBLICA.ics"
-ruta_gpkg = "OCUPACION VIA PUBLICA.gpkg"
+ruta_csv = "BD_OCUPACION_VIA_PUBLICA.csv"
+ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
+ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
 ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
 
 rutas_destino = [ruta_ics]
