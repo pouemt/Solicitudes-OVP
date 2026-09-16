@@ -17,7 +17,7 @@
 	<SimpleField name="estado_geo" type="string"></SimpleField>
 </Schema>
 <Folder><name>ocupaciones_tramos</name>
-  <Placemark>
+  <Placemark id="ocupaciones_tramos.1">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">REVISIÓN TUBERÍAS</SimpleData>
 		<SimpleData name="tecnic">VICTOR DARDER</SimpleData>
@@ -34,7 +34,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark>
+  <Placemark id="ocupaciones_tramos.2">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
@@ -52,7 +52,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6529168,39.5775641,0</coordinates></Point>
   </Placemark>
-  <Placemark>
+  <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
