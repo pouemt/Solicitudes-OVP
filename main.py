@@ -399,7 +399,7 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
 
 
 # --- 7. RUTAS Y CONFIGURACIÓN DE EJECUCIÓN ---
-url_excel_sharepoint = "https://tu_organizacion.sharepoint.com/:x:/s/tu_documento_excel.xlsx"
+url_excel_sharepoint = "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/IQDgISBCy3jTRJZpXC5jRRflAYITwYojKDvs50WStuiJd90?rtime=YsdeEnAV30g&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0&download=1"
 ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
 ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
 ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
