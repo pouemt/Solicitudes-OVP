@@ -325,8 +325,8 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
         observaciones = get_val("OBSERVACIONS")
         condicions_mobilitat = get_val("CONDICIONS MOBILITAT")
 
-        f_inicio = normalizar_fecha_obj(fila.get("DATA INICI"))
-        f_fin = normalizar_fecha_obj(fila.get("DATA FINALITZACIO"))
+        f_inicio = normalizar_fecha_str(fila.get("DATA INICI"))
+        f_fin = normalizar_fecha_str(fila.get("DATA FINALITZACIO"))
 
         if f_inicio and f_fin:
             f_fin_ampliada = f_fin + timedelta(days=1)
