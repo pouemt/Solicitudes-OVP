@@ -1,4 +1,5 @@
 import csv
+import io
 import json
 import os
 import re
@@ -6,13 +7,20 @@ import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
+import pandas as pd
 from osgeo import ogr, osr
 
 
 # --- 1. NORMALIZACIÓN DE FECHAS ---
-def normalizar_fecha_obj(f_str):
-    f_str = f_str.strip()
-    if not f_str:
+def normalizar_fecha_obj(val):
+    """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
+    if val is None or (isinstance(val, float) and pd.isna(val)):
+        return None
+    if isinstance(val, datetime):
+        return val
+
+    f_str = str(val).strip()
+    if not f_str or f_str.lower() in ("nan", "none", "nat"):
         return None
 
     if f_str.isdigit():
@@ -30,6 +38,7 @@ def normalizar_fecha_obj(f_str):
         "%d-%m-%y",
         "%Y-%m-%d",
         "%Y/%m/%d",
+        "%Y-%m-%d %H:%M:%S",
     ]
 
     for formato in formatos_posibles:
@@ -268,8 +277,34 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
     )
 
 
-# --- 5. PROCESO PRINCIPAL ---
-def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
+# --- 5. DESCARGA DE EXCEL DESDE SHAREPOINT ---
+def descargar_excel_sharepoint(url_sharepoint):
+    """Descarga en memoria el archivo Excel desde una URL compartida de SharePoint/OneDrive."""
+    # Garantizar el parámetro de descarga directa para omitir el visor web de SharePoint
+    if "download=1" not in url_sharepoint:
+        url_descarga = (
+            url_sharepoint + "&download=1"
+            if "?" in url_sharepoint
+            else url_sharepoint + "?download=1"
+        )
+    else:
+        url_descarga = url_sharepoint
+
+    req = urllib.request.Request(
+        url_descarga,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) QGIS_SharePoint_Reader/1.0"
+        },
+    )
+
+    with urllib.request.urlopen(req, timeout=15) as respuesta:
+        contenido = respuesta.read()
+
+    return io.BytesIO(contenido)
+
+
+# --- 6. PROCESO PRINCIPAL (EXCEL A ICS, GEOPACKAGE Y KML) ---
+def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml):
     lineas_ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -280,61 +315,75 @@ def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
 
     datos_para_gpkg = {}
 
-    with open(archivo_csv, mode="r", encoding="utf-8-sig") as f:
-        muestra = f.read(2048)
-        f.seek(0)
-        delimitador = ";" if ";" in muestra else "\t"
+    # Cargar el archivo Excel desde enlace web o ruta local
+    if origen_excel.startswith("http://") or origen_excel.startswith("https://"):
+        print("Descargando libro Excel desde SharePoint/URL...")
+        buffer_excel = descargar_excel_sharepoint(origen_excel)
+        df = pd.read_excel(buffer_excel)
+    else:
+        print(f"Cargando libro Excel local desde: {origen_excel}")
+        df = pd.read_excel(origen_excel)
 
-        lector = csv.DictReader(f, delimiter=delimitador)
+    df = df.fillna("")
 
-        for fila in lector:
-            exp_id = fila.get("ID", "").strip()
-            if not exp_id:
-                continue
+    for _, fila in df.iterrows():
+        def get_val(col):
+            v = fila.get(col, "")
+            if pd.isna(v):
+                return ""
+            return str(v).strip()
 
-            servei = fila.get("SERVEI", "").strip()
-            tecnic = fila.get("TECNIC", "").strip()
-            contratista = fila.get("CONTRATISTA", "").strip()
-            cap_obra = fila.get("CAP OBRA", "").strip()
-            emplazamiento = fila.get("EMPLAZAMIENTO", "").strip()
-            descripcion = fila.get("DESCRIPCIO OBRA", "").strip()
-            tipo_obra = fila.get("TIPUS OBRA", "").strip()
-            observaciones = fila.get("OBSERVACIONS", "").strip()
-            condicions_mobilitat = fila.get("CONDICIONS MOBILITAT", "").strip()
+        exp_id = get_val("ID")
+        # Si Pandas lee el ID como flotante (ej. 1001.0), eliminamos el decimal
+        if exp_id.endswith(".0"):
+            exp_id = exp_id[:-2]
 
-            f_inicio = normalizar_fecha_obj(fila.get("DATA INICI", ""))
-            f_fin = normalizar_fecha_obj(fila.get("DATA FINALITZACIO", ""))
+        if not exp_id:
+            continue
 
-            if f_inicio and f_fin:
-                f_fin_ampliada = f_fin + timedelta(days=1)
-                f_inicio_str = f_inicio.strftime("%Y%m%d")
-                f_fin_str = f_fin_ampliada.strftime("%Y%m%d")
+        servei = get_val("SERVEI")
+        tecnic = get_val("TECNIC")
+        contratista = get_val("CONTRATISTA")
+        cap_obra = get_val("CAP OBRA")
+        emplazamiento = get_val("EMPLAZAMIENTO")
+        descripcion = get_val("DESCRIPCIO OBRA")
+        tipo_obra = get_val("TIPUS OBRA")
+        observaciones = get_val("OBSERVACIONS")
+        condicions_mobilitat = get_val("CONDICIONS MOBILITAT")
 
-                # A) Bloques para los calendarios .ics
-                lineas_ics.extend([
-                    "BEGIN:VEVENT",
-                    f"UID:ocupacion-{exp_id}",
-                    f"SUMMARY:{emplazamiento}",
-                    f"DESCRIPTION:{tipo_obra}-{descripcion}-{observaciones}",
-                    f"DTSTART;VALUE=DATE:{f_inicio_str}",
-                    f"DTEND;VALUE=DATE:{f_fin_str}",
-                    "END:VEVENT",
-                ])
+        f_inicio = normalizar_fecha_obj(fila.get("DATA INICI"))
+        f_fin = normalizar_fecha_obj(fila.get("DATA FINALITZACIO"))
 
-                # B) Tupla de atributos para el GeoPackage
-                datos_para_gpkg[exp_id] = (
-                    servei,
-                    tecnic,
-                    contratista,
-                    cap_obra,
-                    emplazamiento,
-                    descripcion,
-                    tipo_obra,
-                    observaciones,
-                    condicions_mobilitat,
-                    f_inicio_str,
-                    f_fin.strftime("%Y%m%d"),
-                )
+        if f_inicio and f_fin:
+            f_fin_ampliada = f_fin + timedelta(days=1)
+            f_inicio_str = f_inicio.strftime("%Y%m%d")
+            f_fin_str = f_fin_ampliada.strftime("%Y%m%d")
+
+            # A) Bloques para los calendarios .ics
+            lineas_ics.extend([
+                "BEGIN:VEVENT",
+                f"UID:ocupacion-{exp_id}",
+                f"SUMMARY:{emplazamiento}",
+                f"DESCRIPTION:{tipo_obra}-{descripcion}-{observaciones}",
+                f"DTSTART;VALUE=DATE:{f_inicio_str}",
+                f"DTEND;VALUE=DATE:{f_fin_str}",
+                "END:VEVENT",
+            ])
+
+            # B) Tupla de atributos para el GeoPackage
+            datos_para_gpkg[exp_id] = (
+                servei,
+                tecnic,
+                contratista,
+                cap_obra,
+                emplazamiento,
+                descripcion,
+                tipo_obra,
+                observaciones,
+                condicions_mobilitat,
+                f_inicio_str,
+                f_fin.strftime("%Y%m%d"),
+            )
 
     lineas_ics.append("END:VCALENDAR")
 
@@ -347,15 +396,17 @@ def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
     # Sincronización con el GeoPackage
     actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg)
 
-    # Exportacion a KLM
+    # Exportación a KML
     exportar_geopackage_a_kml(ruta_gpkg, ruta_kml)
 
 
-# --- RUTAS DE EJECUCIÓN ---
-ruta_csv = "BD_OCUPACION_VIA_PUBLICA.csv"
+# --- 7. RUTAS Y CONFIGURACIÓN DE EJECUCIÓN ---
+url_excel_sharepoint = "https://tu_organizacion.sharepoint.com/:x:/s/tu_documento_excel.xlsx"
 ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
 ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
 ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
 
 rutas_destino = [ruta_ics]
-csv_to_ics_gpkg(ruta_csv, rutas_destino, ruta_gpkg)
+
+# Ejecución principal leyendo directamente del Excel de SharePoint
+excel_sharepoint_to_ics_gpkg(url_excel_sharepoint, rutas_destino, ruta_gpkg, ruta_kml)
