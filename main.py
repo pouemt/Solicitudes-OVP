@@ -13,42 +13,18 @@ from osgeo import ogr, osr
 
 
 # --- 1. NORMALIZACIÓN DE FECHAS ---
-def normalizar_fecha_obj(val):
-    """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
-    if val is None or (isinstance(val, float) and pd.isna(val)):
-        return None
-    if isinstance(val, datetime):
-        return val
+def normalizar_fecha_str(val_fecha):
+  """Convierte fechas de Excel (Timestamp o NaT) o cadenas a formato YYYYMMDD."""
+  if pd.isna(val_fecha):
+    return ""
 
-    f_str = str(val).strip()
-    if not f_str or f_str.lower() in ("nan", "none", "nat"):
-        return None
+  if isinstance(val_fecha, (pd.Timestamp, datetime)):
+    return val_fecha.strftime("%Y%m%d")
 
-    if f_str.isdigit():
-        if len(f_str) == 8:
-            if f_str.startswith("20"):
-                return datetime.strptime(f_str, "%Y%m%d")
-            return datetime.strptime(f_str, "%d%m%Y")
-        elif len(f_str) == 6:
-            return datetime.strptime(f_str, "%d%m%y")
-
-    formatos_posibles = [
-        "%d/%m/%Y",
-        "%d/%m/%y",
-        "%d-%m-%Y",
-        "%d-%m-%y",
-        "%Y-%m-%d",
-        "%Y/%m/%d",
-        "%Y-%m-%d %H:%M:%S",
-    ]
-
-    for formato in formatos_posibles:
-        try:
-            return datetime.strptime(f_str, formato)
-        except ValueError:
-            continue
-
-    return None
+  # Si ya viene como texto (por ejemplo "2026-05-10" o "10/05/2026")
+  val_str = str(val_fecha).strip()
+  dt = pd.to_datetime(val_str, errors="coerce")
+  return dt.strftime("%Y%m%d") if pd.notna(dt) else ""
 
 
 # --- 2. FUNCIONES DE GEOCODIFICACIÓN CON NOMINATIM ---
