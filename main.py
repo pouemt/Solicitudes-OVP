@@ -4,7 +4,6 @@ import json
 import os
 import re
 import time
-import requests
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
@@ -12,22 +11,45 @@ import pandas as pd
 from osgeo import ogr, osr
 
 
-# --- 1. NORMALIZACIÓN DE FECHAS ---
-def normalizar_fecha_str(val_fecha):
-  """Convierte fechas de Excel (Timestamp o NaT) o cadenas a formato YYYYMMDD."""
-  if pd.isna(val_fecha):
-    return ""
+def normalizar_fecha_obj(val):
+    """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
+    if val is None or (isinstance(val, float) and pd.isna(val)):
+        return None
+    if isinstance(val, datetime):
+        return val
 
-  if isinstance(val_fecha, (pd.Timestamp, datetime)):
-    return val_fecha.strftime("%Y%m%d")
+    f_str = str(val).strip()
+    if not f_str or f_str.lower() in ("nan", "none", "nat"):
+        return None
 
-  # Si ya viene como texto (por ejemplo "2026-05-10" o "10/05/2026")
-  val_str = str(val_fecha).strip()
-  dt = pd.to_datetime(val_str, errors="coerce")
-  return dt.strftime("%Y%m%d") if pd.notna(dt) else ""
+    # Normalización de cadenas numéricas compactas (ej. 20260918 o 18092026)
+    if f_str.isdigit():
+        if len(f_str) == 8:
+            if f_str.startswith("20"):
+                return datetime.strptime(f_str, "%Y%m%d")
+            return datetime.strptime(f_str, "%d%m%Y")
+        elif len(f_str) == 6:
+            return datetime.strptime(f_str, "%d%m%y")
+
+    formatos_posibles = [
+        "%d/%m/%Y",
+        "%d/%m/%y",
+        "%d-%m-%Y",
+        "%d-%m-%y",
+        "%Y-%m-%d",
+        "%Y/%m/%d",
+        "%Y-%m-%d %H:%M:%S",
+    ]
+
+    for formato in formatos_posibles:
+        try:
+            return datetime.strptime(f_str, formato)
+        except ValueError:
+            continue
+
+    return None
 
 
-# --- 2. FUNCIONES DE GEOCODIFICACIÓN CON NOMINATIM ---
 def parsear_direccion_interseccion(direccion):
     """Detecta y formatea cruces de calles para Nominatim (ej. 'Calle A & Calle B')."""
     patron = r"(?:intersección|esquina|cruce|confluencia)\s+(?:de\s+la\s+|del?\s+)?(?:calle\s+|c/\s*)?(.+?)\s+(?:con|y|esquina)\s+(?:la\s+calle\s+|c/\s*)?(.+)"
@@ -69,7 +91,7 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
     if lon and lat:
         return lon, lat, "EXACTO"
 
-    time.sleep(1)  # Respetar políticas de uso de la API gratuita
+    time.sleep(1)  # Respetar políticas de uso de la API gratuita (máx. 1 req/seg)
 
     # Paso 2: Fallback para cruces no detectados directamente (Punto medio entre calles)
     if "&" in direccion_limpia:
@@ -85,8 +107,8 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
     return None, None, "PENDIENTE"
 
 
-# --- 3. ACTUALIZACIÓN Y CREACIÓN EN GEOPACKAGE VÍA OGR ---
 def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
+    """Actualiza e inserta entidades en la capa GeoPackage usando OGR."""
     if not os.path.exists(ruta_gpkg):
         print(f"Aviso: No se encuentra el GeoPackage en {ruta_gpkg}")
         return
@@ -116,7 +138,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
     registros_actualizados = 0
     registros_nuevos = 0
 
-    # 1. Recorrer y actualizar geometrías existentes
+    # 1. Recorrer y actualizar geometrías/atributos de expedientes existentes
     for feature in capa:
         exp_id = (
             str(feature.GetField("ID")).strip()
@@ -167,7 +189,6 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             capa.SetFeature(feature)
             registros_actualizados += 1
 
-    # 2. Insertar registros nuevos con geocodificación
     defn = capa.GetLayerDefn()
     for exp_id, (
         serv,
@@ -217,8 +238,9 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
         f"GeoPackage actualizado: {registros_actualizados} modificados, {registros_nuevos} nuevos procesados."
     )
 
-# --- 4. EXPORTAR GEOPACKAGE A KML ---
+
 def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
+    """Filtra las ocupaciones vigentes a fecha de hoy y las exporta a formato KML."""
     driver_gpkg = ogr.GetDriverByName("GPKG")
     driver_kml = ogr.GetDriverByName("KML")
 
@@ -233,7 +255,7 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
         ds_in = None
         return
 
-    # Obtener la fecha actual en el mismo formato en que se guarda en la BD (YYYYMMDD)
+    # Obtener la fecha actual en formato YYYYMMDD para consultar la vigencia
     fecha_hoy = datetime.now().strftime("%Y%m%d")
 
     # Aplicar filtro OGR: solo registros cuya fecha de fin sea hoy o posterior
@@ -243,7 +265,7 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
     if os.path.exists(ruta_kml):
         driver_kml.DeleteDataSource(ruta_kml)
 
-    # Copiar únicamente las entidades que cumplen el filtro al nuevo KML
+    # Copiar únicamente las entidades filtradas al nuevo KML
     ds_out = driver_kml.CreateDataSource(ruta_kml)
     ds_out.CopyLayer(capa_in, "ocupaciones_tramos")
 
@@ -254,31 +276,32 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
     )
 
 
-# --- 5. DESCARGA DE EXCEL DESDE SHAREPOINT ---
-def descargar_excel_sharepoint(url):
-  """Descarga el archivo Excel desde SharePoint/URL usando requests."""
-  # .strip() elimina posibles espacios en blanco o saltos de línea al inicio o final
-  url = url.strip()
+def descargar_excel_sharepoint(url_sharepoint):
+    """Descarga en memoria el archivo Excel desde una URL compartida de SharePoint/OneDrive."""
+    if "download=1" not in url_sharepoint:
+        url_descarga = (
+            url_sharepoint + "&download=1"
+            if "?" in url_sharepoint
+            else url_sharepoint + "?download=1"
+        )
+    else:
+        url_descarga = url_sharepoint
 
-  print(f'Descargando libro Excel desde SharePoint...')
+    req = urllib.request.Request(
+        url_descarga,
+        headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) QGIS_SharePoint_Reader/1.0"
+        },
+    )
 
-  headers = {
-      'User-Agent': (
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,'
-          ' like Gecko) Chrome/120.0.0.0 Safari/537.36'
-      )
-  }
+    with urllib.request.urlopen(req, timeout=15) as respuesta:
+        contenido = respuesta.read()
 
-  # Realizar la petición GET permitiendo redirecciones
-  response = requests.get(
-      url, headers=headers, timeout=30, allow_redirects=True
-  )
-  response.raise_for_status()  # Lanza error si el estado HTTP no es OK (200)
+    return io.BytesIO(contenido)
 
-  return io.BytesIO(response.content)
 
-# --- 6. PROCESO PRINCIPAL (EXCEL A ICS, GEOPACKAGE Y KML) ---
 def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml):
+    """Pipeline principal de lectura, conversión a calendario ICS, GeoPackage y KML."""
     lineas_ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -308,7 +331,6 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
             return str(v).strip()
 
         exp_id = get_val("ID")
-        # Si Pandas lee el ID como flotante (ej. 1001.0), eliminamos el decimal
         if exp_id.endswith(".0"):
             exp_id = exp_id[:-2]
 
@@ -325,8 +347,8 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
         observaciones = get_val("OBSERVACIONS")
         condicions_mobilitat = get_val("CONDICIONS MOBILITAT")
 
-        f_inicio = normalizar_fecha_str(fila.get("DATA INICI"))
-        f_fin = normalizar_fecha_str(fila.get("DATA FINALITZACIO"))
+        f_inicio = normalizar_fecha_obj(fila.get("DATA INICI"))
+        f_fin = normalizar_fecha_obj(fila.get("DATA FINALITZACIO"))
 
         if f_inicio and f_fin:
             f_fin_ampliada = f_fin + timedelta(days=1)
@@ -374,13 +396,27 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
     exportar_geopackage_a_kml(ruta_gpkg, ruta_kml)
 
 
-# --- 7. RUTAS Y CONFIGURACIÓN DE EJECUCIÓN ---
-url_excel_sharepoint = "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/IQDgISBCy3jTRJZpXC5jRRflAYITwYojKDvs50WStuiJd90?rtime=YsdeEnAV30g&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0&download=1"
-ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
-ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
-ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
+if __name__ == "__main__":
+    # Activa MODO_PRUEBA para no sobrescribir la base de datos de producción durante las pruebas
+    MODO_PRUEBA = True
 
-rutas_destino = [ruta_ics]
+    if MODO_PRUEBA:
+        print("=== INICIANDO EJECUCIÓN EN MODO PRUEBA ===")
+        origen_excel = (
+            "test_ocupaciones.xlsx"
+            if os.path.exists("test_ocupaciones.xlsx")
+            else "https://tu_organizacion.sharepoint.com/:x:/s/tu_documento_excel.xlsx"
+        )
+        ruta_ics = "TEST_OCUPACION_VIA_PUBLICA.ics"
+        ruta_gpkg = "TEST_OCUPACION_VIA_PUBLICA.gpkg"
+        ruta_kml = "TEST_OCUPACION_VIA_PUBLICA.kml"
+    else:
+        origen_excel = "https://tu_organizacion.sharepoint.com/:x:/s/tu_documento_excel.xlsx"
+        ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
+        ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
+        ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
 
-# Ejecución principal leyendo directamente del Excel de SharePoint
-excel_sharepoint_to_ics_gpkg(url_excel_sharepoint, rutas_destino, ruta_gpkg, ruta_kml)
+    rutas_destino = [ruta_ics]
+
+    # Ejecución del proceso
+    excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml)
