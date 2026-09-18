@@ -4,6 +4,7 @@ import json
 import os
 import re
 import time
+import requests
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
@@ -278,30 +279,27 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
 
 
 # --- 5. DESCARGA DE EXCEL DESDE SHAREPOINT ---
-def descargar_excel_sharepoint(url_sharepoint):
-    """Descarga en memoria el archivo Excel desde una URL compartida de SharePoint/OneDrive."""
-    # Garantizar el parámetro de descarga directa para omitir el visor web de SharePoint
-    if "download=1" not in url_sharepoint:
-        url_descarga = (
-            url_sharepoint + "&download=1"
-            if "?" in url_sharepoint
-            else url_sharepoint + "?download=1"
-        )
-    else:
-        url_descarga = url_sharepoint
+def descargar_excel_sharepoint(url):
+  """Descarga el archivo Excel desde SharePoint/URL usando requests."""
+  # .strip() elimina posibles espacios en blanco o saltos de línea al inicio o final
+  url = url.strip()
 
-    req = urllib.request.Request(
-        url_descarga,
-        headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) QGIS_SharePoint_Reader/1.0"
-        },
-    )
+  print(f'Descargando libro Excel desde SharePoint...')
 
-    with urllib.request.urlopen(req, timeout=15) as respuesta:
-        contenido = respuesta.read()
+  headers = {
+      'User-Agent': (
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,'
+          ' like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      )
+  }
 
-    return io.BytesIO(contenido)
+  # Realizar la petición GET permitiendo redirecciones
+  response = requests.get(
+      url, headers=headers, timeout=30, allow_redirects=True
+  )
+  response.raise_for_status()  # Lanza error si el estado HTTP no es OK (200)
 
+  return io.BytesIO(response.content)
 
 # --- 6. PROCESO PRINCIPAL (EXCEL A ICS, GEOPACKAGE Y KML) ---
 def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml):
