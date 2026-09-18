@@ -30,7 +30,7 @@ jobs:
               git config --global user.email "github-actions[bot]@users.noreply.github.com"
     
           - name: Instalar dependencias de Python
-            run: python3 -m pip install pandas openpyxl requests
+            run: python3 -m pip install --break-system-packages pandas openpyxl requests
     
           - name: Ejecutar script de actualización
             run: python3 main.py
