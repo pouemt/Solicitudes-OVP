@@ -1,20 +1,27 @@
-import csv
+import io
 import json
 import os
 import re
 import time
 import urllib.parse
-import urllib.request
 from datetime import datetime, timedelta
+import pandas as pd
+import requests
 from osgeo import ogr, osr
 
 
-# --- 1. NORMALIZACIÓN DE FECHAS ---
-def normalizar_fecha_obj(f_str):
-    f_str = f_str.strip()
-    if not f_str:
+def normalizar_fecha_obj(val):
+    """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
+    if val is None or pd.isna(val):
+        return None
+    if isinstance(val, (datetime, pd.Timestamp)):
+        return val
+
+    f_str = str(val).strip()
+    if not f_str or f_str.lower() in ("nan", "none", "nat"):
         return None
 
+    # Normalización de cadenas numéricas compactas (ej. 20260918 o 18092026)
     if f_str.isdigit():
         if len(f_str) == 8:
             if f_str.startswith("20"):
@@ -30,6 +37,7 @@ def normalizar_fecha_obj(f_str):
         "%d-%m-%y",
         "%Y-%m-%d",
         "%Y/%m/%d",
+        "%Y-%m-%d %H:%M:%S",
     ]
 
     for formato in formatos_posibles:
@@ -38,10 +46,17 @@ def normalizar_fecha_obj(f_str):
         except ValueError:
             continue
 
+    # Fallback utilizando pandas to_datetime
+    try:
+        dt = pd.to_datetime(f_str, dayfirst=True, errors="coerce")
+        if pd.notna(dt):
+            return dt
+    except Exception:
+        pass
+
     return None
 
 
-# --- 2. FUNCIONES DE GEOCODIFICACIÓN CON NOMINATIM ---
 def parsear_direccion_interseccion(direccion):
     """Detecta y formatea cruces de calles para Nominatim (ej. 'Calle A & Calle B')."""
     patron = r"(?:intersección|esquina|cruce|confluencia)\s+(?:de\s+la\s+|del?\s+)?(?:calle\s+|c/\s*)?(.+?)\s+(?:con|y|esquina)\s+(?:la\s+calle\s+|c/\s*)?(.+)"
@@ -58,12 +73,11 @@ def consultar_nominatim(texto_busqueda):
     url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(
         {"q": texto_busqueda, "format": "json", "limit": 1}
     )
-    req = urllib.request.Request(
-        url, headers={"User-Agent": "QGIS_OVP_Script/1.0"}
-    )
+    headers = {"User-Agent": "QGIS_OVP_Script/1.0"}
     try:
-        with urllib.request.urlopen(req, timeout=3) as response:
-            datos = json.loads(response.read().decode())
+        response = requests.get(url, headers=headers, timeout=5)
+        if response.status_code == 200:
+            datos = response.json()
             if datos:
                 return float(datos[0]["lon"]), float(datos[0]["lat"])
     except Exception:
@@ -83,7 +97,7 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
     if lon and lat:
         return lon, lat, "EXACTO"
 
-    time.sleep(1)  # Respetar políticas de uso de la API gratuita
+    time.sleep(1)  # Respetar políticas de uso de la API gratuita (máx. 1 req/seg)
 
     # Paso 2: Fallback para cruces no detectados directamente (Punto medio entre calles)
     if "&" in direccion_limpia:
@@ -99,8 +113,8 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
     return None, None, "PENDIENTE"
 
 
-# --- 3. ACTUALIZACIÓN Y CREACIÓN EN GEOPACKAGE VÍA OGR ---
 def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
+    """Actualiza e inserta entidades en la capa GeoPackage usando OGR."""
     if not os.path.exists(ruta_gpkg):
         print(f"Aviso: No se encuentra el GeoPackage en {ruta_gpkg}")
         return
@@ -116,7 +130,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
         ds = None
         return
 
-    # Reproyección automática si la capa usa un CRS distinto a WGS84 (ej. ETRS89 / UTM 31N - EPSG:25831)
+    # Reproyección automática si la capa usa un CRS distinto a WGS84
     target_srs = capa.GetSpatialRef()
     transform = None
     if target_srs:
@@ -130,7 +144,6 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
     registros_actualizados = 0
     registros_nuevos = 0
 
-    # 1. Recorrer y actualizar geometrías existentes
     for feature in capa:
         exp_id = (
             str(feature.GetField("ID")).strip()
@@ -167,7 +180,6 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             feature.SetField("f_inicio", fini)
             feature.SetField("f_fin", fend)
 
-            # Si el elemento no tiene geometría aún, intentar geocodificar
             if not feature.GetGeometryRef():
                 lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
                 feature.SetField("estado_geo", estado_geo)
@@ -181,7 +193,6 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             capa.SetFeature(feature)
             registros_actualizados += 1
 
-    # 2. Insertar registros nuevos con geocodificación
     defn = capa.GetLayerDefn()
     for exp_id, (
         serv,
@@ -212,7 +223,6 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             new_feature.SetField("f_inicio", fini)
             new_feature.SetField("f_fin", fend)
 
-            # Geocodificar ubicación
             lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
             new_feature.SetField("estado_geo", estado_geo)
 
@@ -231,8 +241,9 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
         f"GeoPackage actualizado: {registros_actualizados} modificados, {registros_nuevos} nuevos procesados."
     )
 
-# --- 4. EXPORTAR GEOPACKAGE A KML ---
+
 def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
+    """Filtra las ocupaciones vigentes a fecha de hoy y las exporta a formato KML."""
     driver_gpkg = ogr.GetDriverByName("GPKG")
     driver_kml = ogr.GetDriverByName("KML")
 
@@ -247,17 +258,12 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
         ds_in = None
         return
 
-    # Obtener la fecha actual en el mismo formato en que se guarda en la BD (YYYYMMDD)
     fecha_hoy = datetime.now().strftime("%Y%m%d")
-
-    # Aplicar filtro OGR: solo registros cuya fecha de fin sea hoy o posterior
     capa_in.SetAttributeFilter(f"f_fin >= '{fecha_hoy}'")
 
-    # Eliminar KML previo si existe para sobreescribir
     if os.path.exists(ruta_kml):
         driver_kml.DeleteDataSource(ruta_kml)
 
-    # Copiar únicamente las entidades que cumplen el filtro al nuevo KML
     ds_out = driver_kml.CreateDataSource(ruta_kml)
     ds_out.CopyLayer(capa_in, "ocupaciones_tramos")
 
@@ -268,8 +274,36 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
     )
 
 
-# --- 5. PROCESO PRINCIPAL ---
-def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
+def descargar_excel_sharepoint(url_sharepoint):
+    """Descarga en memoria el archivo Excel desde SharePoint/OneDrive usando la librería requests."""
+    url_limpia = str(url_sharepoint).strip()
+    if "download=1" not in url_limpia:
+        url_descarga = (
+            url_limpia + "&download=1"
+            if "?" in url_limpia
+            else url_limpia + "?download=1"
+        )
+    else:
+        url_descarga = url_limpia
+
+    print("Descargando libro Excel desde SharePoint con requests...")
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            " (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+    }
+
+    response = requests.get(
+        url_descarga, headers=headers, timeout=30, allow_redirects=True
+    )
+    response.raise_for_status()
+
+    return io.BytesIO(response.content)
+
+
+def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml):
+    """Pipeline principal de lectura, conversión a calendario ICS, GeoPackage y KML."""
     lineas_ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -280,82 +314,106 @@ def csv_to_ics_gpkg(archivo_csv, rutas_destino, ruta_gpkg):
 
     datos_para_gpkg = {}
 
-    with open(archivo_csv, mode="r", encoding="utf-8-sig") as f:
-        muestra = f.read(2048)
-        f.seek(0)
-        delimitador = ";" if ";" in muestra else "\t"
+    if origen_excel.startswith("http://") or origen_excel.startswith("https://"):
+        buffer_excel = descargar_excel_sharepoint(origen_excel)
+        df = pd.read_excel(buffer_excel, engine="openpyxl")
+    else:
+        print(f"Cargando libro Excel local desde: {origen_excel}")
+        df = pd.read_excel(origen_excel, engine="openpyxl")
 
-        lector = csv.DictReader(f, delimiter=delimitador)
+    df = df.fillna("")
 
-        for fila in lector:
-            exp_id = fila.get("ID", "").strip()
-            if not exp_id:
-                continue
+    for _, fila in df.iterrows():
+        def get_val(col):
+            v = fila.get(col, "")
+            if pd.isna(v):
+                return ""
+            return str(v).strip()
 
-            servei = fila.get("SERVEI", "").strip()
-            tecnic = fila.get("TECNIC", "").strip()
-            contratista = fila.get("CONTRATISTA", "").strip()
-            cap_obra = fila.get("CAP OBRA", "").strip()
-            emplazamiento = fila.get("EMPLAZAMIENTO", "").strip()
-            descripcion = fila.get("DESCRIPCIO OBRA", "").strip()
-            tipo_obra = fila.get("TIPUS OBRA", "").strip()
-            observaciones = fila.get("OBSERVACIONS", "").strip()
-            condicions_mobilitat = fila.get("CONDICIONS MOBILITAT", "").strip()
+        exp_id = get_val("ID")
+        if exp_id.endswith(".0"):
+            exp_id = exp_id[:-2]
 
-            f_inicio = normalizar_fecha_obj(fila.get("DATA INICI", ""))
-            f_fin = normalizar_fecha_obj(fila.get("DATA FINALITZACIO", ""))
+        if not exp_id:
+            continue
 
-            if f_inicio and f_fin:
-                f_fin_ampliada = f_fin + timedelta(days=1)
-                f_inicio_str = f_inicio.strftime("%Y%m%d")
-                f_fin_str = f_fin_ampliada.strftime("%Y%m%d")
+        servei = get_val("SERVEI")
+        tecnic = get_val("TECNIC")
+        contratista = get_val("CONTRATISTA")
+        cap_obra = get_val("CAP OBRA")
+        emplazamiento = get_val("EMPLAZAMIENTO")
+        descripcion = get_val("DESCRIPCIO OBRA")
+        tipo_obra = get_val("TIPUS OBRA")
+        observaciones = get_val("OBSERVACIONS")
+        condicions_mobilitat = get_val("CONDICIONS MOBILITAT")
 
-                # A) Bloques para los calendarios .ics
-                lineas_ics.extend([
-                    "BEGIN:VEVENT",
-                    f"UID:ocupacion-{exp_id}",
-                    f"SUMMARY:{emplazamiento}",
-                    f"DESCRIPTION:{tipo_obra}-{descripcion}-{observaciones}",
-                    f"DTSTART;VALUE=DATE:{f_inicio_str}",
-                    f"DTEND;VALUE=DATE:{f_fin_str}",
-                    "END:VEVENT",
-                ])
+        f_inicio = normalizar_fecha_obj(fila.get("DATA INICI"))
+        f_fin = normalizar_fecha_obj(fila.get("DATA FINALITZACIO"))
 
-                # B) Tupla de atributos para el GeoPackage
-                datos_para_gpkg[exp_id] = (
-                    servei,
-                    tecnic,
-                    contratista,
-                    cap_obra,
-                    emplazamiento,
-                    descripcion,
-                    tipo_obra,
-                    observaciones,
-                    condicions_mobilitat,
-                    f_inicio_str,
-                    f_fin.strftime("%Y%m%d"),
-                )
+        if f_inicio and f_fin:
+            f_fin_ampliada = f_fin + timedelta(days=1)
+            f_inicio_str = f_inicio.strftime("%Y%m%d")
+            f_fin_str = f_fin_ampliada.strftime("%Y%m%d")
+
+            lineas_ics.extend([
+                "BEGIN:VEVENT",
+                f"UID:ocupacion-{exp_id}",
+                f"SUMMARY:{emplazamiento}",
+                f"DESCRIPTION:{tipo_obra}-{descripcion}-{observaciones}",
+                f"DTSTART;VALUE=DATE:{f_inicio_str}",
+                f"DTEND;VALUE=DATE:{f_fin_str}",
+                "END:VEVENT",
+            ])
+
+            datos_para_gpkg[exp_id] = (
+                servei,
+                tecnic,
+                contratista,
+                cap_obra,
+                emplazamiento,
+                descripcion,
+                tipo_obra,
+                observaciones,
+                condicions_mobilitat,
+                f_inicio_str,
+                f_fin.strftime("%Y%m%d"),
+            )
 
     lineas_ics.append("END:VCALENDAR")
 
-    # Escritura de archivos .ics
     for ruta in rutas_destino:
         with open(ruta, mode="w", encoding="utf-8") as f_out:
             f_out.write("\n".join(lineas_ics))
             print(f"Éxito: Archivo '{ruta}' generado correctamente.")
 
-    # Sincronización con el GeoPackage
     actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg)
-
-    # Exportacion a KLM
     exportar_geopackage_a_kml(ruta_gpkg, ruta_kml)
 
 
-# --- RUTAS DE EJECUCIÓN ---
-ruta_csv = "BD_OCUPACION_VIA_PUBLICA.csv"
-ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
-ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
-ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
+if __name__ == "__main__":
+    MODO_PRUEBA = False
 
-rutas_destino = [ruta_ics]
-csv_to_ics_gpkg(ruta_csv, rutas_destino, ruta_gpkg)
+    URL_SHAREPOINT_OFFICIAL = (
+        "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
+        "IQDgISBCy3jTRJZpXC5jRRflAYITwYojKDvs50WStuiJd90?rtime=YsdeEnAV30g&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0&download=1"
+    )
+
+    if MODO_PRUEBA:
+        print("=== INICIANDO EJECUCIÓN EN MODO PRUEBA ===")
+        origen_excel = (
+            URL_SHAREPOINT_OFFICIAL
+            if not os.path.exists("test_ocupaciones.xlsx")
+            else "test_ocupaciones.xlsx"
+        )
+        ruta_ics = "TEST_OCUPACION_VIA_PUBLICA.ics"
+        ruta_gpkg = "TEST_OCUPACION_VIA_PUBLICA.gpkg"
+        ruta_kml = "TEST_OCUPACION_VIA_PUBLICA.kml"
+    else:
+        origen_excel = URL_SHAREPOINT_OFFICIAL
+        ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
+        ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
+        ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
+
+    rutas_destino = [ruta_ics]
+
+    excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml)

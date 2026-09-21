@@ -2,7 +2,7 @@ name: Actualizacion Automatica OVP
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Ejecuta automáticamente cada 5 minutos
+    - cron: '*/5 * * * *' # Ejecución cada 5 minutos
   workflow_dispatch:
 
 jobs:
@@ -10,28 +10,34 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/osgeo/gdal:ubuntu-small-latest
+      options: --dns 8.8.8.8
 
     permissions:
       contents: write
 
     steps:
-      - name: Instalar Git en el contenedor
-        run: apt-get update && apt-get install -y git
-
-      - name: Descargar repositorio
-        uses: actions/checkout@v4
-
-      - name: Configurar Git
-        run: |
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Ejecutar script de actualización
-        run: python main.py
-
-      - name: Guardar y publicar archivos actualizados (.ics y .kml)
-        run: |
-          git add .
-          git commit -m "Actualización automática de ICS y KML" || exit 0
-          git push
+          - name: Instalar dependencias del sistema (Git y Pip)
+            run: |
+              apt-get update
+              apt-get install -y git python3-pip
+    
+          - name: Descargar repositorio
+            uses: actions/checkout@v4
+    
+          - name: Configurar Git
+            run: |
+              git config --global --add safe.directory "$GITHUB_WORKSPACE"
+              git config --global user.name "github-actions[bot]"
+              git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    
+          - name: Instalar dependencias de Python
+            run: python3 -m pip install --break-system-packages pandas openpyxl requests
+    
+          - name: Ejecutar script de actualización
+            run: python3 main.py
+    
+          - name: Guardar y publicar archivos actualizados (.ics, .kml y .gpkg)
+            run: |
+              git add .
+              git commit -m "Actualización automática desde Excel Online" || exit 0
+              git push
