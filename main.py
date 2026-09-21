@@ -391,7 +391,7 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
 
 
 if __name__ == "__main__":
-    MODO_PRUEBA = True
+    MODO_PRUEBA = False
 
     URL_SHAREPOINT_OFFICIAL = (
         "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
