@@ -52,5 +52,23 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6435188,39.5750169,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.3">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Servei de prova</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avinguda Antoni Maura 10</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260927</SimpleData>
+		<SimpleData name="f_fin">20260930</SimpleData>
+		<SimpleData name="ID">6</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6460639,39.5685565,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
