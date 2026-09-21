@@ -34,5 +34,23 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.2">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Servei de prova</SimpleData>
+		<SimpleData name="tecnic">Tencic de prova</SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">PASEO MALLORCA 17</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">MUDANZA</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20260927</SimpleData>
+		<SimpleData name="ID">5</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6435188,39.5750169,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
