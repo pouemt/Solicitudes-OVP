@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 import requests
 from osgeo import ogr, osr
-
+LON_DEFECTO, LAT_DEFECTO = 2.6400, 39.5555
 
 def normalizar_fecha_obj(val):
     """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
@@ -88,7 +88,7 @@ def consultar_nominatim(texto_busqueda):
 def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
     """Estrategia de geocodificación en 3 pasos: Exacta/Cruces -> Punto medio -> Pendiente."""
     if not direccion_raw:
-        return None, None, "PENDIENTE"
+        return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
 
     direccion_limpia = parsear_direccion_interseccion(direccion_raw)
 
