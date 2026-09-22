@@ -36,39 +36,194 @@
   </Placemark>
   <Placemark id="ocupaciones_tramos.2">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">Servei de prova</SimpleData>
-		<SimpleData name="tecnic">Tencic de prova</SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">PASEO MALLORCA 17</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra">MUDANZA</SimpleData>
-		<SimpleData name="observaciones"></SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20260927</SimpleData>
-		<SimpleData name="ID">5</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6435188,39.5750169,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.3">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">Servei de prova</SimpleData>
+		<SimpleData name="servei">COBRA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
 		<SimpleData name="contratista"></SimpleData>
 		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">Avinguda Antoni Maura 10</SimpleData>
+		<SimpleData name="emplazamiento">Carrer Manacor, 24</SimpleData>
 		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra"></SimpleData>
-		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
+		<SimpleData name="observaciones">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
 		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260927</SimpleData>
-		<SimpleData name="f_fin">20260930</SimpleData>
-		<SimpleData name="ID">6</SimpleData>
+		<SimpleData name="f_inicio">20260922</SimpleData>
+		<SimpleData name="f_fin">20260922</SimpleData>
+		<SimpleData name="ID">8</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6460639,39.5685565,0</coordinates></Point>
+      <Point><coordinates>2.6705131,39.5712852,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.3">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">COBRA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">JOAN ALCOVER, 1</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
+		<SimpleData name="observaciones">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260922</SimpleData>
+		<SimpleData name="f_fin">20260922</SimpleData>
+		<SimpleData name="ID">9</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6613446,39.5711592,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.4">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic">Sonia González Núnez</SimpleData>
+		<SimpleData name="contratista">URBIA INTERMEDIACION ING Y SERVICIOS S.A.</SimpleData>
+		<SimpleData name="cap_obra">MARCIAL GONZALEZ</SimpleData>
+		<SimpleData name="emplazamiento">Carrer Puig de la mola 51</SimpleData>
+		<SimpleData name="descripcion">APERTURA SIQUIA EN CALÇADA, ENCREUAMENT</SimpleData>
+		<SimpleData name="tipo_obra">TREBALLS DE OPERTURA DE SIQUIA PER MANTENIMENT D'ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="observaciones">TALL DE CARRER NECESSARI DE 9:00 A 16:00. RUTA ALTERNATIVA SEGONS PLÀNOL</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260921</SimpleData>
+		<SimpleData name="f_fin">20260922</SimpleData>
+		<SimpleData name="ID">11</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.5">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra">Mariano Giussano</SimpleData>
+		<SimpleData name="emplazamiento">Avenida Alemanya</SimpleData>
+		<SimpleData name="descripcion">Montaje de luces de Navidad desde la calle. Con ocupación de acera y carril de taxi-bus.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA (CARRIL DE TAXI-BUS).</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano)</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260929</SimpleData>
+		<SimpleData name="f_fin">20261005</SimpleData>
+		<SimpleData name="ID">12</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6477119,39.577519,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.6">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">INDALECIO PRIETO lado ns pares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL CIRCULACIO</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260924</SimpleData>
+		<SimpleData name="f_fin">20260924</SimpleData>
+		<SimpleData name="ID">13</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.7">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">INDALECIO PRIETO lado ns impares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL CIRCULACIO</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20260925</SimpleData>
+		<SimpleData name="ID">14</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.8">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">POMPEU FABRA lado ns pares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO</SimpleData>
+		<SimpleData name="tipo_obra">PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260922</SimpleData>
+		<SimpleData name="f_fin">20260922</SimpleData>
+		<SimpleData name="ID">15</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.9">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">POMPEU FABRA lado ns impares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO</SimpleData>
+		<SimpleData name="tipo_obra">PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260923</SimpleData>
+		<SimpleData name="ID">16</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.10">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">IGNACI FERRETJANS lado ns impares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">PODA ARBOLADO PUESTA A PUNTO</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260922</SimpleData>
+		<SimpleData name="f_fin">20260922</SimpleData>
+		<SimpleData name="ID">17</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.11">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">IGNACI FERRETJANS lado ns pares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">PODA ARBOLADO PUESTA A PUNTO</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260923</SimpleData>
+		<SimpleData name="ID">18</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.12">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">GRUAS POL</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">GRAN VIA ASIMA, 21</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">DESMONTAJE CARTELERIA DE GRANDES DIMENSIONES</SimpleData>
+		<SimpleData name="observaciones">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260921</SimpleData>
+		<SimpleData name="f_fin">20260923</SimpleData>
+		<SimpleData name="ID">19</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6682532,39.606698,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
