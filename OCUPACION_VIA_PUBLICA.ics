@@ -136,4 +136,170 @@ DESCRIPTION:DESMONTAJE CARTELERIA DE GRANDES DIMENSIONES--Inicio a partir de las
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260924
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-20
+SUMMARY:AVINGUDA ALEMANYA, 17
+DESCRIPTION:Treballs de manteniment del paviment-Reparació de les llambordes enfonsades al pas de vianants-OCUPACIÓ PUNTUAL DEL CARRIL ESQUERRA DE LA VIA, PER A LA REPARACIÓ DEL PAVIMENT ASFÀLTIC AL PAS DE VIANANTS. ELS TREBALLS S'INICIARAN A LES 11:00 FINS LES 12:00.
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-21
+SUMMARY:C. GAPAR BENNAZA, 1 AL 73
+DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.-Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20261008
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-22
+SUMMARY:GABRIEL ROCA Nº 21
+DESCRIPTION:--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-23
+SUMMARY:BARÓ DE PINOPAR, 4
+DESCRIPTION:--Se autoriza con hora de inicio a partir de las 9.30h.
+
+La ocupación no debe exceder en ningún momento de un carril de circulación, permitiendo en todo momento el paso del autobús.
+
+Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a la izquierda de la ocupación prevista.
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-24
+SUMMARY:C/ ARC DE SANT MARTI, 20
+DESCRIPTION:RENOVAR ACOMETIDA ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA Y CALZADA-
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260925
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-25
+SUMMARY:C/ CAMI DE GENOVA SANT AGUSTI, 49A
+DESCRIPTION:REPARAR RED ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA Y CALZADA-
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260924
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-26
+SUMMARY:C/ ASEGRA, 11
+DESCRIPTION:REPARAR RED ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA-
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260924
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-27
+SUMMARY:Aurora Picornell
+DESCRIPTION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.-Desvío provisional-Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-28
+SUMMARY:Vicari Joaquim Fuster (de Passeig Born del Molinar a Aurora Picornell)
+DESCRIPTION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.-Desvío provisional-Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20260923
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-29
+SUMMARY:Av. Argentina esqina con c. Annibal
+DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº5 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261001
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-30
+SUMMARY:Av. Argentina esqina con c. Annibal
+DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº6 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261001
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-31
+SUMMARY:Av. Argentina nº45
+DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº10 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261001
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-32
+SUMMARY:Av. Argentina nº45A
+DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº11 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261001
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-33
+SUMMARY:Av. Argentina nº53
+DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº12 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20261001
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-34
+SUMMARY:C. GAPAR BENNAZA, 1 AL 73
+DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.-Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20261008
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-35
+SUMMARY:CAMÍ 140, 50
+DESCRIPTION:--Permitir el paso a vecinos y EMT hasta la intersección inmediatamente anterior a la obra
+DTSTART;VALUE=DATE:20260927
+DTEND;VALUE=DATE:20260928
+END:VEVENT
 END:VCALENDAR
