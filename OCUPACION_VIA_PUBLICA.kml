@@ -465,7 +465,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="ID">37</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6749659,39.5712248,0</coordinates></Point>
+      <Point><coordinates>2.6705131,39.5712852,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
