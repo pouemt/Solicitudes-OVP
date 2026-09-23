@@ -8,7 +8,9 @@ from datetime import datetime, timedelta
 import pandas as pd
 import requests
 from osgeo import ogr, osr
+
 LON_DEFECTO, LAT_DEFECTO = 2.6400, 39.5555
+
 
 def normalizar_fecha_obj(val):
     """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
@@ -109,12 +111,12 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
         if lon1 and lon2:
             return (lon1 + lon2) / 2, (lat1 + lat2) / 2, "APROXIMADO"
 
-    # Paso 3: Registro sin ubicación precisa
-    return None, None, "PENDIENTE"
+    # Paso 3: Registro sin ubicación precisa -> Asignar ubicación por defecto
+    return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
 
 
-def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
-    """Actualiza e inserta entidades en la capa GeoPackage usando OGR."""
+def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False):
+    """Actualiza, inserta y elimina entidades en la capa GeoPackage usando OGR."""
     if not os.path.exists(ruta_gpkg):
         print(f"Aviso: No se encuentra el GeoPackage en {ruta_gpkg}")
         return
@@ -143,7 +145,9 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
     expedientes_en_gpkg = set()
     registros_actualizados = 0
     registros_nuevos = 0
+    fids_a_eliminar = []
 
+    # Recorrido de las entidades existentes en la capa GeoPackage
     for feature in capa:
         exp_id = (
             str(feature.GetField("ID")).strip()
@@ -153,6 +157,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
         if exp_id:
             expedientes_en_gpkg.add(exp_id)
 
+        # Caso 1: El registro existe en el Excel y en el GPKG (Actualizar)
         if exp_id in datos_para_gpkg:
             (
                 serv,
@@ -168,6 +173,10 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
                 fend,
             ) = datos_para_gpkg[exp_id]
 
+            # Comprobar si la dirección guardada en el GPKG difiere de la del Excel
+            emplaz_antiguo = str(feature.GetField("emplazamiento") or "").strip()
+            direccion_modificada = (emplaz_antiguo != emplaz.strip())
+
             feature.SetField("servei", serv)
             feature.SetField("tecnic", tec)
             feature.SetField("contratista", contr)
@@ -180,10 +189,11 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             feature.SetField("f_inicio", fini)
             feature.SetField("f_fin", fend)
 
-            if not feature.GetGeometryRef():
+            # Recalcular coordenadas si no tiene geometría, si la dirección cambió o si se fuerza el recálculo
+            if not feature.GetGeometryRef() or direccion_modificada or forzar_recalculo:
                 lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
                 feature.SetField("estado_geo", estado_geo)
-                if lon and lat:
+                if lon is not None and lat is not None:
                     punto = ogr.Geometry(ogr.wkbPoint)
                     punto.AddPoint(lon, lat)
                     if transform:
@@ -193,6 +203,16 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             capa.SetFeature(feature)
             registros_actualizados += 1
 
+        # Caso 2: El registro está en el GPKG pero YA NO está en el Excel (Eliminar)
+        else:
+            if exp_id:
+                fids_a_eliminar.append(feature.GetFID())
+
+    # Proceso de borrado explícito de los registros que fueron eliminados del Excel
+    for fid in fids_a_eliminar:
+        capa.DeleteFeature(fid)
+
+    # Caso 3: Insertar registros nuevos del Excel que no existían en el GPKG
     defn = capa.GetLayerDefn()
     for exp_id, (
         serv,
@@ -226,7 +246,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
             new_feature.SetField("estado_geo", estado_geo)
 
-            if lon and lat:
+            if lon is not None and lat is not None:
                 punto = ogr.Geometry(ogr.wkbPoint)
                 punto.AddPoint(lon, lat)
                 if transform:
@@ -238,7 +258,8 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
 
     ds = None
     print(
-        f"GeoPackage actualizado: {registros_actualizados} modificados, {registros_nuevos} nuevos procesados."
+        f"GeoPackage actualizado: {registros_actualizados} modificados, "
+        f"{registros_nuevos} nuevos, {len(fids_a_eliminar)} eliminados."
     )
 
 
@@ -302,7 +323,9 @@ def descargar_excel_sharepoint(url_sharepoint):
     return io.BytesIO(response.content)
 
 
-def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml):
+def excel_sharepoint_to_ics_gpkg(
+    origen_excel, rutas_destino, ruta_gpkg, ruta_kml, forzar_recalculo=False
+):
     """Pipeline principal de lectura, conversión a calendario ICS, GeoPackage y KML."""
     lineas_ics = [
         "BEGIN:VCALENDAR",
@@ -386,12 +409,15 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
             f_out.write("\n".join(lineas_ics))
             print(f"Éxito: Archivo '{ruta}' generado correctamente.")
 
-    actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg)
+    actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=forzar_recalculo)
     exportar_geopackage_a_kml(ruta_gpkg, ruta_kml)
 
 
 if __name__ == "__main__":
+    # Cambiar a True para evitar sobreescribir los archivos de salida (usar en pruebas)
     MODO_PRUEBA = False
+    # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
+    FORZAR_RECALCULO_GEO = True
 
     URL_SHAREPOINT_OFFICIAL = (
         "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
@@ -416,4 +442,10 @@ if __name__ == "__main__":
 
     rutas_destino = [ruta_ics]
 
-    excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml)
+    excel_sharepoint_to_ics_gpkg(
+        origen_excel,
+        rutas_destino,
+        ruta_gpkg,
+        ruta_kml,
+        forzar_recalculo=FORZAR_RECALCULO_GEO,
+    )
