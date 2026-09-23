@@ -115,7 +115,7 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
     return None, None, "PENDIENTE"
 
 
-def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
+def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False):
     """Actualiza, inserta y elimina entidades en la capa GeoPackage usando OGR."""
     if not os.path.exists(ruta_gpkg):
         print(f"Aviso: No se encuentra el GeoPackage en {ruta_gpkg}")
@@ -189,8 +189,8 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg):
             feature.SetField("f_inicio", fini)
             feature.SetField("f_fin", fend)
 
-            # Recalcular coordenadas si no tiene geometría O si la dirección ha cambiado
-            if not feature.GetGeometryRef() or direccion_modificada:
+            # Recalcular coordenadas si no tiene geometría, si la dirección cambió o si se fuerza el recálculo
+            if not feature.GetGeometryRef() or direccion_modificada or forzar_recalculo:
                 lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
                 feature.SetField("estado_geo", estado_geo)
                 if lon and lat:
@@ -323,7 +323,9 @@ def descargar_excel_sharepoint(url_sharepoint):
     return io.BytesIO(response.content)
 
 
-def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml):
+def excel_sharepoint_to_ics_gpkg(
+    origen_excel, rutas_destino, ruta_gpkg, ruta_kml, forzar_recalculo=False
+):
     """Pipeline principal de lectura, conversión a calendario ICS, GeoPackage y KML."""
     lineas_ics = [
         "BEGIN:VCALENDAR",
@@ -407,12 +409,14 @@ def excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_km
             f_out.write("\n".join(lineas_ics))
             print(f"Éxito: Archivo '{ruta}' generado correctamente.")
 
-    actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg)
+    actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=forzar_recalculo)
     exportar_geopackage_a_kml(ruta_gpkg, ruta_kml)
 
 
 if __name__ == "__main__":
     MODO_PRUEBA = False
+    # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
+    FORZAR_RECALCULO_GEO = True
 
     URL_SHAREPOINT_OFFICIAL = (
         "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
@@ -437,4 +441,10 @@ if __name__ == "__main__":
 
     rutas_destino = [ruta_ics]
 
-    excel_sharepoint_to_ics_gpkg(origen_excel, rutas_destino, ruta_gpkg, ruta_kml)
+    excel_sharepoint_to_ics_gpkg(
+        origen_excel,
+        rutas_destino,
+        ruta_gpkg,
+        ruta_kml,
+        forzar_recalculo=FORZAR_RECALCULO_GEO,
+    )
