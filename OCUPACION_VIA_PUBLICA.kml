@@ -509,5 +509,23 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6430241,39.5723658,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.26">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Vialitat</SimpleData>
+		<SimpleData name="tecnic">Miquel Gost</SimpleData>
+		<SimpleData name="contratista">Brigada Municipal</SimpleData>
+		<SimpleData name="cap_obra">Miguel Ángel Muñoz</SimpleData>
+		<SimpleData name="emplazamiento">C/ MANACOR, 130</SimpleData>
+		<SimpleData name="descripcion">Reparació de les llambordes enfonsades al pas de vianants</SimpleData>
+		<SimpleData name="tipo_obra">Treballs de manteniment del paviment</SimpleData>
+		<SimpleData name="observaciones">OCUPACIÓ PUNTUAL DEL CARRIL DRET DE LA VIA, PER A LA REPARACIÓ DEL PAVIMENT ASFÀLTIC . ELS TREBALLS S'INICIARAN A LES 10:00 FINS LES 11:00.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Se da conformidad al corte de carril derecho en el horario solicitado.</SimpleData>
+		<SimpleData name="f_inicio">20260924</SimpleData>
+		<SimpleData name="f_fin">20260924</SimpleData>
+		<SimpleData name="ID">41</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6727657,39.5711688,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
