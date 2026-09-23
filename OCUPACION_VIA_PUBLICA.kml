@@ -36,59 +36,6 @@
   </Placemark>
   <Placemark id="ocupaciones_tramos.2">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">COBRA</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">Carrer Manacor, 24</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
-		<SimpleData name="observaciones">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260922</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">8</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6705131,39.5712852,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.3">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">COBRA</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">JOAN ALCOVER, 1</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
-		<SimpleData name="observaciones">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260922</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">9</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6613446,39.5711592,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.4">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic">Sonia González Núnez</SimpleData>
-		<SimpleData name="contratista">URBIA INTERMEDIACION ING Y SERVICIOS S.A.</SimpleData>
-		<SimpleData name="cap_obra">MARCIAL GONZALEZ</SimpleData>
-		<SimpleData name="emplazamiento">Carrer Puig de la mola 51</SimpleData>
-		<SimpleData name="descripcion">APERTURA SIQUIA EN CALÇADA, ENCREUAMENT</SimpleData>
-		<SimpleData name="tipo_obra">TREBALLS DE OPERTURA DE SIQUIA PER MANTENIMENT D'ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="observaciones">TALL DE CARRER NECESSARI DE 9:00 A 16:00. RUTA ALTERNATIVA SEGONS PLÀNOL</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260921</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">11</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.5">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
 		<SimpleData name="contratista">EDISON NEXT</SimpleData>
@@ -105,7 +52,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6477119,39.577519,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.6">
+  <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
 		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
@@ -122,7 +69,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.7">
+  <Placemark id="ocupaciones_tramos.4">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
 		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
@@ -139,24 +86,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.8">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
-		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
-		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
-		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
-		<SimpleData name="emplazamiento">POMPEU FABRA lado ns pares</SimpleData>
-		<SimpleData name="descripcion">OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO</SimpleData>
-		<SimpleData name="tipo_obra">PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR</SimpleData>
-		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260922</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">15</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.9">
+  <Placemark id="ocupaciones_tramos.5">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
 		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
@@ -173,24 +103,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.10">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
-		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
-		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
-		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
-		<SimpleData name="emplazamiento">IGNACI FERRETJANS lado ns impares</SimpleData>
-		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL D'APARCAMENT</SimpleData>
-		<SimpleData name="tipo_obra">PODA ARBOLADO PUESTA A PUNTO</SimpleData>
-		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260922</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">17</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.11">
+  <Placemark id="ocupaciones_tramos.6">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
 		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
@@ -207,7 +120,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.12">
+  <Placemark id="ocupaciones_tramos.7">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">GRUAS POL</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -225,7 +138,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6682532,39.606698,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.13">
+  <Placemark id="ocupaciones_tramos.8">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
@@ -242,7 +155,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.14">
+  <Placemark id="ocupaciones_tramos.9">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">GRUAS POL</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -259,7 +172,7 @@
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.15">
+  <Placemark id="ocupaciones_tramos.10">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">GRUAS POL</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -281,7 +194,7 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6481829,39.5754121,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.16">
+  <Placemark id="ocupaciones_tramos.11">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA</SimpleData>
 		<SimpleData name="tecnic">CARLOS DEL BLANCO</SimpleData>
@@ -299,7 +212,7 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6375883,39.5812262,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.17">
+  <Placemark id="ocupaciones_tramos.12">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA</SimpleData>
 		<SimpleData name="tecnic">CARLOS DEL BLANCO</SimpleData>
@@ -316,7 +229,7 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.18">
+  <Placemark id="ocupaciones_tramos.13">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA</SimpleData>
 		<SimpleData name="tecnic">CARLOS DEL BLANCO</SimpleData>
@@ -334,42 +247,7 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6316997,39.5965436,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.19">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
-		<SimpleData name="tecnic">Xavier Ara</SimpleData>
-		<SimpleData name="contratista">VOPSA</SimpleData>
-		<SimpleData name="cap_obra">Gustavo Castellanos</SimpleData>
-		<SimpleData name="emplazamiento">Aurora Picornell</SimpleData>
-		<SimpleData name="descripcion">Desvío provisional</SimpleData>
-		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.</SimpleData>
-		<SimpleData name="observaciones">Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260922</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">27</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6733706,39.5590058,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.20">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
-		<SimpleData name="tecnic">Xavier Ara</SimpleData>
-		<SimpleData name="contratista">VOPSA</SimpleData>
-		<SimpleData name="cap_obra">Gustavo Castellanos</SimpleData>
-		<SimpleData name="emplazamiento">Vicari Joaquim Fuster (de Passeig Born del Molinar a Aurora Picornell)</SimpleData>
-		<SimpleData name="descripcion">Desvío provisional</SimpleData>
-		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.</SimpleData>
-		<SimpleData name="observaciones">Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260922</SimpleData>
-		<SimpleData name="f_fin">20260922</SimpleData>
-		<SimpleData name="ID">28</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.21">
+  <Placemark id="ocupaciones_tramos.14">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -396,7 +274,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.22">
+  <Placemark id="ocupaciones_tramos.15">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -423,7 +301,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.23">
+  <Placemark id="ocupaciones_tramos.16">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -451,7 +329,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6394882,39.57001,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.24">
+  <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -479,7 +357,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6394882,39.57001,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.25">
+  <Placemark id="ocupaciones_tramos.18">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -507,7 +385,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6408614,39.5759698,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.26">
+  <Placemark id="ocupaciones_tramos.19">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
@@ -524,7 +402,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.27">
+  <Placemark id="ocupaciones_tramos.20">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">COBRA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
