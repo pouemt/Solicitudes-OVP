@@ -51,7 +51,7 @@
 		<SimpleData name="ID">12</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6485949,39.5783805,0</coordinates></Point>
+      <Point><coordinates>2.6467279,39.5765747,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -197,9 +197,9 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 		<SimpleData name="f_inicio">20260925</SimpleData>
 		<SimpleData name="f_fin">20260925</SimpleData>
 		<SimpleData name="ID">23</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6481829,39.5754121,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.11">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -215,9 +215,9 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 		<SimpleData name="f_inicio">20260922</SimpleData>
 		<SimpleData name="f_fin">20260924</SimpleData>
 		<SimpleData name="ID">24</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6375883,39.5812262,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.12">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -251,9 +251,9 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 		<SimpleData name="f_inicio">20260921</SimpleData>
 		<SimpleData name="f_fin">20260923</SimpleData>
 		<SimpleData name="ID">26</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6316997,39.5965436,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.14">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -335,9 +335,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260923</SimpleData>
 		<SimpleData name="f_fin">20260930</SimpleData>
 		<SimpleData name="ID">31</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6394882,39.57001,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -363,9 +363,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260923</SimpleData>
 		<SimpleData name="f_fin">20260930</SimpleData>
 		<SimpleData name="ID">32</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6394882,39.57001,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.18">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -391,9 +391,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260923</SimpleData>
 		<SimpleData name="f_fin">20260930</SimpleData>
 		<SimpleData name="ID">33</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6394882,39.57001,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.19">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -427,9 +427,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260927</SimpleData>
 		<SimpleData name="f_fin">20260927</SimpleData>
 		<SimpleData name="ID">35</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6687559,39.6282145,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.21">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -463,9 +463,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260925</SimpleData>
 		<SimpleData name="f_fin">20260925</SimpleData>
 		<SimpleData name="ID">37</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6649808,39.5713465,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -481,9 +481,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260926</SimpleData>
 		<SimpleData name="f_fin">20260926</SimpleData>
 		<SimpleData name="ID">38</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6613446,39.5711592,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.24">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -499,9 +499,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260924</SimpleData>
 		<SimpleData name="f_fin">20260924</SimpleData>
 		<SimpleData name="ID">39</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6609871,39.571615,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.25">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -517,9 +517,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260925</SimpleData>
 		<SimpleData name="f_fin">20261010</SimpleData>
 		<SimpleData name="ID">40</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6430241,39.5723658,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.26">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -535,9 +535,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260924</SimpleData>
 		<SimpleData name="f_fin">20260924</SimpleData>
 		<SimpleData name="ID">41</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+      <Point><coordinates>2.6727657,39.5711688,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
