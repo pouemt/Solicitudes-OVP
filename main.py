@@ -111,8 +111,8 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
         if lon1 and lon2:
             return (lon1 + lon2) / 2, (lat1 + lat2) / 2, "APROXIMADO"
 
-    # Paso 3: Registro sin ubicación precisa
-    return None, None, "PENDIENTE"
+    # Paso 3: Registro sin ubicación precisa -> Asignar ubicación por defecto
+    return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
 
 
 def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False):
@@ -193,7 +193,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
             if not feature.GetGeometryRef() or direccion_modificada or forzar_recalculo:
                 lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
                 feature.SetField("estado_geo", estado_geo)
-                if lon and lat:
+                if lon is not None and lat is not None:
                     punto = ogr.Geometry(ogr.wkbPoint)
                     punto.AddPoint(lon, lat)
                     if transform:
@@ -246,7 +246,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
             lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
             new_feature.SetField("estado_geo", estado_geo)
 
-            if lon and lat:
+            if lon is not None and lat is not None:
                 punto = ogr.Geometry(ogr.wkbPoint)
                 punto.AddPoint(lon, lat)
                 if transform:
@@ -416,7 +416,7 @@ def excel_sharepoint_to_ics_gpkg(
 if __name__ == "__main__":
     MODO_PRUEBA = False
     # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
-    FORZAR_RECALCULO_GEO = True
+    FORZAR_RECALCULO_GEO = False
 
     URL_SHAREPOINT_OFFICIAL = (
         "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
