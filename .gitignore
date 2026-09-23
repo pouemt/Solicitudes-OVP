@@ -1,0 +1,5 @@
+# Archivos generados automáticamente por el pipeline
+*.gpkg
+*.kml
+*.ics
+*.xlsx
