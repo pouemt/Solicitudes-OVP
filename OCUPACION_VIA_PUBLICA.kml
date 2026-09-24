@@ -51,7 +51,7 @@
 		<SimpleData name="ID">12</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6467279,39.5765747,0</coordinates></Point>
+      <Point><coordinates>2.6477119,39.577519,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -445,6 +445,24 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260924</SimpleData>
 		<SimpleData name="f_fin">20260924</SimpleData>
 		<SimpleData name="ID">41</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.22">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CE Arxiduc Lluis Salvador, 89</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Ocupación carril circulación</SimpleData>
+		<SimpleData name="condicions_mobilitat">Ocupación carril circulación mediante tráfico alternativo con señalistas en toda la intersección. Horario de 10:00 a 12:00h.</SimpleData>
+		<SimpleData name="f_inicio">20261006</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">42</SimpleData>
 		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
