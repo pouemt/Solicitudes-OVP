@@ -351,4 +351,11 @@ DESCRIPTION:--Ocupación carril circulación
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261008
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-43
+SUMMARY:JOAN MIRÓ 243
+DESCRIPTION:--Ocupación carril circulación, paso alterno de vehiculos por el sentido no ocupado y banda de estacionamiento
+DTSTART;VALUE=DATE:20260929
+DTEND;VALUE=DATE:20261003
+END:VEVENT
 END:VCALENDAR
