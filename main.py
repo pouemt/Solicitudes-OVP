@@ -11,6 +11,9 @@ from osgeo import ogr, osr
 
 LON_DEFECTO, LAT_DEFECTO = 2.6400, 39.5555
 
+# Variable global para garantizar la pausa de 1 segundo requerida por OSM / Nominatim
+ULTIMA_CONSULTA_NOMINATIM = 0.0
+
 
 def normalizar_fecha_obj(val):
     """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
@@ -48,7 +51,7 @@ def normalizar_fecha_obj(val):
         except ValueError:
             continue
 
-    # Fallback utilizando pandas to_datetime
+	# Fallback utilizando pandas to_datetime
     try:
         dt = pd.to_datetime(f_str, dayfirst=True, errors="coerce")
         if pd.notna(dt):
@@ -60,15 +63,36 @@ def normalizar_fecha_obj(val):
 
 
 def limpiar_direccion(direccion):
-    """Normaliza abreviaturas urbanas comunes y corrige errores tipográficos frecuentes."""
+    """Limpia textos secundarios, erratas, rangos de números y aclaraciones entre paréntesis."""
     if not direccion:
         return ""
 
     texto = str(direccion).strip()
-    texto = re.sub(r"\s+", " ", texto)
 
+    # 1. Eliminar aclaraciones entre paréntesis ej. "(de Passeig Born...)"
+    texto = re.sub(r"\([^)]*\)", "", texto)
+
+    # 2. Eliminar acotaciones de tramo o lado de vía ej. "lado ns pares", "lado impares"
+    texto = re.sub(
+        r"\blado\s+(?:ns\s+)?(?:pares|impares|n/s)\b",
+        "",
+        texto,
+        flags=re.IGNORECASE,
+    )
+
+    # 3. Normalizar rangos de portales ej. "1 AL 73" -> "1"
+    texto = re.sub(r"(\d+)\s+AL?\s+\d+", r"\1", texto, flags=re.IGNORECASE)
+
+    # 4. Corregir erratas tipográficas frecuentes de la base de datos municipal
+    texto = re.sub(r"\besqina\b", "esquina", texto, flags=re.IGNORECASE)
+    texto = re.sub(r"\bGAPAR\b", "GASPAR", texto, flags=re.IGNORECASE)
+    texto = re.sub(r"\bCE\b", "Calle", texto, flags=re.IGNORECASE)
+
+    # 5. Normalizar abreviaturas urbanas comunes
+    texto = re.sub(r"\s+", " ", texto)
     reemplazos = [
         (r"\bc/\s*", "Calle "),
+        (r"\bc\.\s*", "Calle "),
         (r"\bcl/\s*", "Calle "),
         (r"\bavda\.\s*", "Avenida "),
         (r"\bav\.\s*", "Avenida "),
@@ -84,8 +108,23 @@ def limpiar_direccion(direccion):
     return texto.strip()
 
 
+def normalizar_comas_portal(texto):
+    """Elimina palabras redundantes de portal (ej. 'nº', 'num') preservando la coma si existe."""
+    if not texto:
+        return ""
+    return re.sub(r",?\s*(?:nº|num|núm|n0)\s*(\d+)", r", \1", texto, flags=re.IGNORECASE)
+
+
+def tiene_tipo_via(texto):
+    """Verifica si la dirección cuenta con un prefijo urbano."""
+    if not texto:
+        return False
+    patron = r"^\s*(?:calle|cl|c/|carrer|c|avenida|avda|av|plaza|pza|pl|paseo|passeig|pg|pasaje|ptge|carretera|ctra|camino|camí)\b"
+    return bool(re.search(patron, texto, re.IGNORECASE))
+
+
 def remover_tipo_via(texto):
-    """Elimina prefijos de tipos de vía (Calle, Carrer, Avda, Plaza, etc.) para evitar descalces por idioma en Nominatim."""
+    """Elimina prefijos de tipos de vía para evitar descalces por idioma en Nominatim."""
     if not texto:
         return ""
     patron = r"^\s*(?:calle|cl|c/|carrer|c|avenida|avda|av|plaza|pza|pl|paseo|passeig|pg|pasaje|ptge|carretera|ctra|camino|camí)\b\.?\s*(?:de\s+|del\s+|d['’]\s*)?"
@@ -121,18 +160,29 @@ def extraer_solo_via(direccion):
     """Extrae el nombre principal de la vía antes de cruces, números o detalles secundarios."""
     if "&" in direccion:
         return direccion.split("&")[0].strip()
-    partes = direccion.split(",")
-    if len(partes) > 1:
-        return partes[0].strip()
-    return direccion
+    return direccion.split(",")[0].strip()
 
 
-def consultar_nominatim(texto_busqueda, debug=True):
-    """Realiza la petición HTTP a la API pública de Nominatim (OpenStreetMap) con trazabilidad debug."""
-    url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(
-        {"q": texto_busqueda, "format": "json", "limit": 1}
-    )
-    headers = {"User-Agent": "QGIS_OVP_Script/1.0"}
+def consultar_nominatim(texto_busqueda, debug=True, params_estructurados=None):
+    """Realiza la petición HTTP a la API pública de Nominatim respetando el límite estricto de 1 req/sec."""
+    global ULTIMA_CONSULTA_NOMINATIM
+
+    # Garantizar una pausa mínima de 1.1 segundos entre peticiones a Nominatim
+    tiempo_transcurrido = time.time() - ULTIMA_CONSULTA_NOMINATIM
+    if tiempo_transcurrido < 1.1:
+        time.sleep(1.1 - tiempo_transcurrido)
+    ULTIMA_CONSULTA_NOMINATIM = time.time()
+
+    params = {"format": "json", "limit": 1, "countrycodes": "es"}
+    if params_estructurados:
+        params.update(params_estructurados)
+        label_log = f"Estructurado: {params_estructurados}"
+    else:
+        params["q"] = texto_busqueda
+        label_log = f"'{texto_busqueda}'"
+
+    url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(params)
+    headers = {"User-Agent": "QGIS_OVP_Script/1.0 (movilidad_palma)"}
     try:
         response = requests.get(url, headers=headers, timeout=5)
         if response.status_code == 200:
@@ -141,14 +191,14 @@ def consultar_nominatim(texto_busqueda, debug=True):
                 lon, lat = float(datos[0]["lon"]), float(datos[0]["lat"])
                 match_name = datos[0].get("display_name", "Sin nombre")
                 if debug:
-                    print(f"  [DEBUG Nominatim] QUERIED: '{texto_busqueda}' -> MATCH: ({lon:.5f}, {lat:.5f}) ['{match_name[:50]}...']")
+                    print(f"  [DEBUG Nominatim] QUERIED: {label_log} -> MATCH: ({lon:.5f}, {lat:.5f}) ['{match_name[:50]}...']")
                 return lon, lat
     except Exception as e:
         if debug:
             print(f"  [DEBUG Nominatim] ERROR HTTP/Conexión: {e}")
 
     if debug:
-        print(f"  [DEBUG Nominatim] QUERIED: '{texto_busqueda}' -> SIN RESULTADOS")
+        print(f"  [DEBUG Nominatim] QUERIED: {label_log} -> SIN RESULTADOS")
     return None, None
 
 
@@ -172,15 +222,18 @@ def consultar_google_maps(texto_busqueda, ciudad="Palma, España", debug=True):
         response = requests.get(url, params=params, timeout=5)
         if response.status_code == 200:
             datos = response.json()
-            if datos.get("status") == "OK" and datos.get("results"):
+            status = datos.get("status")
+            if status == "OK" and datos.get("results"):
                 location = datos["results"][0]["geometry"]["location"]
                 formatted_address = datos["results"][0].get("formatted_address", "")
                 lon, lat = float(location["lng"]), float(location["lat"])
                 if debug:
                     print(f"  [DEBUG Google Maps] QUERIED: '{texto_busqueda}, {ciudad}' -> MATCH: ({lon:.5f}, {lat:.5f}) ['{formatted_address}']")
                 return lon, lat
+            elif status == "REQUEST_DENIED" and debug:
+                print(f"  [DEBUG Google Maps] API Status: REQUEST_DENIED (Comprueba en Google Cloud que la 'Geocoding API' esté activada y la clave no tenga restricciones incompatibles).")
             elif debug:
-                print(f"  [DEBUG Google Maps] API Status: {datos.get('status')}")
+                print(f"  [DEBUG Google Maps] API Status: {status}")
     except Exception as e:
         if debug:
             print(f"  [DEBUG Google Maps] ERROR: {e}")
@@ -203,28 +256,64 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
     dir_interseccion = parsear_direccion_interseccion(direccion_limpia)
     es_interseccion = "&" in dir_interseccion
 
-    # Paso 1A: Nominatim con la dirección completa (prioridad para evitar falsos positivos genéricos)
+    # Paso 1A: Consulta directa a Nominatim con la dirección limpia
     if not es_interseccion:
         if debug:
-            print(f" -> [Paso 1A] Nominatim con dirección completa...")
+            print(f" -> [Paso 1A] Nominatim con dirección limpia ('{direccion_limpia}, {ciudad}')...")
         lon, lat = consultar_nominatim(f"{direccion_limpia}, {ciudad}", debug=debug)
         if lon and lat:
             if debug:
                 print(f" -> ÉXITO PASO 1A: Coordenadas exactas asignadas ({lon:.5f}, {lat:.5f})")
             return lon, lat, "EXACTO"
 
-        # Paso 1B: Probar sin tipo de vía solo si la búsqueda completa falló
+        # Paso 1B: Probar sin sufijos de portal redundantes
+        dir_coma_portal = normalizar_comas_portal(direccion_limpia)
+        if dir_coma_portal != direccion_limpia:
+            if debug:
+                print(f" -> [Paso 1B] Nominatim con portal normalizado ('{dir_coma_portal}, {ciudad}')...")
+            lon, lat = consultar_nominatim(f"{dir_coma_portal}, {ciudad}", debug=debug)
+            if lon and lat:
+                if debug:
+                    print(f" -> ÉXITO PASO 1B: Coordenadas asignadas tras normalizar portal ({lon:.5f}, {lat:.5f})")
+                return lon, lat, "EXACTO"
+
+        # Paso 1C: Probar prefijos urbanos explícitos (Carrer / Calle)
+        if not tiene_tipo_via(direccion_limpia):
+            for prefijo in ["Carrer", "Calle"]:
+                dir_con_prefijo = f"{prefijo} {direccion_limpia}"
+                if debug:
+                    print(f" -> [Paso 1C] Probando Nominatim con prefijo '{prefijo}' ('{dir_con_prefijo}, {ciudad}')...")
+                lon, lat = consultar_nominatim(f"{dir_con_prefijo}, {ciudad}", debug=debug)
+                if lon and lat:
+                    if debug:
+                        print(f" -> ÉXITO PASO 1C: Coordenadas asignadas con prefijo '{prefijo}' ({lon:.5f}, {lat:.5f})")
+                    return lon, lat, "EXACTO"
+
+        # Paso 1D: Búsqueda estructurada
+        if debug:
+            print(f" -> [Paso 1D] Búsqueda estructurada en Nominatim...")
+        lon, lat = consultar_nominatim(
+            None,
+            debug=debug,
+            params_estructurados={"street": direccion_limpia, "city": "Palma"},
+        )
+        if lon and lat:
+            if debug:
+                print(f" -> ÉXITO PASO 1D: Coordenadas asignadas por búsqueda estructurada ({lon:.5f}, {lat:.5f})")
+            return lon, lat, "EXACTO"
+
+        # Paso 1E: Probar eliminando el tipo de vía
         dir_sin_tipo = remover_tipo_via(direccion_limpia)
         if dir_sin_tipo != direccion_limpia:
             if debug:
-                print(f" -> [Paso 1B] Nominatim sin tipo de vía ('{dir_sin_tipo}')...")
+                print(f" -> [Paso 1E] Nominatim sin tipo de vía ('{dir_sin_tipo}, {ciudad}')...")
             lon, lat = consultar_nominatim(f"{dir_sin_tipo}, {ciudad}", debug=debug)
             if lon and lat:
                 if debug:
-                    print(f" -> ÉXITO PASO 1B: Coordenadas asignadas sin prefijo de vía ({lon:.5f}, {lat:.5f})")
+                    print(f" -> ÉXITO PASO 1E: Coordenadas asignadas sin tipo de vía ({lon:.5f}, {lat:.5f})")
                 return lon, lat, "EXACTO"
 
-    # Paso 2: Google Maps (Cruces e intersecciones o como respaldo de alta precisión)
+    # Paso 2: Google Maps API (Respaldo)
     if debug:
         print(f" -> [Paso 2] Google Maps API con '{dir_interseccion}'...")
     lon_g, lat_g = consultar_google_maps(dir_interseccion, ciudad, debug=debug)
@@ -233,9 +322,7 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
             print(f" -> ÉXITO PASO 2: Coordenadas devueltas por Google Maps ({lon_g:.5f}, {lat_g:.5f})")
         return lon_g, lat_g, "EXACTO_GOOGLE"
 
-    time.sleep(1)
-
-    # Paso 3: Fallback de intersección en Nominatim (Vías por separado)
+    # Paso 3: Fallback de intersección en Nominatim
     if es_interseccion:
         if debug:
             print(f" -> [Paso 3] Nominatim intersección por separado...")
@@ -244,28 +331,27 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
         calle2_sin_tipo = remover_tipo_via(calle2.strip())
 
         lon1, lat1 = consultar_nominatim(f"{calle1_sin_tipo}, {ciudad}", debug=debug)
-        time.sleep(1)
         lon2, lat2 = consultar_nominatim(f"{calle2_sin_tipo}, {ciudad}", debug=debug)
 
         if lon1 and lat1 and lon2 and lat2:
             lon_med, lat_med = (lon1 + lon2) / 2, (lat1 + lat2) / 2
             if debug:
-                print(f" -> ÉXITO PASO 3: Punto medio de intersección calculated ({lon_med:.5f}, {lat_med:.5f})")
+                print(f" -> ÉXITO PASO 3: Punto medio de intersección calculado ({lon_med:.5f}, {lat_med:.5f})")
             return lon_med, lat_med, "APROXIMADO"
 
-    # Paso 4: Búsqueda por vía principal
+    # Paso 4: Búsqueda por vía principal únicamente
     solo_via = extraer_solo_via(dir_interseccion)
     solo_via_sin_tipo = remover_tipo_via(solo_via)
     if solo_via_sin_tipo and solo_via_sin_tipo != direccion_limpia:
         if debug:
-            print(f" -> [Paso 4] Nominatim por vía principal únicamente ('{solo_via_sin_tipo}')...")
+            print(f" -> [Paso 4] Nominatim por vía principal únicamente ('{solo_via_sin_tipo}, {ciudad}')...")
         lon_v, lat_v = consultar_nominatim(f"{solo_via_sin_tipo}, {ciudad}", debug=debug)
         if lon_v and lat_v:
             if debug:
                 print(f" -> ÉXITO PASO 4: Vía principal localizada ({lon_v:.5f}, {lat_v:.5f})")
             return lon_v, lat_v, "APROXIMADO"
 
-    # Paso 5: Fallback por defecto
+    # Paso 5: Asignación por defecto
     if debug:
         print(f" -> [Paso 5] Sin coincidencia en APIs. Asignando punto predeterminado (PENDIENTE).")
     return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
@@ -304,11 +390,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
     fids_a_eliminar = []
 
     for feature in capa:
-        exp_id = (
-            str(feature.GetField("ID")).strip()
-            if feature.GetField("ID")
-            else ""
-        )
+        exp_id = str(feature.GetField("ID")).strip() if feature.GetField("ID") else ""
         if exp_id:
             expedientes_en_gpkg.add(exp_id)
 
@@ -358,7 +440,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
             capa.SetFeature(feature)
             registros_actualizados += 1
 
-        # Caso 2: El registro está en el GPKG pero YA NO está en el Excel (Eliminar)
+		# Caso 2: El registro está en el GPKG pero YA NO está en el Excel (Eliminar)
         else:
             if exp_id:
                 fids_a_eliminar.append(feature.GetFID())
@@ -443,13 +525,11 @@ def exportar_geopackage_a_kml(ruta_gpkg, ruta_kml):
 
     ds_in = None
     ds_out = None
-    print(
-        f"Éxito: KML exportado con ocupaciones activas a partir de {fecha_hoy}."
-    )
+    print(f"Éxito: KML exportado con ocupaciones activas a partir de {fecha_hoy}.")
 
 
 def descargar_excel_sharepoint(url_sharepoint):
-    """Descarga en memoria el archivo Excel desde SharePoint/OneDrive usando la librería requests."""
+    """Descarga en memoria el archivo Excel desde SharePoint/OneDrive."""
     url_limpia = str(url_sharepoint).strip()
     if "download=1" not in url_limpia:
         url_descarga = (
@@ -468,9 +548,7 @@ def descargar_excel_sharepoint(url_sharepoint):
         )
     }
 
-    response = requests.get(
-        url_descarga, headers=headers, timeout=30, allow_redirects=True
-    )
+    response = requests.get(url_descarga, headers=headers, timeout=30, allow_redirects=True)
     response.raise_for_status()
 
     return io.BytesIO(response.content)
@@ -479,7 +557,7 @@ def descargar_excel_sharepoint(url_sharepoint):
 def excel_sharepoint_to_ics_gpkg(
     origen_excel, rutas_destino, ruta_gpkg, ruta_kml, forzar_recalculo=False
 ):
-    """Pipeline principal de lectura, conversión a calendario ICS, GeoPackage y KML."""
+    """Pipeline principal de lectura y geocodificación."""
     lineas_ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
