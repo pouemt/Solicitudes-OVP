@@ -58,20 +58,71 @@ def normalizar_fecha_obj(val):
 
     return None
 
+def limpiar_direccion(direccion):
+    """Normaliza abreviaturas urbanas comunes y corrige errores tipográficos frecuentes."""
+    if not direccion:
+        return ""
+
+    texto = str(direccion).strip()
+    texto = re.sub(r"\s+", " ", texto)
+
+    reemplazos = [
+        (r"\bc/\s*", "Calle "),
+        (r"\bcl/\s*", "Calle "),
+        (r"\bavda\.\s*", "Avenida "),
+        (r"\bav\.\s*", "Avenida "),
+        (r"\bpza\.\s*", "Plaza "),
+        (r"\bpl\.\s*", "Plaza "),
+        (r"\bpg\.\s*", "Paseo "),
+        (r"\bptge\.\s*", "Pasaje "),
+        (r"\bctra\.\s*", "Carretera "),
+    ]
+    for patron, reemp in reemplazos:
+        texto = re.sub(patron, reemp, texto, flags=re.IGNORECASE)
+
+    return texto.strip()
+
+def remover_tipo_via(texto):
+    """Elimina prefijos de tipos de vía (Calle, Carrer, Avda, Plaza, etc.) para evitar descalces por idioma en Nominatim."""
+    if not texto:
+        return ""
+    patron = r"^\s*(?:calle|cl|c/|carrer|c|avenida|avda|av|plaza|pza|pl|paseo|passeig|pg|pasaje|ptge|carretera|ctra|camino|camí)\b\.?\s*(?:de\s+|del\s+|d['’]\s*)?"
+    texto_sin_via = re.sub(patron, "", texto, flags=re.IGNORECASE).strip()
+    return texto_sin_via if texto_sin_via else texto
 
 def parsear_direccion_interseccion(direccion):
-    """Detecta y formatea cruces de calles para Nominatim (ej. 'Calle A & Calle B')."""
-    patron = r"(?:intersección|esquina|cruce|confluencia)\s+(?:de\s+la\s+|del?\s+)?(?:calle\s+|c/\s*)?(.+?)\s+(?:con|y|esquina)\s+(?:la\s+calle\s+|c/\s*)?(.+)"
-    coincidencia = re.search(patron, direccion, re.IGNORECASE)
-    if coincidencia:
-        calle1 = coincidencia.group(1).strip()
-        calle2 = coincidencia.group(2).strip()
+    """Detecta y formatea cruces de calles (ej. 'Calle A & Calle B')."""
+    if not direccion:
+        return ""
+    # Caso 1: "intersección/esquina/cruce de Calle A con/y Calle B"
+    patron1 = r"(?:intersección|esquina|cruce|confluencia)\s+(?:de\s+la\s+|del?\s+)?(?:calle\s+|c/\s*|cl/\s*)?(.+?)\s+(?:con|y|esquina|amb)\s+(?:la\s+calle\s+|c/\s*|cl/\s*)?(.+)"
+    coincidencia1 = re.search(patron1, direccion, re.IGNORECASE)
+    if coincidencia1:
+        calle1 = coincidencia1.group(1).strip()
+        calle2 = coincidencia1.group(2).strip()
         return f"{calle1} & {calle2}"
+
+    # Caso 2: "Calle A con/esquina/amb Calle B" o "Calle A / Calle B"
+    patron2 = r"^(.+?)\s+(?:esquina|con|amb|cruce con|\/)\s+(.+)$"
+    coincidencia2 = re.search(patron2, direccion, re.IGNORECASE)
+    if coincidencia2:
+        calle1 = coincidencia2.group(1).strip()
+        calle2 = coincidencia2.group(2).strip()
+        return f"{calle1} & {calle2}"
+
     return direccion
 
+def extraer_solo_via(direccion):
+    """Extrae el nombre principal de la vía antes de cruces, números o detalles secundarios."""
+    if "&" in direccion:
+        return direccion.split("&")[0].strip()
+    partes = direccion.split(",")
+    if len(partes) > 1:
+        return partes[0].strip()
+    return direccion
 
 def consultar_nominatim(texto_busqueda):
-    """Realiza la petición HTTP a la API pública de Nominatim."""
+    """Realiza la petición HTTP a la API pública de Nominatim (OpenStreetMap)."""
     url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(
         {"q": texto_busqueda, "format": "json", "limit": 1}
     )
@@ -86,34 +137,83 @@ def consultar_nominatim(texto_busqueda):
         pass
     return None, None
 
+def consultar_google_maps(texto_busqueda, ciudad="Palma, España"):
+    """Consulta la API de Geocoding de Google Maps como segunda opción de alta precisión."""
+    api_key = os.environ.get("GOOGLE_MAPS_API_KEY")
+    if not api_key:
+        return None, None
+
+    url = "https://maps.googleapis.com/maps/api/geocode/json"
+    params = {
+        "address": f"{texto_busqueda}, {ciudad}",
+        "key": api_key,
+        "region": "es",
+        "language": "es",
+    }
+
+    try:
+        response = requests.get(url, params=params, timeout=5)
+        if response.status_code == 200:
+            datos = response.json()
+            if datos.get("status") == "OK" and datos.get("results"):
+                location = datos["results"][0]["geometry"]["location"]
+                return float(location["lng"]), float(location["lat"])
+    except Exception:
+        pass
+
+    return None, None
 
 def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
-    """Estrategia de geocodificación en 3 pasos: Exacta/Cruces -> Punto medio -> Pendiente."""
+    """Estrategia de geocodificación multinivel optimizada para OpenStreetMap (Nominatim) y Google Maps."""
     if not direccion_raw:
         return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
 
-    direccion_limpia = parsear_direccion_interseccion(direccion_raw)
+    direccion_limpia = limpiar_direccion(direccion_raw)
+    dir_interseccion = parsear_direccion_interseccion(direccion_limpia)
+    es_interseccion = "&" in dir_interseccion
 
-    # Paso 1: Búsqueda directa o intersección exacta
-    lon, lat = consultar_nominatim(f"{direccion_limpia}, {ciudad}")
-    if lon and lat:
-        return lon, lat, "EXACTO"
+    # Paso 1: Si NO es intersección, probar Nominatim sin prefijo de vía (ej. "Ausias March 10, Palma")
+    if not es_interseccion:
+        dir_sin_tipo = remover_tipo_via(direccion_limpia)
+        lon, lat = consultar_nominatim(f"{dir_sin_tipo}, {ciudad}")
+        if lon and lat:
+            return lon, lat, "EXACTO"
 
-    time.sleep(1)  # Respetar políticas de uso de la API gratuita (máx. 1 req/seg)
+        # Intento secundario en Nominatim con la dirección completa
+        lon, lat = consultar_nominatim(f"{direccion_limpia}, {ciudad}")
+        if lon and lat:
+            return lon, lat, "EXACTO"
 
-    # Paso 2: Fallback para cruces no detectados directamente (Punto medio entre calles)
-    if "&" in direccion_limpia:
-        calle1, calle2 = direccion_limpia.split("&")
-        lon1, lat1 = consultar_nominatim(f"{calle1.strip()}, {ciudad}")
+    # Paso 2: Si es una intersección o Nominatim falló, consultar Google Maps (Soporta nativamente '&' e intersecciones)
+    lon_g, lat_g = consultar_google_maps(dir_interseccion, ciudad)
+    if lon_g and lat_g:
+        return lon_g, lat_g, "EXACTO_GOOGLE"
+
+    time.sleep(1)
+
+    # Paso 3: Fallback de intersección en Nominatim (Consultar vías por separado sin prefijo y promediar)
+    if es_interseccion:
+        calle1, calle2 = dir_interseccion.split("&")
+        calle1_sin_tipo = remover_tipo_via(calle1.strip())
+        calle2_sin_tipo = remover_tipo_via(calle2.strip())
+
+        lon1, lat1 = consultar_nominatim(f"{calle1_sin_tipo}, {ciudad}")
         time.sleep(1)
-        lon2, lat2 = consultar_nominatim(f"{calle2.strip()}, {ciudad}")
+        lon2, lat2 = consultar_nominatim(f"{calle2_sin_tipo}, {ciudad}")
 
-        if lon1 and lon2:
+        if lon1 and lat1 and lon2 and lat2:
             return (lon1 + lon2) / 2, (lat1 + lat2) / 2, "APROXIMADO"
 
-    # Paso 3: Registro sin ubicación precisa -> Asignar ubicación por defecto
-    return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
+    # Paso 4: Búsqueda únicamente por el nombre de la vía principal sin tipo
+    solo_via = extraer_solo_via(dir_interseccion)
+    solo_via_sin_tipo = remover_tipo_via(solo_via)
+    if solo_via_sin_tipo and solo_via_sin_tipo != direccion_limpia:
+        lon_v, lat_v = consultar_nominatim(f"{solo_via_sin_tipo}, {ciudad}")
+        if lon_v and lat_v:
+            return lon_v, lat_v, "APROXIMADO"
 
+    # Paso 5: Asignación por defecto
+    return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
 
 def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False):
     """Actualiza, inserta y elimina entidades en la capa GeoPackage usando OGR."""
