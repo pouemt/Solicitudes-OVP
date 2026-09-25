@@ -51,7 +51,7 @@
 		<SimpleData name="ID">12</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6477119,39.577519,0</coordinates></Point>
+      <Point><coordinates>2.6467279,39.5765747,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -107,9 +107,9 @@ Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a l
 		<SimpleData name="f_inicio">20260925</SimpleData>
 		<SimpleData name="f_fin">20260925</SimpleData>
 		<SimpleData name="ID">23</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6481829,39.5754121,0</coordinates></Point>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.6">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -247,9 +247,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260923</SimpleData>
 		<SimpleData name="f_fin">20260930</SimpleData>
 		<SimpleData name="ID">33</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6408614,39.5759698,0</coordinates></Point>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.11">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -301,9 +301,9 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 		<SimpleData name="f_inicio">20260925</SimpleData>
 		<SimpleData name="f_fin">20260925</SimpleData>
 		<SimpleData name="ID">36</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6550177,39.5756454,0</coordinates></Point>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.14">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
