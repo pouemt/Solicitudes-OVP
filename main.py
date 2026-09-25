@@ -58,6 +58,7 @@ def normalizar_fecha_obj(val):
 
     return None
 
+
 def limpiar_direccion(direccion):
     """Normaliza abreviaturas urbanas comunes y corrige errores tipográficos frecuentes."""
     if not direccion:
@@ -82,6 +83,7 @@ def limpiar_direccion(direccion):
 
     return texto.strip()
 
+
 def remover_tipo_via(texto):
     """Elimina prefijos de tipos de vía (Calle, Carrer, Avda, Plaza, etc.) para evitar descalces por idioma en Nominatim."""
     if not texto:
@@ -90,10 +92,12 @@ def remover_tipo_via(texto):
     texto_sin_via = re.sub(patron, "", texto, flags=re.IGNORECASE).strip()
     return texto_sin_via if texto_sin_via else texto
 
+
 def parsear_direccion_interseccion(direccion):
     """Detecta y formatea cruces de calles (ej. 'Calle A & Calle B')."""
     if not direccion:
         return ""
+
     # Caso 1: "intersección/esquina/cruce de Calle A con/y Calle B"
     patron1 = r"(?:intersección|esquina|cruce|confluencia)\s+(?:de\s+la\s+|del?\s+)?(?:calle\s+|c/\s*|cl/\s*)?(.+?)\s+(?:con|y|esquina|amb)\s+(?:la\s+calle\s+|c/\s*|cl/\s*)?(.+)"
     coincidencia1 = re.search(patron1, direccion, re.IGNORECASE)
@@ -112,6 +116,7 @@ def parsear_direccion_interseccion(direccion):
 
     return direccion
 
+
 def extraer_solo_via(direccion):
     """Extrae el nombre principal de la vía antes de cruces, números o detalles secundarios."""
     if "&" in direccion:
@@ -121,8 +126,9 @@ def extraer_solo_via(direccion):
         return partes[0].strip()
     return direccion
 
-def consultar_nominatim(texto_busqueda):
-    """Realiza la petición HTTP a la API pública de Nominatim (OpenStreetMap)."""
+
+def consultar_nominatim(texto_busqueda, debug=True):
+    """Realiza la petición HTTP a la API pública de Nominatim (OpenStreetMap) con trazabilidad debug."""
     url = "https://nominatim.openstreetmap.org/search?" + urllib.parse.urlencode(
         {"q": texto_busqueda, "format": "json", "limit": 1}
     )
@@ -132,15 +138,26 @@ def consultar_nominatim(texto_busqueda):
         if response.status_code == 200:
             datos = response.json()
             if datos:
-                return float(datos[0]["lon"]), float(datos[0]["lat"])
-    except Exception:
-        pass
+                lon, lat = float(datos[0]["lon"]), float(datos[0]["lat"])
+                match_name = datos[0].get("display_name", "Sin nombre")
+                if debug:
+                    print(f"  [DEBUG Nominatim] QUERIED: '{texto_busqueda}' -> MATCH: ({lon:.5f}, {lat:.5f}) ['{match_name[:50]}...']")
+                return lon, lat
+    except Exception as e:
+        if debug:
+            print(f"  [DEBUG Nominatim] ERROR HTTP/Conexión: {e}")
+
+    if debug:
+        print(f"  [DEBUG Nominatim] QUERIED: '{texto_busqueda}' -> SIN RESULTADOS")
     return None, None
 
-def consultar_google_maps(texto_busqueda, ciudad="Palma, España"):
-    """Consulta la API de Geocoding de Google Maps como segunda opción de alta precisión."""
+
+def consultar_google_maps(texto_busqueda, ciudad="Palma, España", debug=True):
+    """Consulta la API de Geocoding de Google Maps con trazabilidad debug."""
     api_key = os.environ.get("GOOGLE_MAPS_API_KEY")
     if not api_key:
+        if debug:
+            print("  [DEBUG Google Maps] OMITIDO: No se detectó GOOGLE_MAPS_API_KEY en las variables de entorno.")
         return None, None
 
     url = "https://maps.googleapis.com/maps/api/geocode/json"
@@ -157,63 +174,102 @@ def consultar_google_maps(texto_busqueda, ciudad="Palma, España"):
             datos = response.json()
             if datos.get("status") == "OK" and datos.get("results"):
                 location = datos["results"][0]["geometry"]["location"]
-                return float(location["lng"]), float(location["lat"])
-    except Exception:
-        pass
+                formatted_address = datos["results"][0].get("formatted_address", "")
+                lon, lat = float(location["lng"]), float(location["lat"])
+                if debug:
+                    print(f"  [DEBUG Google Maps] QUERIED: '{texto_busqueda}, {ciudad}' -> MATCH: ({lon:.5f}, {lat:.5f}) ['{formatted_address}']")
+                return lon, lat
+            elif debug:
+                print(f"  [DEBUG Google Maps] API Status: {datos.get('status')}")
+    except Exception as e:
+        if debug:
+            print(f"  [DEBUG Google Maps] ERROR: {e}")
 
+    if debug:
+        print(f"  [DEBUG Google Maps] QUERIED: '{texto_busqueda}, {ciudad}' -> SIN RESULTADOS")
     return None, None
 
-def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España"):
-    """Estrategia de geocodificación multinivel optimizada para OpenStreetMap (Nominatim) y Google Maps."""
+
+def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=True):
+    """Estrategia de geocodificación multinivel optimizada con logs detallados."""
     if not direccion_raw:
         return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
+
+    if debug:
+        print(f"\n" + "=" * 60)
+        print(f"[DEBUG GEOCODIFICACIÓN] Dirección Excel: '{direccion_raw}'")
 
     direccion_limpia = limpiar_direccion(direccion_raw)
     dir_interseccion = parsear_direccion_interseccion(direccion_limpia)
     es_interseccion = "&" in dir_interseccion
 
-    # Paso 1: Si NO es intersección, probar Nominatim sin prefijo de vía (ej. "Ausias March 10, Palma")
+    # Paso 1A: Nominatim con la dirección completa (prioridad para evitar falsos positivos genéricos)
     if not es_interseccion:
+        if debug:
+            print(f" -> [Paso 1A] Nominatim con dirección completa...")
+        lon, lat = consultar_nominatim(f"{direccion_limpia}, {ciudad}", debug=debug)
+        if lon and lat:
+            if debug:
+                print(f" -> ÉXITO PASO 1A: Coordenadas exactas asignadas ({lon:.5f}, {lat:.5f})")
+            return lon, lat, "EXACTO"
+
+        # Paso 1B: Probar sin tipo de vía solo si la búsqueda completa falló
         dir_sin_tipo = remover_tipo_via(direccion_limpia)
-        lon, lat = consultar_nominatim(f"{dir_sin_tipo}, {ciudad}")
-        if lon and lat:
-            return lon, lat, "EXACTO"
+        if dir_sin_tipo != direccion_limpia:
+            if debug:
+                print(f" -> [Paso 1B] Nominatim sin tipo de vía ('{dir_sin_tipo}')...")
+            lon, lat = consultar_nominatim(f"{dir_sin_tipo}, {ciudad}", debug=debug)
+            if lon and lat:
+                if debug:
+                    print(f" -> ÉXITO PASO 1B: Coordenadas asignadas sin prefijo de vía ({lon:.5f}, {lat:.5f})")
+                return lon, lat, "EXACTO"
 
-        # Intento secundario en Nominatim con la dirección completa
-        lon, lat = consultar_nominatim(f"{direccion_limpia}, {ciudad}")
-        if lon and lat:
-            return lon, lat, "EXACTO"
-
-    # Paso 2: Si es una intersección o Nominatim falló, consultar Google Maps (Soporta nativamente '&' e intersecciones)
-    lon_g, lat_g = consultar_google_maps(dir_interseccion, ciudad)
+    # Paso 2: Google Maps (Cruces e intersecciones o como respaldo de alta precisión)
+    if debug:
+        print(f" -> [Paso 2] Google Maps API con '{dir_interseccion}'...")
+    lon_g, lat_g = consultar_google_maps(dir_interseccion, ciudad, debug=debug)
     if lon_g and lat_g:
+        if debug:
+            print(f" -> ÉXITO PASO 2: Coordenadas devueltas por Google Maps ({lon_g:.5f}, {lat_g:.5f})")
         return lon_g, lat_g, "EXACTO_GOOGLE"
 
     time.sleep(1)
 
-    # Paso 3: Fallback de intersección en Nominatim (Consultar vías por separado sin prefijo y promediar)
+    # Paso 3: Fallback de intersección en Nominatim (Vías por separado)
     if es_interseccion:
+        if debug:
+            print(f" -> [Paso 3] Nominatim intersección por separado...")
         calle1, calle2 = dir_interseccion.split("&")
         calle1_sin_tipo = remover_tipo_via(calle1.strip())
         calle2_sin_tipo = remover_tipo_via(calle2.strip())
 
-        lon1, lat1 = consultar_nominatim(f"{calle1_sin_tipo}, {ciudad}")
+        lon1, lat1 = consultar_nominatim(f"{calle1_sin_tipo}, {ciudad}", debug=debug)
         time.sleep(1)
-        lon2, lat2 = consultar_nominatim(f"{calle2_sin_tipo}, {ciudad}")
+        lon2, lat2 = consultar_nominatim(f"{calle2_sin_tipo}, {ciudad}", debug=debug)
 
         if lon1 and lat1 and lon2 and lat2:
-            return (lon1 + lon2) / 2, (lat1 + lat2) / 2, "APROXIMADO"
+            lon_med, lat_med = (lon1 + lon2) / 2, (lat1 + lat2) / 2
+            if debug:
+                print(f" -> ÉXITO PASO 3: Punto medio de intersección calculated ({lon_med:.5f}, {lat_med:.5f})")
+            return lon_med, lat_med, "APROXIMADO"
 
-    # Paso 4: Búsqueda únicamente por el nombre de la vía principal sin tipo
+    # Paso 4: Búsqueda por vía principal
     solo_via = extraer_solo_via(dir_interseccion)
     solo_via_sin_tipo = remover_tipo_via(solo_via)
     if solo_via_sin_tipo and solo_via_sin_tipo != direccion_limpia:
-        lon_v, lat_v = consultar_nominatim(f"{solo_via_sin_tipo}, {ciudad}")
+        if debug:
+            print(f" -> [Paso 4] Nominatim por vía principal únicamente ('{solo_via_sin_tipo}')...")
+        lon_v, lat_v = consultar_nominatim(f"{solo_via_sin_tipo}, {ciudad}", debug=debug)
         if lon_v and lat_v:
+            if debug:
+                print(f" -> ÉXITO PASO 4: Vía principal localizada ({lon_v:.5f}, {lat_v:.5f})")
             return lon_v, lat_v, "APROXIMADO"
 
-    # Paso 5: Asignación por defecto
+    # Paso 5: Fallback por defecto
+    if debug:
+        print(f" -> [Paso 5] Sin coincidencia en APIs. Asignando punto predeterminado (PENDIENTE).")
     return LON_DEFECTO, LAT_DEFECTO, "PENDIENTE"
+
 
 def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False):
     """Actualiza, inserta y elimina entidades en la capa GeoPackage usando OGR."""
@@ -247,7 +303,6 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
     registros_nuevos = 0
     fids_a_eliminar = []
 
-    # Recorrido de las entidades existentes en la capa GeoPackage
     for feature in capa:
         exp_id = (
             str(feature.GetField("ID")).strip()
@@ -289,7 +344,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
             feature.SetField("f_inicio", fini)
             feature.SetField("f_fin", fend)
 
-            # Recalcular coordenadas si no tiene geometría, si la dirección cambió o si se fuerza el recálculo
+            # Recalcular coordenadas si no tiene geometría, si cambió la dirección o si se fuerza recálculo
             if not feature.GetGeometryRef() or direccion_modificada or forzar_recalculo:
                 lon, lat, estado_geo = obtener_coordenadas_robustas(emplaz)
                 feature.SetField("estado_geo", estado_geo)
@@ -308,11 +363,9 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
             if exp_id:
                 fids_a_eliminar.append(feature.GetFID())
 
-    # Proceso de borrado explícito de los registros que fueron eliminados del Excel
     for fid in fids_a_eliminar:
         capa.DeleteFeature(fid)
 
-    # Caso 3: Insertar registros nuevos del Excel que no existían en el GPKG
     defn = capa.GetLayerDefn()
     for exp_id, (
         serv,
@@ -514,10 +567,9 @@ def excel_sharepoint_to_ics_gpkg(
 
 
 if __name__ == "__main__":
-    # Cambiar a True para evitar sobreescribir los archivos de salida (usar en pruebas)
     MODO_PRUEBA = False
     # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
-    FORZAR_RECALCULO_GEO = True
+    FORZAR_RECALCULO_GEO = False
 
     URL_SHAREPOINT_OFFICIAL = (
         "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
