@@ -569,7 +569,7 @@ def excel_sharepoint_to_ics_gpkg(
 if __name__ == "__main__":
     MODO_PRUEBA = False
     # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
-    FORZAR_RECALCULO_GEO = False
+    FORZAR_RECALCULO_GEO = True
 
     URL_SHAREPOINT_OFFICIAL = (
         "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
