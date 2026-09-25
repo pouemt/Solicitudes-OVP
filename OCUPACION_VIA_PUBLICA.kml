@@ -33,7 +33,7 @@
 		<SimpleData name="ID">1</SimpleData>
 		<SimpleData name="estado_geo">APROXIMADO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6195077,39.5507266,0</coordinates></Point>
+      <Point><coordinates>2.6334708,39.5686719,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.2">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
