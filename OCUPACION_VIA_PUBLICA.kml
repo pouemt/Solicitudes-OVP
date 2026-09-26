@@ -55,24 +55,6 @@
   </Placemark>
   <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
-		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
-		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
-		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
-		<SimpleData name="emplazamiento">INDALECIO PRIETO lado ns impares</SimpleData>
-		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL CIRCULACIO</SimpleData>
-		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
-		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20260925</SimpleData>
-		<SimpleData name="ID">14</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.4">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
 		<SimpleData name="contratista">EDISON NEXT</SimpleData>
@@ -89,29 +71,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.5">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">GRUAS POL</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">BARÓ DE PINOPAR, 4</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra"></SimpleData>
-		<SimpleData name="observaciones">Se autoriza con hora de inicio a partir de las 9.30h.
-
-La ocupación no debe exceder en ningún momento de un carril de circulación, permitiendo en todo momento el paso del autobús.
-
-Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a la izquierda de la ocupación prevista.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20260925</SimpleData>
-		<SimpleData name="ID">23</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.6">
+  <Placemark id="ocupaciones_tramos.4">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -139,7 +99,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.7">
+  <Placemark id="ocupaciones_tramos.5">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -167,7 +127,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.8">
+  <Placemark id="ocupaciones_tramos.6">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -195,7 +155,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.9">
+  <Placemark id="ocupaciones_tramos.7">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -223,7 +183,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.10">
+  <Placemark id="ocupaciones_tramos.8">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
@@ -251,7 +211,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.11">
+  <Placemark id="ocupaciones_tramos.9">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
@@ -269,7 +229,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.12">
+  <Placemark id="ocupaciones_tramos.10">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">COBRA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -287,43 +247,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.13">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PRIVAT</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">Marques de la Fontsanta, 4</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra"></SimpleData>
-		<SimpleData name="observaciones"></SimpleData>
-		<SimpleData name="condicions_mobilitat">Per aquesta ocupació s'haurà de mantenir la circulació pel carrer Marques de la Fontsanta en ambdós sentits en tot moment, per lo qual el sol·licitant haurà d'habilitar un carril dels dos destinats al sentit cap a Avinguda Alexandre Rosselló, senyalitzar-lo adequadament i delimitar-lo amb balises i cons. L'inici de la ocupació es farà a partir de les 9:30.</SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20260925</SimpleData>
-		<SimpleData name="ID">36</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.14">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">COBRA</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">Carrer Manacor, 24</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
-		<SimpleData name="observaciones"></SimpleData>
-		<SimpleData name="condicions_mobilitat">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20260925</SimpleData>
-		<SimpleData name="ID">37</SimpleData>
-		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.15">
+  <Placemark id="ocupaciones_tramos.11">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">COBRA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -341,7 +265,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.16">
+  <Placemark id="ocupaciones_tramos.12">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -359,7 +283,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.17">
+  <Placemark id="ocupaciones_tramos.13">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -377,7 +301,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.18">
+  <Placemark id="ocupaciones_tramos.14">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -395,7 +319,7 @@ Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo 
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.64,39.5555,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.19">
+  <Placemark id="ocupaciones_tramos.15">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
