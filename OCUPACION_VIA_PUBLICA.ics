@@ -5,208 +5,208 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ocupacion-1
-SUMMARY:AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires
-DESCRIPTION:Revisión de tuberías, con cámara.-Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.-INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA UN APARCAMIENTO DEL LADO TIERRA
+SUMMARY:REVISIÓN TUBERÍAS-AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires
+DESCRIPTION:SOLICITUD DE OCUPACION:Revisión de tuberías, con cámara.-Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.-INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA UN APARCAMIENTO DEL LADO TIERRA-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20261110
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-2
-SUMMARY:JOAN ALCOVER, 1
-DESCRIPTION:Zanja cruce completo calle--Inicio a partir de las 9:30, avance por fases para mantener el paso de vehiculos en todo momento
+SUMMARY:COBRA-JOAN ALCOVER, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:Zanja cruce completo calle--Inicio a partir de las 9:30, avance por fases para mantener el paso de vehiculos en todo momento-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260913
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-3
-SUMMARY:C/ARXIDUC LLUIS SALVADOR, 1
-DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTES AL TRÁFICO.-Montaje de elementos de Navidad, guirnaldas árboles. Ocupación zona aparcamientos, con corte al tráfico en la zona indicada de 8:00 a 15:00 h, en plano aperece los tramos con fechas y horarios. Afectan a líneas de bus de la EMT.-Ocupación (ver plano). Es probable hacerlo en un día.
+SUMMARY:ENLLUMENAT PUBLIC-C/ARXIDUC LLUIS SALVADOR, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTES AL TRÁFICO.-Montaje de elementos de Navidad, guirnaldas árboles. Ocupación zona aparcamientos, con corte al tráfico en la zona indicada de 8:00 a 15:00 h, en plano aperece los tramos con fechas y horarios. Afectan a líneas de bus de la EMT.-Ocupación (ver plano). Es probable hacerlo en un día.-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260919
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-4
-SUMMARY:JOAN MIRÓ 243
-DESCRIPTION:CARGA Y DESCARGA-Beach club Cala Major-Inicio a partir de las 9:30, paso alterno con señalista
+SUMMARY:PRIVAT-JOAN MIRÓ 243
+DESCRIPTION:SOLICITUD DE OCUPACION:CARGA Y DESCARGA-Beach club Cala Major-Inicio a partir de las 9:30, paso alterno con señalista-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260919
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-5
-SUMMARY:Alfons el magnànim, 48
-DESCRIPTION:CARGA Y DESCARGA--Inicio a partir de las 9:30
+SUMMARY:PRIVAT-Alfons el magnànim, 48
+DESCRIPTION:SOLICITUD DE OCUPACION:CARGA Y DESCARGA--Inicio a partir de las 9:30-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-6
-SUMMARY:Llucmajor, 8
-DESCRIPTION:Obra nueva edificación--Inicio a partir de las 9:30
+SUMMARY:PRIVAT-Llucmajor, 8
+DESCRIPTION:SOLICITUD DE OCUPACION:Obra nueva edificación--Inicio a partir de las 9:30-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-7
-SUMMARY:Ripoll i Trobat, 44
-DESCRIPTION:Obra nueva edificación--Inicio a partir de las 9:30
+SUMMARY:PRIVAT-Ripoll i Trobat, 44
+DESCRIPTION:SOLICITUD DE OCUPACION:Obra nueva edificación--Inicio a partir de las 9:30-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-8
-SUMMARY:Carrer Manacor, 24
-DESCRIPTION:Pavimentación sobre zanja previamente ejecutada--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
+SUMMARY:COBRA-Carrer Manacor, 24
+DESCRIPTION:SOLICITUD DE OCUPACION:Pavimentación sobre zanja previamente ejecutada--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-9
-SUMMARY:JOAN ALCOVER, 1
-DESCRIPTION:Pavimentación sobre zanja previamente ejecutada--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
+SUMMARY:COBRA-JOAN ALCOVER, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:Pavimentación sobre zanja previamente ejecutada--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-10
-SUMMARY:Carrer manacor, 45
-DESCRIPTION:Pavimentación sobre zanja previamente ejecutada--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
+SUMMARY:COBRA-Carrer manacor, 45
+DESCRIPTION:SOLICITUD DE OCUPACION:Pavimentación sobre zanja previamente ejecutada--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-11
-SUMMARY:Carrer del Puig de la Mola, 51
-DESCRIPTION:TREBALLS DE OPERTURA DE SIQUIA PER MANTENIMENT D'ENLLUMENAT PUBLIC-APERTURA SIQUIA EN CALÇADA, ENCREUAMENT-TALL DE CARRER NECESSARI DE 9:00 A 16:00. RUTA ALTERNATIVA SEGONS PLÀNOL
+SUMMARY:ENLLUMENAT PUBLIC-Carrer del Puig de la Mola, 51
+DESCRIPTION:SOLICITUD DE OCUPACION:TREBALLS DE OPERTURA DE SIQUIA PER MANTENIMENT D'ENLLUMENAT PUBLIC-APERTURA SIQUIA EN CALÇADA, ENCREUAMENT-TALL DE CARRER NECESSARI DE 9:00 A 16:00. RUTA ALTERNATIVA SEGONS PLÀNOL-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-12
-SUMMARY:Avenida Alemanya
-DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA (CARRIL DE TAXI-BUS).-Montaje de luces de Navidad desde la calle. Con ocupación de acera y carril de taxi-bus.-Ocupación (ver plano)
+SUMMARY:ENLLUMENAT PUBLIC-Avenida Alemanya
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA (CARRIL DE TAXI-BUS).-Montaje de luces de Navidad desde la calle. Con ocupación de acera y carril de taxi-bus.-Ocupación (ver plano)-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20261006
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-13
-SUMMARY:INDALECIO PRIETO lado ns pares
-DESCRIPTION:PODA EN VERDE ARBOLADO DE ALINEACIONES-OCUPACIO DE VORERA I CARRIL CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL
+SUMMARY:PARCS I JARDINS-INDALECIO PRIETO lado ns pares
+DESCRIPTION:SOLICITUD DE OCUPACION:PODA EN VERDE ARBOLADO DE ALINEACIONES-OCUPACIO DE VORERA I CARRIL CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-14
-SUMMARY:INDALECIO PRIETO lado ns impares
-DESCRIPTION:PODA EN VERDE ARBOLADO DE ALINEACIONES-OCUPACIO DE VORERA I CARRIL CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA
+SUMMARY:PARCS I JARDINS-INDALECIO PRIETO lado ns impares
+DESCRIPTION:SOLICITUD DE OCUPACION:PODA EN VERDE ARBOLADO DE ALINEACIONES-OCUPACIO DE VORERA I CARRIL CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-15
-SUMMARY:POMPEU FABRA lado ns pares
-DESCRIPTION:PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR-OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL
+SUMMARY:PARCS I JARDINS-POMPEU FABRA lado ns pares
+DESCRIPTION:SOLICITUD DE OCUPACION:PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR-OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-16
-SUMMARY:POMPEU FABRA lado ns impares
-DESCRIPTION:PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR-OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA
+SUMMARY:PARCS I JARDINS-POMPEU FABRA lado ns impares
+DESCRIPTION:SOLICITUD DE OCUPACION:PODA ARBOLADO PUESTA A PUNTO//PODA DESPEJE SEÑALES//RADAR-OCUPACIO DE VORERA,  CARRIL D'APARCAMENT I CARRIL DE CIRCULACIO-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-17
-SUMMARY:IGNACI FERRETJANS lado ns impares
-DESCRIPTION:PODA ARBOLADO PUESTA A PUNTO-OCUPACIO DE VORERA I CARRIL D'APARCAMENT-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL
+SUMMARY:PARCS I JARDINS-IGNACI FERRETJANS lado ns impares
+DESCRIPTION:SOLICITUD DE OCUPACION:PODA ARBOLADO PUESTA A PUNTO-OCUPACIO DE VORERA I CARRIL D'APARCAMENT-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN AZUL-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-18
-SUMMARY:IGNACI FERRETJANS lado ns pares
-DESCRIPTION:PODA ARBOLADO PUESTA A PUNTO-OCUPACIO DE VORERA I CARRIL D'APARCAMENT-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA
+SUMMARY:PARCS I JARDINS-IGNACI FERRETJANS lado ns pares
+DESCRIPTION:SOLICITUD DE OCUPACION:PODA ARBOLADO PUESTA A PUNTO-OCUPACIO DE VORERA I CARRIL D'APARCAMENT-ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-19
-SUMMARY:GRAN VIA ASIMA, 21
-DESCRIPTION:DESMONTAJE CARTELERIA DE GRANDES DIMENSIONES--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
+SUMMARY:GRUAS POL-GRAN VIA ASIMA, 21
+DESCRIPTION:SOLICITUD DE OCUPACION:DESMONTAJE CARTELERIA DE GRANDES DIMENSIONES--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260924
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-20
-SUMMARY:AVINGUDA ALEMANYA, 17
-DESCRIPTION:Treballs de manteniment del paviment-Reparació de les llambordes enfonsades al pas de vianants-OCUPACIÓ PUNTUAL DEL CARRIL ESQUERRA DE LA VIA, PER A LA REPARACIÓ DEL PAVIMENT ASFÀLTIC AL PAS DE VIANANTS. ELS TREBALLS S'INICIARAN A LES 11:00 FINS LES 12:00.
+SUMMARY:Vialitat-AVINGUDA ALEMANYA, 17
+DESCRIPTION:SOLICITUD DE OCUPACION:Treballs de manteniment del paviment-Reparació de les llambordes enfonsades al pas de vianants-OCUPACIÓ PUNTUAL DEL CARRIL ESQUERRA DE LA VIA, PER A LA REPARACIÓ DEL PAVIMENT ASFÀLTIC AL PAS DE VIANANTS. ELS TREBALLS S'INICIARAN A LES 11:00 FINS LES 12:00.-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-21
-SUMMARY:C. GASPAR BENNAZAR, 1 AL 73
-DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.-Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.
+SUMMARY:ENLLUMENAT PUBLIC-C. GASPAR BENNAZAR, 1 AL 73
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.-Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20261008
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-22
-SUMMARY:GABRIEL ROCA Nº 21
-DESCRIPTION:--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
+SUMMARY:GRUAS POL-GABRIEL ROCA Nº 21
+DESCRIPTION:SOLICITUD DE OCUPACION:--Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-23
-SUMMARY:BARÓ DE PINOPAR, 4
-DESCRIPTION:--Se autoriza con hora de inicio a partir de las 9.30h.
+SUMMARY:GRUAS POL-BARÓ DE PINOPAR, 4
+DESCRIPTION:SOLICITUD DE OCUPACION:--Se autoriza con hora de inicio a partir de las 9.30h.
 
 La ocupación no debe exceder en ningún momento de un carril de circulación, permitiendo en todo momento el paso del autobús.
 
-Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a la izquierda de la ocupación prevista.
+Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a la izquierda de la ocupación prevista.-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-24
-SUMMARY:C/ ARC DE SANT MARTI, 20
-DESCRIPTION:RENOVAR ACOMETIDA ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA Y CALZADA-
+SUMMARY:EMAYA-C/ ARC DE SANT MARTI, 20
+DESCRIPTION:SOLICITUD DE OCUPACION:RENOVAR ACOMETIDA ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA Y CALZADA--CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260925
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-25
-SUMMARY:C/ CAMI DE GENOVA SANT AGUSTI, 49A
-DESCRIPTION:REPARAR RED ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA Y CALZADA-
+SUMMARY:EMAYA-C/ CAMI DE GENOVA SANT AGUSTI, 49A
+DESCRIPTION:SOLICITUD DE OCUPACION:REPARAR RED ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA Y CALZADA--CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260924
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-26
-SUMMARY:C/ ASEGRA, 11
-DESCRIPTION:REPARAR RED ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA-
+SUMMARY:EMAYA-C/ ASEGRA, 11
+DESCRIPTION:SOLICITUD DE OCUPACION:REPARAR RED ALCANTARILLADO POR ROTURA-TRABAJOS A REALIZAR EN ACERA--CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260924
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-27
-SUMMARY:Aurora Picornell
-DESCRIPTION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.-Desvío provisional-Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer
+SUMMARY:EMAYA. Obres i Projectes-Aurora Picornell
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.-Desvío provisional-Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-28
-SUMMARY:Vicari Joaquim Fuster (de Passeig Born del Molinar a Aurora Picornell)
-DESCRIPTION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.-Desvío provisional-Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer
+SUMMARY:EMAYA. Obres i Projectes-Vicari Joaquim Fuster (de Passeig Born del Molinar a Aurora Picornell)
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN ZONA ES MOLINAR, COLL D’EN RABASSA, CAN PASTILLA.-Desvío provisional-Cambio sentido circulación de 10:00 a 13:00 para aglomerado de cruces C/Romaguer-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-29
-SUMMARY:Av. Argentina esqina con c. Annibal
-DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº5 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+SUMMARY:Obras I Projectes de EMAYA.-Av. Argentina esqina con c. Annibal
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº5 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
 
 No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
 
@@ -216,14 +216,14 @@ Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la a
 
 Deberán señalizar los estrechamientos correctamente.
 
-Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20261001
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-30
-SUMMARY:Av. Argentina esqina con c. Annibal
-DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº6 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+SUMMARY:Obras I Projectes de EMAYA.-Av. Argentina esqina con c. Annibal
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº6 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
 
 No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
 
@@ -233,14 +233,14 @@ Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la a
 
 Deberán señalizar los estrechamientos correctamente.
 
-Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20261001
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-31
-SUMMARY:Av. Argentina nº45
-DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº10 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+SUMMARY:Obras I Projectes de EMAYA.-Av. Argentina nº45
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº10 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
 
 No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
 
@@ -250,14 +250,14 @@ Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la a
 
 Deberán señalizar los estrechamientos correctamente.
 
-Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20261001
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-32
-SUMMARY:Av. Argentina nº45A
-DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº11 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+SUMMARY:Obras I Projectes de EMAYA.-Av. Argentina nº45A
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº11 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
 
 No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
 
@@ -267,14 +267,14 @@ Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la a
 
 Deberán señalizar los estrechamientos correctamente.
 
-Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20261001
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-33
-SUMMARY:Av. Argentina nº53
-DESCRIPTION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº12 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+SUMMARY:Obras I Projectes de EMAYA.-Av. Argentina nº53
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución de cata nº12 para localiación servicios-Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
 
 No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
 
@@ -284,84 +284,84 @@ Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la a
 
 Deberán señalizar los estrechamientos correctamente.
 
-Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20261001
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-34
-SUMMARY:C. GASPAR BENNAZAR, 1 AL 73
-DESCRIPTION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.-Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.
+SUMMARY:ENLLUMENAT PUBLIC-C. GASPAR BENNAZAR, 1 AL 73
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.-Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20261008
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-35
-SUMMARY:CAMÍ 140, 50
-DESCRIPTION:--Permitir el paso a vecinos y EMT hasta la intersección inmediatamente anterior a la obra
+SUMMARY:COBRA-CAMÍ 140, 50
+DESCRIPTION:SOLICITUD DE OCUPACION:--Permitir el paso a vecinos y EMT hasta la intersección inmediatamente anterior a la obra-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260927
 DTEND;VALUE=DATE:20260928
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-36
-SUMMARY:Marques de la Fontsanta, 4
-DESCRIPTION:--
+SUMMARY:PRIVAT-Marques de la Fontsanta, 4
+DESCRIPTION:SOLICITUD DE OCUPACION:---CONDICIONS MOBILITAT:Per aquesta ocupació s'haurà de mantenir la circulació pel carrer Marques de la Fontsanta en ambdós sentits en tot moment, per lo qual el sol·licitant haurà d'habilitar un carril dels dos destinats al sentit cap a Avinguda Alexandre Rosselló, senyalitzar-lo adequadament i delimitar-lo amb balises i cons. L'inici de la ocupació es farà a partir de les 9:30.
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-37
-SUMMARY:Carrer Manacor, 24
-DESCRIPTION:Pavimentación sobre zanja previamente ejecutada--
+SUMMARY:COBRA-Carrer Manacor, 24
+DESCRIPTION:SOLICITUD DE OCUPACION:Pavimentación sobre zanja previamente ejecutada---CONDICIONS MOBILITAT:Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-38
-SUMMARY:JOAN ALCOVER, 1
-DESCRIPTION:Pavimentación sobre zanja previamente ejecutada--
+SUMMARY:COBRA-JOAN ALCOVER, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:Pavimentación sobre zanja previamente ejecutada---CONDICIONS MOBILITAT:Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-39
-SUMMARY:Carrer manacor, 45
-DESCRIPTION:Pavimentación sobre zanja previamente ejecutada--
+SUMMARY:COBRA-Carrer manacor, 45
+DESCRIPTION:SOLICITUD DE OCUPACION:Pavimentación sobre zanja previamente ejecutada---CONDICIONS MOBILITAT:Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-40
-SUMMARY:Jaume III, 25
-DESCRIPTION:CARGA Y DESCARGA--
+SUMMARY:PRIVAT-Jaume III, 25
+DESCRIPTION:SOLICITUD DE OCUPACION:CARGA Y DESCARGA---CONDICIONS MOBILITAT:Horari autoritzat de 10 a 12
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20261011
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-41
-SUMMARY:C/ MANACOR, 130
-DESCRIPTION:Treballs de manteniment del paviment-Reparació de les llambordes enfonsades al pas de vianants-OCUPACIÓ PUNTUAL DEL CARRIL DRET DE LA VIA, PER A LA REPARACIÓ DEL PAVIMENT ASFÀLTIC . ELS TREBALLS S'INICIARAN A LES 10:00 FINS LES 11:00.
+SUMMARY:Vialitat-C/ MANACOR, 130
+DESCRIPTION:SOLICITUD DE OCUPACION:Treballs de manteniment del paviment-Reparació de les llambordes enfonsades al pas de vianants-OCUPACIÓ PUNTUAL DEL CARRIL DRET DE LA VIA, PER A LA REPARACIÓ DEL PAVIMENT ASFÀLTIC . ELS TREBALLS S'INICIARAN A LES 10:00 FINS LES 11:00.-CONDICIONS MOBILITAT:Se da conformidad al corte de carril derecho en el horario solicitado.
 DTSTART;VALUE=DATE:20260924
 DTEND;VALUE=DATE:20260925
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-42
-SUMMARY:CE Arxiduc Lluis Salvador, 89
-DESCRIPTION:--Ocupación carril circulación
+SUMMARY:PRIVAT-CE Arxiduc Lluis Salvador, 89
+DESCRIPTION:SOLICITUD DE OCUPACION:--Ocupación carril circulación-CONDICIONS MOBILITAT:Ocupación carril circulación mediante tráfico alternativo con señalistas en toda la intersección. Horario de 10:00 a 12:00h.
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261008
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-43
-SUMMARY:JOAN MIRÓ 243
-DESCRIPTION:--Ocupación carril circulación, paso alterno de vehiculos por el sentido no ocupado y banda de estacionamiento
+SUMMARY:PRIVAT-JOAN MIRÓ 243
+DESCRIPTION:SOLICITUD DE OCUPACION:--Ocupación carril circulación, paso alterno de vehiculos por el sentido no ocupado y banda de estacionamiento-CONDICIONS MOBILITAT:S'haurà de garantir que en tot moment es pot realitzar el pas alternatiu de vehicles amb senyalista per l'espai disponible, inclosos camions i autobusos. L'inici de la ocupació serà a partir de les 9:30.
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20261003
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-44
-SUMMARY:CE Arxiduc Lluis Salvador, 89
-DESCRIPTION:--Ocupación carril circulación
+SUMMARY:PRIVAT-CE Arxiduc Lluis Salvador, 89
+DESCRIPTION:SOLICITUD DE OCUPACION:--Ocupación carril circulación-CONDICIONS MOBILITAT:Ocupación carril circulación mediante tráfico alternativo con señalistas en toda la intersección. Horario de 10:00 a 12:00h.
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261002
 END:VEVENT
