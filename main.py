@@ -612,8 +612,8 @@ def excel_sharepoint_to_ics_gpkg(
             lineas_ics.extend([
                 "BEGIN:VEVENT",
                 f"UID:ocupacion-{exp_id}",
-                f"SUMMARY:{emplazamiento}",
-                f"DESCRIPTION:{tipo_obra}-{descripcion}-{observaciones}",
+                f"SUMMARY:{servei}-{emplazamiento}",
+                f"DESCRIPTION:SOLICITUD DE OCUPACION:{tipo_obra}-{descripcion}-{observaciones}-CONDICIONS MOBILITAT:{condicions_mobilitat}",
                 f"DTSTART;VALUE=DATE:{f_inicio_str}",
                 f"DTEND;VALUE=DATE:{f_fin_str}",
                 "END:VEVENT",
