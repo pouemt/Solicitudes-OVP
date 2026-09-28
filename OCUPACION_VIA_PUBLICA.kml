@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="ocupaciones_tramos" id="ocupaciones_tramos">
+	<SimpleField name="servei" type="string"></SimpleField>
+	<SimpleField name="tecnic" type="string"></SimpleField>
+	<SimpleField name="contratista" type="string"></SimpleField>
+	<SimpleField name="cap_obra" type="string"></SimpleField>
+	<SimpleField name="emplazamiento" type="string"></SimpleField>
+	<SimpleField name="descripcion" type="string"></SimpleField>
+	<SimpleField name="tipo_obra" type="string"></SimpleField>
+	<SimpleField name="observaciones" type="string"></SimpleField>
+	<SimpleField name="condicions_mobilitat" type="string"></SimpleField>
+	<SimpleField name="f_inicio" type="string"></SimpleField>
+	<SimpleField name="f_fin" type="string"></SimpleField>
+	<SimpleField name="ID" type="int"></SimpleField>
+	<SimpleField name="estado_geo" type="string"></SimpleField>
+</Schema>
+<Folder><name>ocupaciones_tramos</name>
+  <Placemark id="ocupaciones_tramos.1">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">REVISIÓN TUBERÍAS</SimpleData>
+		<SimpleData name="tecnic">VICTOR DARDER</SimpleData>
+		<SimpleData name="contratista">UTE PASSEIG MARITIM</SimpleData>
+		<SimpleData name="cap_obra">GUSTAVO CASTELLANOS</SimpleData>
+		<SimpleData name="emplazamiento">AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires</SimpleData>
+		<SimpleData name="descripcion">Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.</SimpleData>
+		<SimpleData name="tipo_obra">Revisión de tuberías, con cámara.</SimpleData>
+		<SimpleData name="observaciones">INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA UN APARCAMIENTO DEL LADO TIERRA</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260909</SimpleData>
+		<SimpleData name="f_fin">20261109</SimpleData>
+		<SimpleData name="ID">1</SimpleData>
+		<SimpleData name="estado_geo">APROXIMADO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6334708,39.5686719,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.2">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra">Mariano Giussano</SimpleData>
+		<SimpleData name="emplazamiento">Avenida Alemanya</SimpleData>
+		<SimpleData name="descripcion">Montaje de luces de Navidad desde la calle. Con ocupación de acera y carril de taxi-bus.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA (CARRIL DE TAXI-BUS).</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano)</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260929</SimpleData>
+		<SimpleData name="f_fin">20261005</SimpleData>
+		<SimpleData name="ID">12</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6477119,39.577519,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.3">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic">MARIA DE LLUCH SALAS</SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra">DANIEL VILLAR</SimpleData>
+		<SimpleData name="emplazamiento">INDALECIO PRIETO lado ns impares</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL CIRCULACIO</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones">ADJUNTO PLANO DE SITUACION CON LA ZONA AFECTADA MARCADA EN NARANJA</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20260925</SimpleData>
+		<SimpleData name="ID">14</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.4">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra">Mariano Giussano</SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZA, 1 AL 73</SimpleData>
+		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">21</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.5">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">GRUAS POL</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">BARÓ DE PINOPAR, 4</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Se autoriza con hora de inicio a partir de las 9.30h.
+
+La ocupación no debe exceder en ningún momento de un carril de circulación, permitiendo en todo momento el paso del autobús.
+
+Por otra parte, se debe asegurar la salida del aparcamiento que se encuentra a la izquierda de la ocupación prevista.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20260925</SimpleData>
+		<SimpleData name="ID">23</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.6">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
+		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra">Luis Calvo</SimpleData>
+		<SimpleData name="emplazamiento">Av. Argentina esqina con c. Annibal</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cata nº5 para localiación servicios</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260930</SimpleData>
+		<SimpleData name="ID">29</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.7">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
+		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra">Luis Calvo</SimpleData>
+		<SimpleData name="emplazamiento">Av. Argentina esqina con c. Annibal</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cata nº6 para localiación servicios</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260930</SimpleData>
+		<SimpleData name="ID">30</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.8">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
+		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra">Luis Calvo</SimpleData>
+		<SimpleData name="emplazamiento">Av. Argentina nº45</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cata nº10 para localiación servicios</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260930</SimpleData>
+		<SimpleData name="ID">31</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.9">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
+		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra">Luis Calvo</SimpleData>
+		<SimpleData name="emplazamiento">Av. Argentina nº45A</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cata nº11 para localiación servicios</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260930</SimpleData>
+		<SimpleData name="ID">32</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.10">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
+		<SimpleData name="tecnic">Arturo Jiménez</SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra">Luis Calvo</SimpleData>
+		<SimpleData name="emplazamiento">Av. Argentina nº53</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cata nº12 para localiación servicios</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual únicamente del carril derecho en el sentido mar de Avenida Agentina para la realización de las catas. Se trata de estrechamientos puntuales al tráfico.
+
+No se autoriza el corte de las calles transversales a Avenida Argentina. El paso deberá estar habilitado, salvo corte puntual por logística.
+
+Para la realización de cada una de las catas se podrán apoyar en la ocupación de los distintos aparcamientos, cargas y descargas, etc.
+
+Las catas deberán ir abriéndose y cerrándose, volviendo a habilitar toda la anchura de la calzada tan pronto como se pueda.
+
+Deberán señalizar los estrechamientos correctamente.
+
+Las catas deberán reponerse con un pavimento adecuado y resistente, de acuerdo con los condicionantes que desde el SACOV se requieran</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260923</SimpleData>
+		<SimpleData name="f_fin">20260930</SimpleData>
+		<SimpleData name="ID">33</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.11">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic">Francisca Fajardo</SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra">Mariano Giussano</SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZA, 1 AL 73</SimpleData>
+		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">34</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.12">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">COBRA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CAMÍ 140, 50</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Permitir el paso a vecinos y EMT hasta la intersección inmediatamente anterior a la obra</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20260927</SimpleData>
+		<SimpleData name="f_fin">20260927</SimpleData>
+		<SimpleData name="ID">35</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.13">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Marques de la Fontsanta, 4</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Per aquesta ocupació s'haurà de mantenir la circulació pel carrer Marques de la Fontsanta en ambdós sentits en tot moment, per lo qual el sol·licitant haurà d'habilitar un carril dels dos destinats al sentit cap a Avinguda Alexandre Rosselló, senyalitzar-lo adequadament i delimitar-lo amb balises i cons. L'inici de la ocupació es farà a partir de les 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20260925</SimpleData>
+		<SimpleData name="ID">36</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.14">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">COBRA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Carrer Manacor, 24</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20260925</SimpleData>
+		<SimpleData name="ID">37</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.15">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">COBRA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">JOAN ALCOVER, 1</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Pavimentación sobre zanja previamente ejecutada</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Inicio a partir de las 9:30, al menos un carril abierto por sentido en todo momento</SimpleData>
+		<SimpleData name="f_inicio">20260926</SimpleData>
+		<SimpleData name="f_fin">20260926</SimpleData>
+		<SimpleData name="ID">38</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.16">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Jaume III, 25</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">CARGA Y DESCARGA</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Horari autoritzat de 10 a 12</SimpleData>
+		<SimpleData name="f_inicio">20260925</SimpleData>
+		<SimpleData name="f_fin">20261010</SimpleData>
+		<SimpleData name="ID">40</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.17">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CE Arxiduc Lluis Salvador, 89</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Ocupación carril circulación</SimpleData>
+		<SimpleData name="condicions_mobilitat">Ocupación carril circulación mediante tráfico alternativo con señalistas en toda la intersección. Horario de 10:00 a 12:00h.</SimpleData>
+		<SimpleData name="f_inicio">20261006</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">42</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.18">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">JOAN MIRÓ 243</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Ocupación carril circulación, paso alterno de vehiculos por el sentido no ocupado y banda de estacionamiento</SimpleData>
+		<SimpleData name="condicions_mobilitat">S'haurà de garantir que en tot moment es pot realitzar el pas alternatiu de vehicles amb senyalista per l'espai disponible, inclosos camions i autobusos. L'inici de la ocupació serà a partir de les 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20260929</SimpleData>
+		<SimpleData name="f_fin">20261002</SimpleData>
+		<SimpleData name="ID">43</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.19">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CE Arxiduc Lluis Salvador, 89</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Ocupación carril circulación</SimpleData>
+		<SimpleData name="condicions_mobilitat">Ocupación carril circulación mediante tráfico alternativo con señalistas en toda la intersección. Horario de 10:00 a 12:00h.</SimpleData>
+		<SimpleData name="f_inicio">20260930</SimpleData>
+		<SimpleData name="f_fin">20261001</SimpleData>
+		<SimpleData name="ID">44</SimpleData>
+		<SimpleData name="estado_geo">PENDIENTE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.64,39.5555,0</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
