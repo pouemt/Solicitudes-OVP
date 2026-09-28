@@ -365,4 +365,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:--Ocupación carril circulación-CONDICIONS M
 DTSTART;VALUE=DATE:20260930
 DTEND;VALUE=DATE:20261002
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-45
+SUMMARY:PRIVAT-Camí dels Reis 101
+DESCRIPTION:SOLICITUD DE OCUPACION:---CONDICIONS MOBILITAT:Es tracta d'una via amb un carril per sentit i sense banda d'estacionament, per lo qual s'haurà de fer pas altern amb senyalista. Donat que es troba a la zona de col·legis, la ocupació podrà començar a partir de les 9:30.
+DTSTART;VALUE=DATE:20260930
+DTEND;VALUE=DATE:20261001
+END:VEVENT
 END:VCALENDAR
