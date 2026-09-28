@@ -80,8 +80,13 @@ def limpiar_direccion(direccion):
         flags=re.IGNORECASE,
     )
 
-    # 3. Normalizar rangos de portales ej. "1 AL 73" -> "1"
-    texto = re.sub(r"(\d+)\s+AL?\s+\d+", r"\1", texto, flags=re.IGNORECASE)
+    # 3. Normalizar rangos de portales calculando el número promedio ej. "1 AL 73" -> "37"
+    def reemp_promedio(match):
+        n1 = int(match.group(1))
+        n2 = int(match.group(2))
+        return str(round((n1 + n2) / 2))
+
+    texto = re.sub(r"(\d+)\s+AL?\s+(\d+)", reemp_promedio, texto, flags=re.IGNORECASE)
 
     # 4. Corregir erratas tipográficas frecuentes de la base de datos municipal
     texto = re.sub(r"\besqina\b", "esquina", texto, flags=re.IGNORECASE)
