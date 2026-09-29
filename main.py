@@ -151,7 +151,7 @@ def parsear_direccion_interseccion(direccion):
         return f"{calle1} & {calle2}"
 
     # Caso 2: "Calle A con/esquina/amb Calle B" o "Calle A / Calle B"
-    patron2 = r"^(.+?)\s+(?:esquina|con|amb|cruce con|\/)\s+(.+)$"
+    patron2 = r"^(.+?)\s+(?:esquina|con|amb|cruce|desde con|\/)\s+(.+)$"
     coincidencia2 = re.search(patron2, direccion, re.IGNORECASE)
     if coincidencia2:
         calle1 = coincidencia2.group(1).strip()
@@ -236,7 +236,7 @@ def consultar_google_maps(texto_busqueda, ciudad="Palma, España", debug=True):
                     print(f"  [DEBUG Google Maps] QUERIED: '{texto_busqueda}, {ciudad}' -> MATCH: ({lon:.5f}, {lat:.5f}) ['{formatted_address}']")
                 return lon, lat
             elif status == "REQUEST_DENIED" and debug:
-                print(f"  [DEBUG Google Maps] API Status: REQUEST_DENIED (Comprueba en Google Cloud que la 'Geocoding API' esté activada y la clave no tenga restricciones incompatibles).")
+                print(f"  [DEBUG Google Maps] API Status: REQUEST_DENIED (Comprueba en Google Cloud que la 'Geocoding API' esté activada).")
             elif debug:
                 print(f"  [DEBUG Google Maps] API Status: {status}")
     except Exception as e:
@@ -417,7 +417,7 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
 
             # Comprobar si la dirección guardada en el GPKG difiere de la del Excel
             emplaz_antiguo = str(feature.GetField("emplazamiento") or "").strip()
-            direccion_modificada = (emplaz_antiguo != emplaz.strip())
+            direccion_modificada = emplaz_antiguo != emplaz.strip()
 
             feature.SetField("servei", serv)
             feature.SetField("tecnic", tec)
@@ -560,9 +560,23 @@ def descargar_excel_sharepoint(url_sharepoint):
 
 
 def excel_sharepoint_to_ics_gpkg(
-    origen_excel, rutas_destino, ruta_gpkg, ruta_kml, forzar_recalculo=False
+    origen_excel=None, rutas_destino=None, ruta_gpkg=None, ruta_kml=None, forzar_recalculo=False
 ):
-    """Pipeline principal de lectura y geocodificación."""
+    """Pipeline principal de lectura y geocodificación.
+    
+    Obtiene la URL desde el parámetro 'origen_excel' o bien desde la variable 
+    de entorno 'SHAREPOINT_EXCEL_URL' (Secreto de GitHub).
+    """
+    # 1. Resolver la fuente del Excel (Prioridad: parámetro -> Variable de Entorno)
+    if not origen_excel:
+        origen_excel = os.environ.get("URL_SHAREPOINT")
+
+    if not origen_excel:
+        raise ValueError(
+            "Error: No se proporcionó la URL de SharePoint. Define la variable "
+            "de entorno 'URL_SHAREPOINT' o pasa la URL como parámetro."
+        )
+
     lineas_ics = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
@@ -640,7 +654,7 @@ def excel_sharepoint_to_ics_gpkg(
 
     lineas_ics.append("END:VCALENDAR")
 
-    for ruta in rutas_destino:
+    for ruta in (rutas_destino or []):
         with open(ruta, mode="w", encoding="utf-8") as f_out:
             f_out.write("\n".join(lineas_ics))
             print(f"Éxito: Archivo '{ruta}' generado correctamente.")
@@ -651,23 +665,23 @@ def excel_sharepoint_to_ics_gpkg(
 
 if __name__ == "__main__":
     MODO_PRUEBA = False
-    # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
-    FORZAR_RECALCULO_GEO = True
- 
-    URL_SHAREPOINT_OFFICIAL = os.environ.get("URL_SHAREPOINT")
-	
+    FORZAR_RECALCULO_GEO = False
+
+    # Buscar la URL desde la variable de entorno 'URL_SHAREPOINT'
+    url_sharepoint_secreto = os.environ.get("URL_SHAREPOINT")
+
     if MODO_PRUEBA:
         print("=== INICIANDO EJECUCIÓN EN MODO PRUEBA ===")
         origen_excel = (
-            URL_SHAREPOINT_OFFICIAL
-            if not os.path.exists("test_ocupaciones.xlsx")
-            else "test_ocupaciones.xlsx"
+            "test_ocupaciones.xlsx"
+            if os.path.exists("test_ocupaciones.xlsx")
+            else url_sharepoint_secreto
         )
         ruta_ics = "TEST_OCUPACION_VIA_PUBLICA.ics"
         ruta_gpkg = "TEST_OCUPACION_VIA_PUBLICA.gpkg"
         ruta_kml = "TEST_OCUPACION_VIA_PUBLICA.kml"
     else:
-        origen_excel = URL_SHAREPOINT_OFFICIAL
+        origen_excel = url_sharepoint_secreto
         ruta_ics = "OCUPACION_VIA_PUBLICA.ics"
         ruta_gpkg = "OCUPACION_VIA_PUBLICA.gpkg"
         ruta_kml = "OCUPACION_VIA_PUBLICA.kml"
@@ -675,9 +689,9 @@ if __name__ == "__main__":
     rutas_destino = [ruta_ics]
 
     excel_sharepoint_to_ics_gpkg(
-        origen_excel,
-        rutas_destino,
-        ruta_gpkg,
-        ruta_kml,
+        origen_excel=origen_excel,
+        rutas_destino=rutas_destino,
+        ruta_gpkg=ruta_gpkg,
+        ruta_kml=ruta_kml,
         forzar_recalculo=FORZAR_RECALCULO_GEO,
     )
