@@ -653,12 +653,9 @@ if __name__ == "__main__":
     MODO_PRUEBA = False
     # Cambiar a True para forzar la re-geocodificación de TODAS las direcciones en una ejecución puntual
     FORZAR_RECALCULO_GEO = True
-
-    URL_SHAREPOINT_OFFICIAL = (
-        "https://ajtpalma-my.sharepoint.com/:x:/g/personal/pedro_pourtau_palma_es/"
-        "IQDgISBCy3jTRJZpXC5jRRflAYITwYojKDvs50WStuiJd90?rtime=YsdeEnAV30g&nav=MTVfezAwMDAwMDAwLTAwMDEtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMH0&download=1"
-    )
-
+ 
+    URL_SHAREPOINT_OFFICIAL = os.environ.get("URL_SHAREPOINT")
+	
     if MODO_PRUEBA:
         print("=== INICIANDO EJECUCIÓN EN MODO PRUEBA ===")
         origen_excel = (
