@@ -420,9 +420,9 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
             direccion_modificada = emplaz_antiguo != emplaz.strip()
 
             feature.SetField("servei", serv)
-            feature.SetField("tecnic", tec)
+            feature.SetField("tecnic", "")
             feature.SetField("contratista", contr)
-            feature.SetField("cap_obra", cap)
+            feature.SetField("cap_obra", "")
             feature.SetField("emplazamiento", emplaz)
             feature.SetField("descripcion", descr)
             feature.SetField("tipo_obra", tip)
@@ -472,9 +472,9 @@ def actualizar_geopackage_ogr(ruta_gpkg, datos_para_gpkg, forzar_recalculo=False
 
             new_feature.SetField("ID", exp_id)
             new_feature.SetField("servei", serv)
-            new_feature.SetField("tecnic", tec)
+            new_feature.SetField("tecnic", "")
             new_feature.SetField("contratista", contr)
-            new_feature.SetField("cap_obra", cap)
+            new_feature.SetField("cap_obra", "")
             new_feature.SetField("emplazamiento", emplaz)
             new_feature.SetField("descripcion", descr)
             new_feature.SetField("tipo_obra", tip)
