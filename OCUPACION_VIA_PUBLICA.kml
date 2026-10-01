@@ -179,5 +179,23 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6717007,39.5612341,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.10">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ BALTASAR VALENTI, 26</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN CALZADA</SimpleData>
+		<SimpleData name="tipo_obra">REPARAR RED ALCANTARILLADO POR ROTURA</SimpleData>
+		<SimpleData name="observaciones">PRECISARA EL DESVIO DE LA LINEA DE LA EMT DE 9,30 H A 14:00 H.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Ocupación de 9:30 a 14:00 con desvío EMT. Permite paso vehículos.</SimpleData>
+		<SimpleData name="f_inicio">20260901</SimpleData>
+		<SimpleData name="f_fin">20261002</SimpleData>
+		<SimpleData name="ID">47</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6827553,39.5907239,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
