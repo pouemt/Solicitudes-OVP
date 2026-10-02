@@ -435,4 +435,18 @@ DESCRIPTION:SOLICITUD DE OCUPACION:Reparacion poste hormigon--A pesar de que se 
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-55
+SUMMARY:PRIVAT-Antoni Marquès 2
+DESCRIPTION:SOLICITUD DE OCUPACION:Carga de escombros de demolición--La ocupació màxima que es permetrà es de un únic carril de circulació (el més proper a la obra) deixant lliures dos carrils a Antoni Marquès en tot moment. La ocupació haurà de començar a partir de les 9:30.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261008
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-56
+SUMMARY:PRIVAT-Llucmajor, 8
+DESCRIPTION:SOLICITUD DE OCUPACION:--A partir de les 9:30, pas altern de vehicles amb senyalista-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+END:VEVENT
 END:VCALENDAR
