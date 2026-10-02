@@ -407,4 +407,25 @@ DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE 
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261016
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-51
+SUMMARY:EMAYA. Obres i Projectes-Avda Joan Miró 229
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)-Conexiones-Ocupaciones puntuale spara preparación de conexiones. Se mantienen ambos sentidos de circulación-CONDICIONS MOBILITAT:en la zona del semáforo se tienen que permitir los dos movimientos, recto y giro a la izquierda.
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261017
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-52
+SUMMARY:EMAYA. Obres i Projectes-Avda Joan Miró -Saridakis
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)-Conexiones-Ocupaciones puntuale spara preparación de conexiones. Se mantienen ambos sentidos de circulación-CONDICIONS MOBILITAT:en la zona del semáforo se tienen que permitir los dos movimientos, recto y giro a la izquierda.
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261017
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-53
+SUMMARY:EMAYA. Obres i Projectes-Avda Joan Miró 227 B
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)-Conexiones-Ocupaciones puntuale spara preparación de conexiones. Se mantienen ambos sentidos de circulación-CONDICIONS MOBILITAT:en la zona del semáforo se tienen que permitir los dos movimientos, recto y giro a la izquierda.
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261017
+END:VEVENT
 END:VCALENDAR
