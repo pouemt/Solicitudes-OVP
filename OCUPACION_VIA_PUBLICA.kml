@@ -341,5 +341,149 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6639468,39.5754215,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.19">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 1 AL 29</SimpleData>
+		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Actuaciones a partir de las 9:30 h en todos los tramos</SimpleData>
+		<SimpleData name="f_inicio">20261012</SimpleData>
+		<SimpleData name="f_fin">20261016</SimpleData>
+		<SimpleData name="ID">58</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6600023,39.5822064,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.20">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 11 parada 1976</SimpleData>
+		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat">En el tramo comprendido entre Eusebi Estada y Gaspar Bennazar ocupación entre las 9:30 horas y 13:30 horas al ser una zona de colegios</SimpleData>
+		<SimpleData name="f_inicio">20261007</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">59</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.21">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 31 AL 49</SimpleData>
+		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Siempre se ha de permitir la circulación en ambos sentidos por lo que se han de adoptar las medidas de señalización adecuadas</SimpleData>
+		<SimpleData name="f_inicio">20261011</SimpleData>
+		<SimpleData name="f_fin">20261015</SimpleData>
+		<SimpleData name="ID">60</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6565581,39.5836436,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.22">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 30 AL 38</SimpleData>
+		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Si no se pueden hacer los trabajos con estas condiciones se tendrán que hacer en fin de semana o en horario nocturno.</SimpleData>
+		<SimpleData name="f_inicio">20261006</SimpleData>
+		<SimpleData name="f_fin">20261008</SimpleData>
+		<SimpleData name="ID">61</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6572468,39.5833445,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.23">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR,40 AL 70</SimpleData>
+		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261007</SimpleData>
+		<SimpleData name="f_fin">20261010</SimpleData>
+		<SimpleData name="ID">62</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6560981,39.5834617,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.24">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 11 parada 1975</SimpleData>
+		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril derecho, no es necesario hacer tráfico carril derecho ya que hay dos carriles en el mismo sentido. Horario de 9,30 a 13h</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261007</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">63</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.25">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 51 AL 73</SimpleData>
+		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261009</SimpleData>
+		<SimpleData name="f_fin">20261014</SimpleData>
+		<SimpleData name="ID">64</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6543571,39.5843342,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.26">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 11 parada 1974</SimpleData>
+		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril habilitando tráfico alternativo, de forma que se mantengan los dos sentidos de circulación. Horario de 9,30 a 13h</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL</SimpleData>
+		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261007</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">65</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>

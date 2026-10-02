@@ -456,4 +456,60 @@ DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRA
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261017
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-58
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 1 AL 29
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO-###############################################################################################################################################################################################################################################################-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:Actuaciones a partir de las 9:30 h en todos los tramos
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261017
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-59
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 11 parada 1976
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL-###############################################################################################################################################################################################################################################################-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:En el tramo comprendido entre Eusebi Estada y Gaspar Bennazar ocupación entre las 9:30 horas y 13:30 horas al ser una zona de colegios
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-60
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 31 AL 49
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO-###############################################################################################################################################################################################################################################################-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:Siempre se ha de permitir la circulación en ambos sentidos por lo que se han de adoptar las medidas de señalización adecuadas
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261016
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-61
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 30 AL 38
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO-###############################################################################################################################################################################################################################################################-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:Si no se pueden hacer los trabajos con estas condiciones se tendrán que hacer en fin de semana o en horario nocturno.
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261009
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-62
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR,40 AL 70
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO-###############################################################################################################################################################################################################################################################-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261011
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-63
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 11 parada 1975
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL-Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril derecho, no es necesario hacer tráfico carril derecho ya que hay dos carriles en el mismo sentido. Horario de 9,30 a 13h-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-64
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 51 AL 73
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, ZONA APARCAMIENTO-###############################################################################################################################################################################################################################################################-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261015
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-65
+SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 11 parada 1974
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL-Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril habilitando tráfico alternativo, de forma que se mantengan los dos sentidos de circulación. Horario de 9,30 a 13h-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+END:VEVENT
 END:VCALENDAR
