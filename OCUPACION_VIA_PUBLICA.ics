@@ -449,4 +449,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:--A partir de les 9:30, pas altern de vehicle
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-57
+SUMMARY:ENLLUMENAT PUBLIC-C. TORCUATO LUCA DE TENA, 1.
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-###############################################################################################################################################################################################################################################################-Ocupación (ver plano).-CONDICIONS MOBILITAT:Si no bastara con la ocupación de banda de aparcamiento (principalmente en el lado impar de la calle) se puede hacer un estrechamiento de carril, pero se tiene que permitir en todo momento el paso de vehículos.
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261017
+END:VEVENT
 END:VCALENDAR
