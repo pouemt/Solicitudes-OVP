@@ -400,4 +400,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:---CONDICIONS MOBILITAT:Ocupacion un carril, 
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261010
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-50
+SUMMARY:EMAYA. Obres i Projectes-Saridakis 31 a 45
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS-nueva red de saneamiento. Tecnología sin zanja-Cortes puntuales carril en horario laboral. Tráfico sentido alternativo-CONDICIONS MOBILITAT:Paso alternativo, prestar especial atención al paso del bus que siempre se tiene que permitir y modificar el estrechamiento si fuera necesario para el paso del bus en condiciones de seguridad.
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261016
+END:VEVENT
 END:VCALENDAR
