@@ -127,42 +127,6 @@
   </Placemark>
   <Placemark id="ocupaciones_tramos.7">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PRIVAT</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">JOAN MIRÓ 243</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra"></SimpleData>
-		<SimpleData name="observaciones">Ocupación carril circulación, paso alterno de vehiculos por el sentido no ocupado y banda de estacionamiento</SimpleData>
-		<SimpleData name="condicions_mobilitat">S'haurà de garantir que en tot moment es pot realitzar el pas alternatiu de vehicles amb senyalista per l'espai disponible, inclosos camions i autobusos. L'inici de la ocupació serà a partir de les 9:30.</SimpleData>
-		<SimpleData name="f_inicio">20260929</SimpleData>
-		<SimpleData name="f_fin">20261002</SimpleData>
-		<SimpleData name="ID">43</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.8">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">EMAYA</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EMAYA</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">C/ BALTASAR VALENTI, 26</SimpleData>
-		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN CALZADA</SimpleData>
-		<SimpleData name="tipo_obra">REPARAR RED ALCANTARILLADO POR ROTURA</SimpleData>
-		<SimpleData name="observaciones">PRECISARA EL DESVIO DE LA LINEA DE LA EMT DE 9,30 H A 14:00 H.</SimpleData>
-		<SimpleData name="condicions_mobilitat">Ocupación de 9:30 a 14:00 con desvío EMT. Permite paso vehículos.</SimpleData>
-		<SimpleData name="f_inicio">20260901</SimpleData>
-		<SimpleData name="f_fin">20261002</SimpleData>
-		<SimpleData name="ID">47</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6827553,39.5907239,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.9">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EDIFICIS MUNICIPALS</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
 		<SimpleData name="contratista">URBIA SERVICES</SimpleData>
@@ -179,7 +143,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6472116,39.5714648,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.10">
+  <Placemark id="ocupaciones_tramos.8">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -197,7 +161,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.11">
+  <Placemark id="ocupaciones_tramos.9">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -215,7 +179,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6091876,39.5560342,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.12">
+  <Placemark id="ocupaciones_tramos.10">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -233,7 +197,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6126535,39.5518755,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.13">
+  <Placemark id="ocupaciones_tramos.11">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -251,7 +215,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.14">
+  <Placemark id="ocupaciones_tramos.12">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -269,7 +233,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6146693,39.5521812,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.15">
+  <Placemark id="ocupaciones_tramos.13">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">COBRA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -287,7 +251,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6687559,39.6282145,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.16">
+  <Placemark id="ocupaciones_tramos.14">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -305,7 +269,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6520735,39.5800215,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.17">
+  <Placemark id="ocupaciones_tramos.15">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -323,7 +287,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6717007,39.5612341,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.18">
+  <Placemark id="ocupaciones_tramos.16">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -341,7 +305,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6639468,39.5754215,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.19">
+  <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -359,7 +323,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6600023,39.5822064,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.20">
+  <Placemark id="ocupaciones_tramos.18">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -377,7 +341,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.21">
+  <Placemark id="ocupaciones_tramos.19">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -395,7 +359,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6565581,39.5836436,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.22">
+  <Placemark id="ocupaciones_tramos.20">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -413,7 +377,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6572468,39.5833445,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.23">
+  <Placemark id="ocupaciones_tramos.21">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -431,7 +395,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6560981,39.5834617,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.24">
+  <Placemark id="ocupaciones_tramos.22">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -449,7 +413,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.25">
+  <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -467,7 +431,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6543571,39.5843342,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.26">
+  <Placemark id="ocupaciones_tramos.24">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
