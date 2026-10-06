@@ -431,5 +431,95 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6224088,39.5531974,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.24">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">URBIA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CAMÍ VELL DE BUNYOLA</SimpleData>
+		<SimpleData name="descripcion">INSPECCIÓN OCA EN EL CUADRO ELÉCTRICO DE ALUMBRADO Y ELEMENTOS CONECTADOS, SE REQUIERE PRESENCIA POLICIAL PORQUE AFECTA A SEMAFOROS. SEMAFOROS EN CRUCES: CAMI VELL DE BUNYOLA - MA-13 y CAMÍ VELL DE BUNYOLA - RECINTE FERIAL</SimpleData>
+		<SimpleData name="tipo_obra">INSPECCIÓN OCA CUADRO DE ALUMBRADO</SimpleData>
+		<SimpleData name="observaciones">de 12:00 a 13:00</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261013</SimpleData>
+		<SimpleData name="ID">67</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6728183,39.5988969,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.25">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">URBIA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CARRER SETZE DE JULIOL</SimpleData>
+		<SimpleData name="descripcion">INSPECCIÓN OCA EN EL CUADRO ELÉCTRICO DE ALUMBRADO Y ELEMENTOS CONECTADOS, SE REQUIERE PRESENCIA POLICIAL PORQUE AFECTA A SEMAFOROS. SEMAFOROS EN CRUCES: GREMI DE SABATERS - GREMI DE BOTERS y GREMI DE SABATERS - GREMI DE FUSTERS</SimpleData>
+		<SimpleData name="tipo_obra">INSPECCIÓN OCA CUADRO DE ALUMBRADO</SimpleData>
+		<SimpleData name="observaciones">de 13:00 a 14:00</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261013</SimpleData>
+		<SimpleData name="ID">68</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6647762,39.5978668,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.26">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">URBIA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CARRER FRANCESC FIOL I JUAN (PLAÇA PARÍS)</SimpleData>
+		<SimpleData name="descripcion">INSPECCIÓN OCA EN EL CUADRO ELÉCTRICO DE ALUMBRADO Y ELEMENTOS CONECTADOS, SE REQUIERE PRESENCIA POLICIAL PORQUE AFECTA A SEMAFOROS. SEMAFOROS EN CRUCES: CARRER FRANCESC FIOL I JUAN (PLAÇA PARÍS)</SimpleData>
+		<SimpleData name="tipo_obra">INSPECCIÓN OCA CUADRO DE ALUMBRADO</SimpleData>
+		<SimpleData name="observaciones">de 10:00 a 11:00</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261015</SimpleData>
+		<SimpleData name="f_fin">20261015</SimpleData>
+		<SimpleData name="ID">69</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6501991,39.5840646,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.27">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">URBIA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CARRETERA MA-1040</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS MODIFICACIÓN DEL CUADRO ELÉCTRICO DE ALUMBRADO Y ELEMENTOS CONECTADOS, SE REQUIERE PRESENCIA POLICIAL PORQUE AFECTA A SEMAFOROS. SEMAFOROS EN CRUCES: JOAN MASCARÓ I FORNÉS - MOLÍ DES COMTE</SimpleData>
+		<SimpleData name="tipo_obra">INSPECCIÓN OCA CUADRO DE ALUMBRADO</SimpleData>
+		<SimpleData name="observaciones">de 11:30 a 13:00</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261015</SimpleData>
+		<SimpleData name="f_fin">20261015</SimpleData>
+		<SimpleData name="ID">70</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6252789,39.6230568,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.28">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">URBIA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">PLAÇA DEL MOLINS DE VENT</SimpleData>
+		<SimpleData name="descripcion">INSPECCIÓN OCA EN EL CUADRO ELÉCTRICO DE ALUMBRADO Y ELEMENTOS CONECTADOS, SE REQUIERE PRESENCIA POLICIAL PORQUE AFECTA A SEMAFOROS. SEMAFOROS EN CRUCES: CRA. MANACOR - CAIXÓ (CASABLANCA)</SimpleData>
+		<SimpleData name="tipo_obra">INSPECCIÓN OCA CUADRO DE ALUMBRADO</SimpleData>
+		<SimpleData name="observaciones">de 10:00 a 11:00</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261019</SimpleData>
+		<SimpleData name="f_fin">20261019</SimpleData>
+		<SimpleData name="ID">71</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.7565166,39.5683718,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
