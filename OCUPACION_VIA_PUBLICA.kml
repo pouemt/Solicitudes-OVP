@@ -521,5 +521,275 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.7565166,39.5683718,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.29">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 406 - COSTA DEL GAS - AVINGUDA ADOLFO SUAREZ</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 406. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 11:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261021</SimpleData>
+		<SimpleData name="f_fin">20261021</SimpleData>
+		<SimpleData name="ID">72</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6504551,39.5647401,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.30">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 432 - C/ CARDENAL ROSSELL - C/ ESTEPONA</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE BÁCULO SEMAFÓRICO. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 11:00 H - 14:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261021</SimpleData>
+		<SimpleData name="f_fin">20261021</SimpleData>
+		<SimpleData name="ID">73</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6993369,39.551689,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.31">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 205 - C/ AV. DE PORTUGAL - RUBEN DARÍO</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS ELÉCTRICOS EN SECTOR DE ALIMENTACIÓN. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 14:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">74</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.32">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 206 - AVINGUDA DE PORTUGAL - CARRER VIA ROMA</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS ELÉCTRICOS EN SECTOR DE ALIMENTACIÓN. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 14:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">75</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.33">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 208 - AVINGUA DE PORTUGAL - AVINGUDA DE ALEMANYA</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS ELÉCTRICOS EN SECTOR DE ALIMENTACIÓN. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 14:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">76</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.34">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 003 - CARRER JOAN ALCOVER - CARRER DE FONERS</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE INSPECCIÓN OCA DE CRUCE SEMFÓRICO. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261026</SimpleData>
+		<SimpleData name="ID">77</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6613952,39.5710036,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.35">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 207 - CARRER BARÓ DE PINOPAR - RAMBLA</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 207. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 11:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261028</SimpleData>
+		<SimpleData name="ID">78</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.647856,39.5759445,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.36">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 442 - CARRER TRAMUNTANA - CARRER XABEC</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 442. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 11:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261028</SimpleData>
+		<SimpleData name="ID">79</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.7196825,39.5365183,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.37">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 117 - CARRER FRANCESC SUAU - CARRER POETA GUILLEM COLOM</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 117. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 11:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261006</SimpleData>
+		<SimpleData name="f_fin">20261006</SimpleData>
+		<SimpleData name="ID">81</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6515559,39.5843484,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.38">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 112 - AV. COMTE DE SALLENT - C/ 31 DESEMBRE</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 112. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 11:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261007</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">82</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6495636,39.5786597,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.39">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 115 - CARRER 31 DE DESEMBRE - CARRER ANTONI MARQUÉS</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 115. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 11:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261007</SimpleData>
+		<SimpleData name="f_fin">20261007</SimpleData>
+		<SimpleData name="ID">83</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6521499,39.5803291,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.40">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 024 - CARRER ARAGÓ - CARRER DE GESSAMÍ</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE ARMARIO DE REGULADOR SEMAFÓRICO. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIAL POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261013</SimpleData>
+		<SimpleData name="ID">84</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6589757,39.5747199,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.41">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 124 - CARRER DE EUSEBI ESTADA - CARRER JAUME BALMES</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 124. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 11:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261014</SimpleData>
+		<SimpleData name="f_fin">20261014</SimpleData>
+		<SimpleData name="ID">85</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6587504,39.579959,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.42">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 230 - CARRETERA DE VALLDEMOSSA - C/ MIQUEL CAPLLONCH</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 230. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 11:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261014</SimpleData>
+		<SimpleData name="f_fin">20261014</SimpleData>
+		<SimpleData name="ID">86</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6490358,39.5903037,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.43">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CRUCE 138 - C/ JAUME BALMES - C/ JACINT VERDAGUER</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE ARMARIO DE REGULADOR SEMAFÓRICO. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIAL POLICIAL.</SimpleData>
+		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
+		<SimpleData name="observaciones">HORARI DE 10:00 H - 12:00 H</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261020</SimpleData>
+		<SimpleData name="f_fin">20261020</SimpleData>
+		<SimpleData name="ID">87</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.660151,39.5798527,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
