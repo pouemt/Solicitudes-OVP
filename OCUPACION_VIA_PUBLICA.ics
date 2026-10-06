@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:ocupacion-1
-SUMMARY:REVISIÓN TUBERÍAS-AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires
+SUMMARY:UTE APB-AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires
 DESCRIPTION:SOLICITUD DE OCUPACION:Revisión de tuberías, con cámara.-Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.-INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA UN APARCAMIENTO DEL LADO TIERRA-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20261110
@@ -511,5 +511,12 @@ SUMMARY:ENLLUMENAT PUBLIC-C. GAPAR BENNAZAR, 11 parada 1974
 DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL-Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril habilitando tráfico alternativo, de forma que se mantengan los dos sentidos de circulación. Horario de 9,30 a 13h-La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-66
+SUMMARY:UTE APB-C/ Porto Pi - C/ Joan Miro
+DESCRIPTION:SOLICITUD DE OCUPACION:ABRIR ZANJA PARA ALUMBRADO-Corte de uno de los dos carriles, alternativamente,  C/ Porto Pi acceso a C/ Joan Miro, según plano adjunto-* Se adjunta plano-CONDICIONS MOBILITAT:Se realizará en dos fases para mantener abierto el tráfico en todo momento, al finalizar la jornada devolver circulación estado original.
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261016
 END:VEVENT
 END:VCALENDAR
