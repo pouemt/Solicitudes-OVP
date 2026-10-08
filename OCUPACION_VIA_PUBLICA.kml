@@ -37,42 +37,6 @@
   </Placemark>
   <Placemark id="ocupaciones_tramos.2">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EDISON NEXT</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">AV. GASPAR BENNASAR, 1 AL 73</SimpleData>
-		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.</SimpleData>
-		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.</SimpleData>
-		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">21</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6580374,39.582871,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.3">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EDISON NEXT</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">AV. GASPAR BENNASAR, 1 AL 73</SimpleData>
-		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). Para la ejecución de los trabajos se regulará con corte carril con tráfico alternativo mediante señalistas. Se realizará por tramo con las fechas indicadas en plano.</SimpleData>
-		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, SIN CORTES DE TRÁFICO, corte carril con tráfico alternativo mediante señalistas.</SimpleData>
-		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20260925</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">34</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6580374,39.582871,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.4">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
 		<SimpleData name="contratista"></SimpleData>
@@ -89,25 +53,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6430241,39.5723658,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.5">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PRIVAT</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">CE Arxiduc Lluis Salvador, 89</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra"></SimpleData>
-		<SimpleData name="observaciones">Ocupación carril circulación</SimpleData>
-		<SimpleData name="condicions_mobilitat">Ocupación carril circulación mediante tráfico alternativo con señalistas en toda la intersección. Horario de 10:00 a 12:00h.</SimpleData>
-		<SimpleData name="f_inicio">20261006</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">42</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6574363,39.5849151,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.6">
+  <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EDIFICIS MUNICIPALS</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -125,7 +71,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6472116,39.5714648,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.7">
+  <Placemark id="ocupaciones_tramos.4">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -143,7 +89,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.8">
+  <Placemark id="ocupaciones_tramos.5">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -161,7 +107,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6091876,39.5560342,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.9">
+  <Placemark id="ocupaciones_tramos.6">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -179,7 +125,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6126535,39.5518755,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.10">
+  <Placemark id="ocupaciones_tramos.7">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -197,7 +143,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.11">
+  <Placemark id="ocupaciones_tramos.8">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -215,25 +161,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6146693,39.5521812,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.12">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">PRIVAT</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">Antoni Marquès 2</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra">Carga de escombros de demolición</SimpleData>
-		<SimpleData name="observaciones">La ocupació màxima que es permetrà es de un únic carril de circulació (el més proper a la obra) deixant lliures dos carrils a Antoni Marquès en tot moment. La ocupació haurà de començar a partir de les 9:30.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261006</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">55</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6520735,39.5800215,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.13">
+  <Placemark id="ocupaciones_tramos.9">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -251,7 +179,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6639468,39.5754215,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.14">
+  <Placemark id="ocupaciones_tramos.10">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -269,25 +197,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6600023,39.5822064,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.15">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EDISON NEXT</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 11 parada 1976</SimpleData>
-		<SimpleData name="descripcion">###############################################################################################################################################################################################################################################################</SimpleData>
-		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL</SimpleData>
-		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
-		<SimpleData name="condicions_mobilitat">En el tramo comprendido entre Eusebi Estada y Gaspar Bennazar ocupación entre las 9:30 horas y 13:30 horas al ser una zona de colegios</SimpleData>
-		<SimpleData name="f_inicio">20261007</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">59</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.16">
+  <Placemark id="ocupaciones_tramos.11">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -305,7 +215,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6565581,39.5836436,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.17">
+  <Placemark id="ocupaciones_tramos.12">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -323,7 +233,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6572468,39.5833445,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.18">
+  <Placemark id="ocupaciones_tramos.13">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -341,25 +251,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6560981,39.5834617,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.19">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EDISON NEXT</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 11 parada 1975</SimpleData>
-		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril derecho, no es necesario hacer tráfico carril derecho ya que hay dos carriles en el mismo sentido. Horario de 9,30 a 13h</SimpleData>
-		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL</SimpleData>
-		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261007</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">63</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.20">
+  <Placemark id="ocupaciones_tramos.14">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -377,25 +269,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6543571,39.5843342,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.21">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EDISON NEXT</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">C. GAPAR BENNAZAR, 11 parada 1974</SimpleData>
-		<SimpleData name="descripcion">Montaje de elementos navideños (árboles, guirnaldas y decoración). corte de carril habilitando tráfico alternativo, de forma que se mantengan los dos sentidos de circulación. Horario de 9,30 a 13h</SimpleData>
-		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, CON CORTE DE TRÁFICO, OCUPACIÓN CARRIL</SimpleData>
-		<SimpleData name="observaciones">La ocupación se realizará conforme al plano adjunto. En las zonas afectadas por líneas de la EMT, los trabajos se ejecutarán en el menor tiempo posible con el fin de minimizar las afecciones al servicio. Asimismo, se comunicará a la EMT cualquier modificación de la planificación prevista, así como la finalización anticipada de los trabajos, en caso de producirse. Fines de semana no se trabaja.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261007</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">65</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6605995,39.581919,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.22">
+  <Placemark id="ocupaciones_tramos.15">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">UTE APB</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -413,7 +287,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6224088,39.5531974,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.23">
+  <Placemark id="ocupaciones_tramos.16">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -431,7 +305,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6728183,39.5988969,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.24">
+  <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -449,7 +323,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6647762,39.5978668,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.25">
+  <Placemark id="ocupaciones_tramos.18">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -467,7 +341,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6501991,39.5840646,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.26">
+  <Placemark id="ocupaciones_tramos.19">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -485,7 +359,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6252789,39.6230568,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.27">
+  <Placemark id="ocupaciones_tramos.20">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PÚBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -503,7 +377,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.7565166,39.5683718,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.28">
+  <Placemark id="ocupaciones_tramos.21">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -521,7 +395,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6504551,39.5647401,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.29">
+  <Placemark id="ocupaciones_tramos.22">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -539,7 +413,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6993369,39.551689,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.30">
+  <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -557,7 +431,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.31">
+  <Placemark id="ocupaciones_tramos.24">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -575,7 +449,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.32">
+  <Placemark id="ocupaciones_tramos.25">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -593,7 +467,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.33">
+  <Placemark id="ocupaciones_tramos.26">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -611,7 +485,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6613952,39.5710036,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.34">
+  <Placemark id="ocupaciones_tramos.27">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -629,7 +503,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.647856,39.5759445,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.35">
+  <Placemark id="ocupaciones_tramos.28">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -647,43 +521,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.7196825,39.5365183,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.36">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">CRUCE 112 - AV. COMTE DE SALLENT - C/ 31 DESEMBRE</SimpleData>
-		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 112. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
-		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
-		<SimpleData name="observaciones">HORARI DE 10:00 H - 11:00 H</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261007</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">82</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6495636,39.5786597,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.37">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">ALUVISA TRAFFIC SYSTEM</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">CRUCE 115 - CARRER 31 DE DESEMBRE - CARRER ANTONI MARQUÉS</SimpleData>
-		<SimpleData name="descripcion">TRABAJOS DE CAMBIO DE PROGRAMACIÓN EN CRUCE 115. SE REQUIERE APAGADO DE SEMÁFOROS. SE REQUIERE PRESENCIA POLICIAL.</SimpleData>
-		<SimpleData name="tipo_obra">TRABAJOS MANTENIMIENTO DE REGULACIÓN Y CONTROL SEMAFORICO</SimpleData>
-		<SimpleData name="observaciones">HORARI DE 11:00 H - 12:00 H</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261007</SimpleData>
-		<SimpleData name="f_fin">20261007</SimpleData>
-		<SimpleData name="ID">83</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6521499,39.5803291,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.38">
+  <Placemark id="ocupaciones_tramos.29">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -701,7 +539,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6589757,39.5747199,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.39">
+  <Placemark id="ocupaciones_tramos.30">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -719,7 +557,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6587504,39.579959,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.40">
+  <Placemark id="ocupaciones_tramos.31">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -737,7 +575,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6490358,39.5903037,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.41">
+  <Placemark id="ocupaciones_tramos.32">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">DPTO MOBILITAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -755,7 +593,7 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.660151,39.5798527,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.42">
+  <Placemark id="ocupaciones_tramos.33">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
