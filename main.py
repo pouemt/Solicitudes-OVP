@@ -825,7 +825,7 @@ def excel_sharepoint_to_ics_gpkg(
 
 if __name__ == "__main__":
     MODO_PRUEBA = False
-    FORZAR_RECALCULO_GEO = False
+    FORZAR_RECALCULO_GEO = True
 
     # Buscar la URL desde la variable de entorno 'URL_SHAREPOINT'
     url_sharepoint_secreto = os.environ.get("URL_SHAREPOINT")
