@@ -737,5 +737,23 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6421899,39.5968448,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.41">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Jaume III, 25</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">CARGA Y DESCARGA</SimpleData>
+		<SimpleData name="observaciones">Carga y descarga con ocupación de carril</SimpleData>
+		<SimpleData name="condicions_mobilitat">Horari autoritzat de 10:00 a 12:00</SimpleData>
+		<SimpleData name="f_inicio">20261015</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">97</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6430241,39.5723658,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
