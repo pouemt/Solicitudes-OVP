@@ -14,6 +14,81 @@ LON_DEFECTO, LAT_DEFECTO = 2.6400, 39.5555
 # Variable global para garantizar la pausa de 1 segundo requerida por OSM / Nominatim
 ULTIMA_CONSULTA_NOMINATIM = 0.0
 
+# ==============================================================================
+# CONFIGURACIÓN Y TABLAS CENTRALIZADAS DE NORMALIZACIÓN URBANA
+# ==============================================================================
+
+# 0. ALIAS LOCALES: Sustituye nombres informales, topónimos locales o erratas históricas por nombres oficiales.
+ALIAS_LOCALES = {
+    r"\bCOSTA\s+DEL\s+GAS\b": "Avinguda de Gabriel Alomar",
+    r"\bTORRE\s+PELAIRES\b": "Torre de Paraires",
+    r"\bTORRE\s+PARAIRES\b": "Torre de Paraires",
+    r"\bPLAZA\s+PARIS\b": "Plaça de París",
+    r"\bPLACA\s+PARIS\b": "Plaça de París",
+}
+
+# 1. PREFIJOS DE CRUCES SEMAFÓRICOS Y DE TRÁFICO A ELIMINAR (Paso 1)
+PREFIJOS_CRUCE_SEMAFORO = [
+    "CRUCE", "CRU", "SEMAFORO", "SEMÀFOR", "SEM"
+]
+
+# 2 y 7. TABLA CENTRAL DE ABREVIATURAS Y TIPOS DE VÍA URBANA (Pasos 2, 7, tiene_tipo_via y remover_tipo_via)
+# Mapea patrones/abreviaturas a su forma estandarizada.
+# Cualquier nueva abreviatura añadida aquí se expande en el Paso 7 y se reconoce como tipo de vía en el Paso 2.
+ABREVIATURAS_VIAS = {
+    r"\bc/\s*": "Calle ",
+    r"\bc\.\s*": "Calle ",
+    r"\bcl/\s*": "Calle ",
+    r"\bcl\.\s*": "Calle ",
+    r"\bavda\.\s*": "Avenida ",
+    r"\bav\.\s*": "Avenida ",
+    r"\bpza\.\s*": "Plaza ",
+    r"\bpl\.\s*": "Plaza ",
+    r"\bpg\.\s*": "Paseo ",
+    r"\bptge\.\s*": "Pasaje ",
+    r"\bctra\.\s*": "Carretera ",
+}
+
+# Tipos de vía / Nombres urbanos completos para reconocimiento en paréntesis (Paso 2) y detección de vía
+TIPOS_VIA_NOMBRES = [
+    "calle", "carrer", "avenida", "avda", "av", "plaza", "plaça", "pza", "pl",
+    "parque", "parc", "paseo", "passeig", "pg", "pasaje", "ptge",
+    "carretera", "ctra", "camino", "camí", "vía", "via", "rambla"
+]
+
+# 2 y 3. ACOTACIONES DE TRAMO Y LADO DE VÍA (Paso 2 segundo check y Paso 3)
+ACOTACIONES_TRAMO = [
+    "lado", "pares", "impares", "tramo", "sentido", "n/s", "ns", "margen", "frente"
+]
+
+# 6. ERRATAS TIPOGRÁFICAS FRECUENTES DE LA BASE DE DATOS MUNICIPAL (Paso 6)
+ERRATAS_TIPOGRAFICAS = {
+    r"\besqina\b": "esquina",
+    r"\bGAPAR\b": "GASPAR",
+    r"\bCE\b": "Calle",
+}
+
+
+def _construir_patron_vias_regex():
+    """Genera dinámicamente el patrón regex para reconocer cualquier tipo de vía o abreviatura de las listas."""
+    terminos = set(t.lower() for t in TIPOS_VIA_NOMBRES)
+    for k in ABREVIATURAS_VIAS.keys():
+        palabras = re.findall(r"[a-zA-ZáéíóúÁÉÍÓÚçÇñÑ]+", k)
+        terminos.update(p.lower() for p in palabras)
+    terminos_ord = sorted(terminos, key=len, reverse=True)
+    return r"\b(?:" + "|".join(re.escape(t) for t in terminos_ord) + r")\b"
+
+
+def _construir_patron_acotaciones_regex():
+    """Genera dinámicamente el patrón regex para detectar acotaciones de tramo/lado."""
+    acotaciones_ord = sorted(ACOTACIONES_TRAMO, key=len, reverse=True)
+    return r"\b(?:" + "|".join(re.escape(a) for a in acotaciones_ord) + r")\b"
+
+
+def _construir_patron_cruce_semaforo_regex():
+    """Genera dinámicamente el patrón regex para eliminar códigos de semáforo o cruces."""
+    prefijos_ord = sorted(PREFIJOS_CRUCE_SEMAFORO, key=len, reverse=True)
+    return r"^\s*(?:" + "|".join(re.escape(p) for p in prefijos_ord) + r")\s*\d+\s*[-:]?\s*"
 
 def normalizar_fecha_obj(val):
     """Normaliza fechas aceptando objetos datetime, Timestamp de Pandas, cadenas o números."""
@@ -61,26 +136,55 @@ def normalizar_fecha_obj(val):
 
     return None
 
+def aplicar_alias_locales(texto):
+    """Sustituye nombres informales, topónimos locales o erratas históricas por nombres oficiales."""
+    if not texto:
+        return ""
+    res = texto
+    for patron, reemplazo in ALIAS_LOCALES.items():
+        res = re.sub(patron, reemplazo, res, flags=re.IGNORECASE)
+    return res
+
 
 def limpiar_direccion(direccion):
-    """Limpia textos secundarios, erratas, rangos de números y aclaraciones entre paréntesis."""
+    """Limpia textos secundarios, erratas, rangos de números, códigos de cruces semafóricos y aclaraciones."""
     if not direccion:
         return ""
 
     texto = str(direccion).strip()
 
-    # 1. Eliminar aclaraciones entre paréntesis ej. "(de Passeig Born...)"
-    texto = re.sub(r"\([^)]*\)", "", texto)
+    # 0. Aplicar alias locales (ej. Costa del Gas -> Av. Gabriel Alomar)
+    texto = aplicar_alias_locales(texto)
 
-    # 2. Eliminar acotaciones de tramo o lado de vía ej. "lado ns pares", "lado impares"
+    # 1. Eliminar códigos de cruce semafórico/tráfico empleando PREFIJOS_CRUCE_SEMAFORO
+    texto = re.sub(_construir_patron_cruce_semaforo_regex(), "", texto, flags=re.IGNORECASE)
+
+    # 2. Procesar paréntesis de forma inteligente empleando TIPOS_VIA_NOMBRES / ABREVIATURAS_VIAS y ACOTACIONES_TRAMO
+    patron_vias = _construir_patron_vias_regex()
+    patron_acotaciones = _construir_patron_acotaciones_regex()
+
+    def evaluar_parentesis(match):
+        contenido = match.group(1).strip()
+        if re.search(patron_vias, contenido, re.IGNORECASE):
+            return f" con {contenido}"
+        if re.search(patron_acotaciones, contenido, re.IGNORECASE):
+            return ""
+        return ""
+
+    texto = re.sub(r"\(([^)]+)\)", evaluar_parentesis, texto)
+
+    # 3. Eliminar acotaciones de tramo o lado de vía sin paréntesis empleando ACOTACIONES_TRAMO
     texto = re.sub(
-        r"\blado\s+(?:ns\s+)?(?:pares|impares|n/s)\b",
+        r"\blado\s+(?:ns\s+)?(?:pares|impares|n/s|ns)\b",
         "",
         texto,
         flags=re.IGNORECASE,
     )
 
-    # 3. Normalizar rangos de portales calculando el número promedio ej. "1 AL 73" -> "37"
+    # 4. Normalizar guiones que separan nombres de calles en cruces ej. "AV. PORTUGAL - RUBEN DARIO"
+    texto = re.sub(r"(?<=[a-zA-ZáéíóúÁÉÍÓÚçÇñÑ])\s*-\s*(?=[a-zA-ZáéíóúÁÉÍÓÚçÇñÑ])", " & ", texto)
+
+    # 5. Normalizar rangos de portales calculando el número promedio ej. "1 AL 73" -> "37"
     def reemp_promedio(match):
         n1 = int(match.group(1))
         n2 = int(match.group(2))
@@ -88,29 +192,34 @@ def limpiar_direccion(direccion):
 
     texto = re.sub(r"(\d+)\s+AL?\s+(\d+)", reemp_promedio, texto, flags=re.IGNORECASE)
 
-    # 4. Corregir erratas tipográficas frecuentes de la base de datos municipal
-    texto = re.sub(r"\besqina\b", "esquina", texto, flags=re.IGNORECASE)
-    texto = re.sub(r"\bGAPAR\b", "GASPAR", texto, flags=re.IGNORECASE)
-    texto = re.sub(r"\bCE\b", "Calle", texto, flags=re.IGNORECASE)
+    # 6. Corregir erratas tipográficas frecuentes mediante el diccionario ERRATAS_TIPOGRAFICAS
+    for patron, reemplazo in ERRATAS_TIPOGRAFICAS.items():
+        texto = re.sub(patron, reemplazo, texto, flags=re.IGNORECASE)
 
-    # 5. Normalizar abreviaturas urbanas comunes
+    # 7. Normalizar abreviaturas urbanas comunes mediante el diccionario ABREVIATURAS_VIAS
     texto = re.sub(r"\s+", " ", texto)
-    reemplazos = [
-        (r"\bc/\s*", "Calle "),
-        (r"\bc\.\s*", "Calle "),
-        (r"\bcl/\s*", "Calle "),
-        (r"\bavda\.\s*", "Avenida "),
-        (r"\bav\.\s*", "Avenida "),
-        (r"\bpza\.\s*", "Plaza "),
-        (r"\bpl\.\s*", "Plaza "),
-        (r"\bpg\.\s*", "Paseo "),
-        (r"\bptge\.\s*", "Pasaje "),
-        (r"\bctra\.\s*", "Carretera "),
-    ]
-    for patron, reemp in reemplazos:
+    for patron, reemp in ABREVIATURAS_VIAS.items():
         texto = re.sub(patron, reemp, texto, flags=re.IGNORECASE)
 
     return texto.strip()
+
+
+def parsear_tramo_desde_hasta(direccion):
+    """Detecta si la dirección describe un tramo (ej. 'AV. GABRIEL ROCA, desde Av. Argentina hasta Torre Pelaires').
+    Devuelve una tupla (via_principal, origen, destino) o None si no es un tramo.
+    """
+    if not direccion:
+        return None
+
+    patron = r"^(.+?)(?:,|\s+)+desde\s+(.+?)\s+hasta\s+(.+)$"
+    match = re.search(patron, direccion, re.IGNORECASE)
+    if match:
+        via = match.group(1).strip()
+        origen = match.group(2).strip()
+        destino = match.group(3).strip()
+        return via, origen, destino
+
+    return None
 
 
 def normalizar_comas_portal(texto):
@@ -121,10 +230,10 @@ def normalizar_comas_portal(texto):
 
 
 def tiene_tipo_via(texto):
-    """Verifica si la dirección cuenta con un prefijo urbano."""
+    """Verifica si la dirección cuenta con un prefijo urbano basado en la lista centralizada."""
     if not texto:
         return False
-    patron = r"^\s*(?:calle|cl|c/|carrer|c|avenida|avda|av|plaza|pza|pl|paseo|passeig|pg|pasaje|ptge|carretera|ctra|camino|camí)\b"
+    patron = r"^\s*" + _construir_patron_vias_regex()
     return bool(re.search(patron, texto, re.IGNORECASE))
 
 
@@ -132,7 +241,7 @@ def remover_tipo_via(texto):
     """Elimina prefijos de tipos de vía para evitar descalces por idioma en Nominatim."""
     if not texto:
         return ""
-    patron = r"^\s*(?:calle|cl|c/|carrer|c|avenida|avda|av|plaza|pza|pl|paseo|passeig|pg|pasaje|ptge|carretera|ctra|camino|camí)\b\.?\s*(?:de\s+|del\s+|d['’]\s*)?"
+    patron = r"^\s*" + _construir_patron_vias_regex() + r"\.?\s*(?:de\s+|del\s+|d['’]\s*)?"
     texto_sin_via = re.sub(patron, "", texto, flags=re.IGNORECASE).strip()
     return texto_sin_via if texto_sin_via else texto
 
@@ -141,6 +250,10 @@ def parsear_direccion_interseccion(direccion):
     """Detecta y formatea cruces de calles (ej. 'Calle A & Calle B')."""
     if not direccion:
         return ""
+
+    if "&" in direccion:
+        partes = [p.strip() for p in direccion.split("&") if p.strip()]
+        return " & ".join(partes)
 
     # Caso 1: "intersección/esquina/cruce de Calle A con/y Calle B"
     patron1 = r"(?:intersección|esquina|cruce|confluencia)\s+(?:de\s+la\s+|del?\s+)?(?:calle\s+|c/\s*|cl/\s*)?(.+?)\s+(?:con|y|esquina|amb)\s+(?:la\s+calle\s+|c/\s*|cl/\s*)?(.+)"
@@ -151,7 +264,7 @@ def parsear_direccion_interseccion(direccion):
         return f"{calle1} & {calle2}"
 
     # Caso 2: "Calle A con/esquina/amb Calle B" o "Calle A / Calle B"
-    patron2 = r"^(.+?)\s+(?:esquina|con|amb|cruce|desde con|\/)\s+(.+)$"
+    patron2 = r"^(.+?)\s+(?:esquina|con|amb|cruce con|\/)\s+(.+)$"
     coincidencia2 = re.search(patron2, direccion, re.IGNORECASE)
     if coincidencia2:
         calle1 = coincidencia2.group(1).strip()
@@ -258,10 +371,33 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
         print(f"[DEBUG GEOCODIFICACIÓN] Dirección Excel: '{direccion_raw}'")
 
     direccion_limpia = limpiar_direccion(direccion_raw)
+
+    # Paso 0A: Comprobar si es un tramo 'desde ... hasta ...'
+    info_tramo = parsear_tramo_desde_hasta(direccion_limpia)
+    if info_tramo:
+        via, origen, destino = info_tramo
+        if debug:
+            print(f" -> [Paso 0A] Tramo detectado: Vía '{via}' | Desde '{origen}' | Hasta '{destino}'")
+
+        # Geocodificar extremo 1 (Intersección Vía & Origen)
+        lon1, lat1, _ = obtener_coordenadas_robustas(f"{via} & {origen}", ciudad=ciudad, debug=False)
+        # Geocodificar extremo 2 (Intersección Vía & Destino o Hito Destino)
+        lon2, lat2, _ = obtener_coordenadas_robustas(f"{via} & {destino}", ciudad=ciudad, debug=False)
+
+        if (lon2 == LON_DEFECTO and lat2 == LAT_DEFECTO):
+            # Probar el hito de destino de forma directa si no hizo cruce
+            lon2, lat2, _ = obtener_coordenadas_robustas(destino, ciudad=ciudad, debug=False)
+
+        if lon1 != LON_DEFECTO and lon2 != LON_DEFECTO:
+            lon_med, lat_med = (lon1 + lon2) / 2, (lat1 + lat2) / 2
+            if debug:
+                print(f" -> ÉXITO PASO 0A (Tramo): Punto medio calculado ({lon_med:.5f}, {lat_med:.5f}) entre extremos.")
+            return lon_med, lat_med, "TRAMO_MEDIO"
+
     dir_interseccion = parsear_direccion_interseccion(direccion_limpia)
     es_interseccion = "&" in dir_interseccion
 
-    # Paso 1A: Consulta directa a Nominatim con la dirección limpia
+    # Paso 1A: Consulta directa a Nominatim
     if not es_interseccion:
         if debug:
             print(f" -> [Paso 1A] Nominatim con dirección limpia ('{direccion_limpia}, {ciudad}')...")
@@ -271,32 +407,43 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
                 print(f" -> ÉXITO PASO 1A: Coordenadas exactas asignadas ({lon:.5f}, {lat:.5f})")
             return lon, lat, "EXACTO"
 
-        # Paso 1B: Probar sin sufijos de portal redundantes
+        # Paso 1B: Si tenía letra en el número (ej. "49A"), probar sin la letra ("49")
+        dir_sin_letra = re.sub(r"(\b\d+)[a-zA-Z]\b", r"\1", direccion_limpia)
+        if dir_sin_letra != direccion_limpia:
+            if debug:
+                print(f" -> [Paso 1B] Nominatim sin letra de portal ('{dir_sin_letra}, {ciudad}')...")
+            lon, lat = consultar_nominatim(f"{dir_sin_letra}, {ciudad}", debug=debug)
+            if lon and lat:
+                if debug:
+                    print(f" -> ÉXITO PASO 1B: Coordenadas asignadas tras eliminar letra de portal ({lon:.5f}, {lat:.5f})")
+                return lon, lat, "EXACTO"
+
+        # Paso 1C: Probar sin sufijos de portal redundantes
         dir_coma_portal = normalizar_comas_portal(direccion_limpia)
         if dir_coma_portal != direccion_limpia:
             if debug:
-                print(f" -> [Paso 1B] Nominatim con portal normalizado ('{dir_coma_portal}, {ciudad}')...")
+                print(f" -> [Paso 1C] Nominatim con portal normalizado ('{dir_coma_portal}, {ciudad}')...")
             lon, lat = consultar_nominatim(f"{dir_coma_portal}, {ciudad}", debug=debug)
             if lon and lat:
                 if debug:
-                    print(f" -> ÉXITO PASO 1B: Coordenadas asignadas tras normalizar portal ({lon:.5f}, {lat:.5f})")
+                    print(f" -> ÉXITO PASO 1C: Coordenadas asignadas tras normalizar portal ({lon:.5f}, {lat:.5f})")
                 return lon, lat, "EXACTO"
 
-        # Paso 1C: Probar prefijos urbanos explícitos (Carrer / Calle)
+        # Paso 1D: Probar prefijos urbanos explícitos (Carrer / Calle)
         if not tiene_tipo_via(direccion_limpia):
             for prefijo in ["Carrer", "Calle"]:
                 dir_con_prefijo = f"{prefijo} {direccion_limpia}"
                 if debug:
-                    print(f" -> [Paso 1C] Probando Nominatim con prefijo '{prefijo}' ('{dir_con_prefijo}, {ciudad}')...")
+                    print(f" -> [Paso 1D] Probando Nominatim con prefijo '{prefijo}' ('{dir_con_prefijo}, {ciudad}')...")
                 lon, lat = consultar_nominatim(f"{dir_con_prefijo}, {ciudad}", debug=debug)
                 if lon and lat:
                     if debug:
                         print(f" -> ÉXITO PASO 1C: Coordenadas asignadas con prefijo '{prefijo}' ({lon:.5f}, {lat:.5f})")
                     return lon, lat, "EXACTO"
 
-        # Paso 1D: Búsqueda estructurada
+        # Paso 1E: Búsqueda estructurada
         if debug:
-            print(f" -> [Paso 1D] Búsqueda estructurada en Nominatim...")
+            print(f" -> [Paso 1E] Búsqueda estructurada en Nominatim...")
         lon, lat = consultar_nominatim(
             None,
             debug=debug,
@@ -304,21 +451,21 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
         )
         if lon and lat:
             if debug:
-                print(f" -> ÉXITO PASO 1D: Coordenadas asignadas por búsqueda estructurada ({lon:.5f}, {lat:.5f})")
+                print(f" -> ÉXITO PASO 1E: Coordenadas asignadas por búsqueda estructurada ({lon:.5f}, {lat:.5f})")
             return lon, lat, "EXACTO"
 
-        # Paso 1E: Probar eliminando el tipo de vía
+        # Paso 1F: Probar eliminando el tipo de vía
         dir_sin_tipo = remover_tipo_via(direccion_limpia)
         if dir_sin_tipo != direccion_limpia:
             if debug:
-                print(f" -> [Paso 1E] Nominatim sin tipo de vía ('{dir_sin_tipo}, {ciudad}')...")
+                print(f" -> [Paso 1F] Nominatim sin tipo de vía ('{dir_sin_tipo}, {ciudad}')...")
             lon, lat = consultar_nominatim(f"{dir_sin_tipo}, {ciudad}", debug=debug)
             if lon and lat:
                 if debug:
-                    print(f" -> ÉXITO PASO 1E: Coordenadas asignadas sin tipo de vía ({lon:.5f}, {lat:.5f})")
+                    print(f" -> ÉXITO PASO 1F: Coordenadas asignadas sin tipo de vía ({lon:.5f}, {lat:.5f})")
                 return lon, lat, "EXACTO"
 
-    # Paso 2: Google Maps API (Respaldo)
+    # Paso 2: Google Maps API (Respaldo inteligente para números inexistentes en OSM o Cruces)
     if debug:
         print(f" -> [Paso 2] Google Maps API con '{dir_interseccion}'...")
     lon_g, lat_g = consultar_google_maps(dir_interseccion, ciudad, debug=debug)
@@ -327,13 +474,26 @@ def obtener_coordenadas_robustas(direccion_raw, ciudad="Palma, España", debug=T
             print(f" -> ÉXITO PASO 2: Coordenadas devueltas por Google Maps ({lon_g:.5f}, {lat_g:.5f})")
         return lon_g, lat_g, "EXACTO_GOOGLE"
 
+    # Paso 2B: Si Google falló con la letra de portal (ej. "49A"), probar en Google sin letra ("49")
+    dir_sin_letra = re.sub(r"(\b\d+)[a-zA-Z]\b", r"\1", dir_interseccion)
+    if dir_sin_letra != dir_interseccion:
+        if debug:
+            print(f" -> [Paso 2B] Google Maps API sin letra de portal con '{dir_sin_letra}'...")
+        lon_g, lat_g = consultar_google_maps(dir_sin_letra, ciudad, debug=debug)
+        if lon_g and lat_g:
+            if debug:
+                print(f" -> ÉXITO PASO 2B: Coordenadas devueltas por Google Maps sin letra ({lon_g:.5f}, {lat_g:.5f})")
+            return lon_g, lat_g, "EXACTO_GOOGLE"
+
     # Paso 3: Fallback de intersección en Nominatim
     if es_interseccion:
         if debug:
             print(f" -> [Paso 3] Nominatim intersección por separado...")
-        calle1, calle2 = dir_interseccion.split("&")
-        calle1_sin_tipo = remover_tipo_via(calle1.strip())
-        calle2_sin_tipo = remover_tipo_via(calle2.strip())
+        partes = dir_interseccion.split("&")
+        calle1 = partes[0].strip()
+        calle2 = partes[1].strip()
+        calle1_sin_tipo = remover_tipo_via(calle1)
+        calle2_sin_tipo = remover_tipo_via(calle2)
 
         lon1, lat1 = consultar_nominatim(f"{calle1_sin_tipo}, {ciudad}", debug=debug)
         lon2, lat2 = consultar_nominatim(f"{calle2_sin_tipo}, {ciudad}", debug=debug)
