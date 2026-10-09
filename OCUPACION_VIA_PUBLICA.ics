@@ -722,4 +722,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE 
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261024
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-96
+SUMMARY:OBRAS CONSELL-cami del Reis, entre rotonda carretera de Soller y nº409
+DESCRIPTION:SOLICITUD DE OCUPACION:Demolición de edificio---CONDICIONS MOBILITAT:van a demoler por la parte de atrás de camí del Reis, pero solicitan el corte de los dos carriles de la zona delantera por seguridad de problemas de proyecciones. Por lo tanto se tiene que cerrar también el camí del Reis y prohibir el estacionamiento, tramo entre número 421 y 409 (tramo trasero del edificio a demoler).
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+END:VEVENT
 END:VCALENDAR
