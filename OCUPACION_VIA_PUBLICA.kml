@@ -31,9 +31,9 @@
 		<SimpleData name="f_inicio">20260909</SimpleData>
 		<SimpleData name="f_fin">20261109</SimpleData>
 		<SimpleData name="ID">1</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">TRAMO_MEDIO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6405968,39.5733148,0</coordinates></Point>
+      <Point><coordinates>2.631601,39.56018785,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.2">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -139,9 +139,9 @@
 		<SimpleData name="f_inicio">20261001</SimpleData>
 		<SimpleData name="f_fin">20261016</SimpleData>
 		<SimpleData name="ID">52</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
+      <Point><coordinates>2.6127827,39.5520088,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.8">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -285,7 +285,7 @@
 		<SimpleData name="ID">67</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6728183,39.5988969,0</coordinates></Point>
+      <Point><coordinates>2.6791822,39.6069946,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.16">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -303,7 +303,7 @@
 		<SimpleData name="ID">68</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6647762,39.5978668,0</coordinates></Point>
+      <Point><coordinates>2.6659805,39.5964802,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -319,9 +319,9 @@
 		<SimpleData name="f_inicio">20261015</SimpleData>
 		<SimpleData name="f_fin">20261015</SimpleData>
 		<SimpleData name="ID">69</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6501991,39.5840646,0</coordinates></Point>
+      <Point><coordinates>2.6492338,39.5838946,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.18">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -339,7 +339,7 @@
 		<SimpleData name="ID">70</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6252789,39.6230568,0</coordinates></Point>
+      <Point><coordinates>2.6170315,39.6327694,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.19">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -355,9 +355,9 @@
 		<SimpleData name="f_inicio">20261019</SimpleData>
 		<SimpleData name="f_fin">20261019</SimpleData>
 		<SimpleData name="ID">71</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.7565166,39.5683718,0</coordinates></Point>
+      <Point><coordinates>2.7565122,39.567789,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.20">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -375,7 +375,7 @@
 		<SimpleData name="ID">72</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6504551,39.5647401,0</coordinates></Point>
+      <Point><coordinates>2.6570521,39.5643375,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.21">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -447,7 +447,7 @@
 		<SimpleData name="ID">76</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
+      <Point><coordinates>2.6465111,39.5764404,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.25">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -465,7 +465,7 @@
 		<SimpleData name="ID">77</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6613952,39.5710036,0</coordinates></Point>
+      <Point><coordinates>2.6606742,39.5696544,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.26">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -483,7 +483,7 @@
 		<SimpleData name="ID">78</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.647856,39.5759445,0</coordinates></Point>
+      <Point><coordinates>2.6482588,39.5749156,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.27">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -519,7 +519,7 @@
 		<SimpleData name="ID">84</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6589757,39.5747199,0</coordinates></Point>
+      <Point><coordinates>2.6769823,39.5890814,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.29">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -537,7 +537,7 @@
 		<SimpleData name="ID">85</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6587504,39.579959,0</coordinates></Point>
+      <Point><coordinates>2.6587358,39.580158,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.30">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -573,7 +573,7 @@
 		<SimpleData name="ID">87</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.660151,39.5798527,0</coordinates></Point>
+      <Point><coordinates>2.659576,39.5798718,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.32">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -628,6 +628,114 @@
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.35">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">cruce Saridakis - Puig de Rnada</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">91</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6095503,39.5556241,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.36">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">cruce Saridakis - Puig de Talaia</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">92</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6086966,39.5563968,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.37">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">cruce Saridakis - Gregori IX</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">93</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6086966,39.5563968,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.38">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">cruce Saridakis - nº38</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">94</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6086966,39.5563968,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.39">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Saridakis 42-44</SimpleData>
+		<SimpleData name="descripcion">Apertura de zanja para ir a buscar red de conexión</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Corte carril - Sentido alternativo mediante semáforos</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261013</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">95</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6104679,39.5548571,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.40">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">OBRAS CONSELL</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">cami del Reis, entre rotonda carretera de Soller y nº409</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Demolición de edificio</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">van a demoler por la parte de atrás de camí del Reis, pero solicitan el corte de los dos carriles de la zona delantera por seguridad de problemas de proyecciones. Por lo tanto se tiene que cerrar también el camí del Reis y prohibir el estacionamiento, tramo entre número 421 y 409 (tramo trasero del edificio a demoler).</SimpleData>
+		<SimpleData name="f_inicio">20261010</SimpleData>
+		<SimpleData name="f_fin">20261010</SimpleData>
+		<SimpleData name="ID">96</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6421899,39.5968448,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
