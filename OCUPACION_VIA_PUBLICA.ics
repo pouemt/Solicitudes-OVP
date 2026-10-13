@@ -746,7 +746,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-99
 SUMMARY:EMAYA. Obres i Projectes-C. Samil, c. Acapulco y c. Jonc
-DESCRIPTION:SOLICITUD DE OCUPACION:Proyecto de la nueva estación de impulsión la Ribera y conducción a la EDAR 1-Ejecución firme final-Cortes de tráfico puntuales-CONDICIONS MOBILITAT:
+DESCRIPTION:SOLICITUD DE OCUPACION:Proyecto de la nueva estación de impulsión la Ribera y conducción a la EDAR 1-Ejecución firme final-Cortes de tráfico puntuales-CONDICIONS MOBILITAT:Tráfico alternativo en Samil, cruce no se puede cortar entero
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261108
 END:VEVENT

@@ -693,7 +693,7 @@
 		<SimpleData name="descripcion">Ejecución firme final</SimpleData>
 		<SimpleData name="tipo_obra">Proyecto de la nueva estación de impulsión la Ribera y conducción a la EDAR 1</SimpleData>
 		<SimpleData name="observaciones">Cortes de tráfico puntuales</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Tráfico alternativo en Samil, cruce no se puede cortar entero</SimpleData>
 		<SimpleData name="f_inicio">20261019</SimpleData>
 		<SimpleData name="f_fin">20261107</SimpleData>
 		<SimpleData name="ID">99</SimpleData>
