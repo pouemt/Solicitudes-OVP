@@ -719,5 +719,23 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6496602,39.5736587,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.40">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Telefónica</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Cardenal Rossell &amp; Bartomeu Castell</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Paso alterno con señalista en cardenal Rossell. Corte de calle Bartomeu Castell entre calle Marqués y Cardenal Rossell</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261017</SimpleData>
+		<SimpleData name="f_fin">20261017</SimpleData>
+		<SimpleData name="ID">101</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6968501,39.5513871,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>

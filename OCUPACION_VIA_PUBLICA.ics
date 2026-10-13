@@ -757,4 +757,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:Carga y descarga material obra 6º piso--entr
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-101
+SUMMARY:Telefónica-Cardenal Rossell & Bartomeu Castell
+DESCRIPTION:SOLICITUD DE OCUPACION:--Paso alterno con señalista en cardenal Rossell. Corte de calle Bartomeu Castell entre calle Marqués y Cardenal Rossell-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+END:VEVENT
 END:VCALENDAR
