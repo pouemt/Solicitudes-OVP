@@ -665,5 +665,41 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6430241,39.5723658,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.37">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Av. Argentina entre c. Fábrica y c. Caro</SimpleData>
+		<SimpleData name="descripcion">Ejecución red alcantarilado y red abastecimiento</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
+		<SimpleData name="observaciones">Ocupación carril derecho en sentido del tráfico. Se mantiene la operatividad del paso de peatones situado en Av. Argentina con c. Caro.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261015</SimpleData>
+		<SimpleData name="f_fin">20261028</SimpleData>
+		<SimpleData name="ID">98</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6401595,39.5720471,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.38">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">ACCIONA CONSTRUCCION</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. Samil, c. Acapulco y c. Jonc</SimpleData>
+		<SimpleData name="descripcion">Ejecución firme final</SimpleData>
+		<SimpleData name="tipo_obra">Proyecto de la nueva estación de impulsión la Ribera y conducción a la EDAR 1</SimpleData>
+		<SimpleData name="observaciones">Cortes de tráfico puntuales</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261019</SimpleData>
+		<SimpleData name="f_fin">20261107</SimpleData>
+		<SimpleData name="ID">99</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.7437584,39.525965,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
