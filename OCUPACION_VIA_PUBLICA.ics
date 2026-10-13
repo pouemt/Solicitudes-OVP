@@ -750,4 +750,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:Proyecto de la nueva estación de impulsión 
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261108
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-100
+SUMMARY:PRIVAT-La Rambla 14
+DESCRIPTION:SOLICITUD DE OCUPACION:Carga y descarga material obra 6º piso--entre las 7:00 y las 10:00, y permitiendo el paso de todo tipo de vehículos (incluidos camiones y autobuses) por el espacio de la calzada que queda sin ocupar.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+END:VEVENT
 END:VCALENDAR
