@@ -527,7 +527,7 @@
 		<SimpleData name="tecnic"></SimpleData>
 		<SimpleData name="contratista">VOPSA</SimpleData>
 		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">cruce Saridakis - Gregori IX</SimpleData>
+		<SimpleData name="emplazamiento">cruce Saridakis - Papa Gregori IX</SimpleData>
 		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
 		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
 		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
@@ -537,7 +537,7 @@
 		<SimpleData name="ID">93</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6309732,39.5881267,0</coordinates></Point>
+      <Point><coordinates>2.6076412,39.5567249,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.30">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -754,6 +754,24 @@
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>-4.4372149,36.7336201,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.42">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">JOAN MIRÓ 243</SimpleData>
+		<SimpleData name="descripcion">Beach club Cala Major</SimpleData>
+		<SimpleData name="tipo_obra">CARGA Y DESCARGA</SimpleData>
+		<SimpleData name="observaciones">Inicio a partir de las 9:30, paso alterno con señalista</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">107</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>

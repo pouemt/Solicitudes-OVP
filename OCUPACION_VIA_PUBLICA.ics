@@ -703,7 +703,7 @@ DTEND;VALUE=DATE:20261024
 END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-93
-SUMMARY:EMAYA. Obres i Projectes-cruce Saridakis - Gregori IX
+SUMMARY:EMAYA. Obres i Projectes-cruce Saridakis - Papa Gregori IX
 DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS-Ejecución de cruces de nueva red-Cortes puntuales carril en horario laboral. Tráfico sentido alternativo-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261024
@@ -798,5 +798,12 @@ SUMMARY:ENLLUMENAT PUBLIC-C/JOAN MIRÓ, 292 a 325
 DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, Ocupación de la zona de aparcamiento (donde exista) y ocupación parcial de la calzada. La circulación se mantendrá mediante regulación manual del tráfico por palista, estableciendo paso alternativo por el carril del sentido contrario cuando las características de la vía así lo requieran..  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-107
+SUMMARY:PRIVAT-JOAN MIRÓ 243
+DESCRIPTION:SOLICITUD DE OCUPACION:CARGA Y DESCARGA-Beach club Cala Major-Inicio a partir de las 9:30, paso alterno con señalista-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261031
 END:VEVENT
 END:VCALENDAR
