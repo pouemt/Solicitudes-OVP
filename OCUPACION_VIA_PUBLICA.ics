@@ -764,4 +764,39 @@ DESCRIPTION:SOLICITUD DE OCUPACION:--Paso alterno con señalista en cardenal Ros
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-102
+SUMMARY:EMAYA-Setze de Juliol, 6
+DESCRIPTION:SOLICITUD DE OCUPACION:--Reserva de la banda de estacionamiento en el lado contrario para mejora del flujo vehicular. inicio a partir de las 9:30-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261026
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-103
+SUMMARY:ENLLUMENAT PUBLIC-JOAN MIRÓ, 229 a 248.
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, Ocupación de un carril de circulación. Regulación del tráfico mediante palista, habilitando el paso alternativo por el carril contrario, al disponer éste de dos carriles.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261021
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-104
+SUMMARY:ENLLUMENAT PUBLIC-C/JOAN MIRÓ, 254 a 269
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, Ocupación de la zona de aparcamiento (donde exista) y ocupación parcial de la calzada. La circulación se mantendrá mediante regulación manual del tráfico por palista, estableciendo paso alternativo por el carril del sentido contrario cuando las características de la vía así lo requieran..  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261021
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-105
+SUMMARY:ENLLUMENAT PUBLIC-C/JOAN MIRÓ, 270 a 291
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, Ocupación de la zona de aparcamiento (donde exista) y ocupación parcial de la calzada. La circulación se mantendrá mediante regulación manual del tráfico por palista, estableciendo paso alternativo por el carril del sentido contrario cuando las características de la vía así lo requieran..  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261023
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-106
+SUMMARY:ENLLUMENAT PUBLIC-C/JOAN MIRÓ, 292 a 325
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, Ocupación de la zona de aparcamiento (donde exista) y ocupación parcial de la calzada. La circulación se mantendrá mediante regulación manual del tráfico por palista, estableciendo paso alternativo por el carril del sentido contrario cuando las características de la vía así lo requieran..  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261024
+END:VEVENT
 END:VCALENDAR
