@@ -806,4 +806,11 @@ DESCRIPTION:SOLICITUD DE OCUPACION:CARGA Y DESCARGA-Beach club Cala Major-Inicio
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261031
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-108
+SUMMARY:Telefónica-Camí de Genova 74
+DESCRIPTION:SOLICITUD DE OCUPACION:Reparacion tapa--Inicio a partir de las 9:30, reserva de estacionamiento para el paso de vehiculos, se advierte de la presencia de una parada de bus recrecida a escasa distancia que puede dificultar el paso por la banda de estacionamiento de vehiculos largos-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261022
+END:VEVENT
 END:VCALENDAR

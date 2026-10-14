@@ -773,5 +773,23 @@
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
   </Placemark>
+  <Placemark id="ocupaciones_tramos.43">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">Telefónica</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Camí de Genova 74</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Reparacion tapa</SimpleData>
+		<SimpleData name="observaciones">Inicio a partir de las 9:30, reserva de estacionamiento para el paso de vehiculos, se advierte de la presencia de una parada de bus recrecida a escasa distancia que puede dificultar el paso por la banda de estacionamiento de vehiculos largos</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261020</SimpleData>
+		<SimpleData name="f_fin">20261021</SimpleData>
+		<SimpleData name="ID">108</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6155998,39.5734217,0</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>
