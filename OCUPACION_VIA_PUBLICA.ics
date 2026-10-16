@@ -855,4 +855,15 @@ DESCRIPTION:SOLICITUD DE OCUPACION:RENOVAR PB ALCANTARILLADO POR FILTRACIONES-TR
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261024
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-115
+SUMMARY:EMAYA. Obres i Projectes-C. Samil, c. Acapulco y c. Jonc
+DESCRIPTION:SOLICITUD DE OCUPACION:Proyecto de la nueva estación de impulsión la Ribera y conducción a la EDAR 1-Ejecución firme final-En c. Samil se efectuará tráfico alternativo para garantizar los dos sentidos de circulación.
+
+Se cortará el acceso a c. Acapulco permitiéndolo solo a los vecinos
+
+El cruce de ambas callles se efectuará con tráfico alternativo.-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261108
+END:VEVENT
 END:VCALENDAR
