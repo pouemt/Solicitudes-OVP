@@ -411,7 +411,7 @@
 		<SimpleData name="ID">95</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6071608,39.5596658,0</coordinates></Point>
+      <Point><coordinates>2.6075915,39.5581557,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -610,6 +610,114 @@
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6155998,39.5734217,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.34">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">TRABAJOS JARDINERIA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE PASSEIG MARITIM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">AVDA. GABRIEL ROCA, 31</SimpleData>
+		<SimpleData name="descripcion">Es necesaria la ocupación de los carriles mas cercanos a la mediana, en ambos sentidos, a la altura del Hotel Melia Victoria y el Lio, para acceder con camión cesta elevadora, para realizar trabajos de poda de palmeras.</SimpleData>
+		<SimpleData name="tipo_obra">Poda de palmeras.</SimpleData>
+		<SimpleData name="observaciones">Horario: 7'30 - 14'00h</SimpleData>
+		<SimpleData name="condicions_mobilitat">Siempre que se mantenga al menos un carril disponible en todo moment</SimpleData>
+		<SimpleData name="f_inicio">20261021</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">109</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6272287,39.5636055,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.35">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ MANACOR, 83</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN CALZADA -SOCAVON</SimpleData>
+		<SimpleData name="tipo_obra">REPARAR ACOMETIDA IMBORNAL PLUVIALES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261019</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">110</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6662971,39.5714875,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.36">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ SAGASTA, 53</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN CALZADA Y ACERA</SimpleData>
+		<SimpleData name="tipo_obra">RENOVAR PB + ACOMETIDA ALCANTARILLADO</SimpleData>
+		<SimpleData name="observaciones">Precisara servicio de grua municipal</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261020</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">111</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6373424,39.5837268,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.37">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ MILA, 5</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN CALZADA</SimpleData>
+		<SimpleData name="tipo_obra">REPARAR ACOMETIDA IMBORNAL PLUVIALES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261020</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">112</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.75247,39.5042828,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.38">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ PROSPERITAT, 1</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN CALZADA Y ACERA</SimpleData>
+		<SimpleData name="tipo_obra">REPARAR RED ALCANTARILLADO POR ROTURA</SimpleData>
+		<SimpleData name="observaciones">Renovacion permiso NIO 130693/2026</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261020</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">113</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6708339,39.5857572,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.39">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ BERENGUER DE TORNAMIRA, 13</SimpleData>
+		<SimpleData name="descripcion">TRABAJOS A REALIZAR EN ACERA Y CALZADA</SimpleData>
+		<SimpleData name="tipo_obra">RENOVAR PB ALCANTARILLADO POR FILTRACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Inicio a partir de las 9:30</SimpleData>
+		<SimpleData name="f_inicio">20261020</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">114</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6430553,39.5718073,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
