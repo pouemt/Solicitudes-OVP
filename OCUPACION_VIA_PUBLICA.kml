@@ -303,7 +303,7 @@
 		<SimpleData name="ID">95</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
+      <Point><coordinates>2.6075915,39.5581557,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
