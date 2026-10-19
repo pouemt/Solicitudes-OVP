@@ -866,4 +866,25 @@ El cruce de ambas callles se efectuará con tráfico alternativo.-CONDICIONS MOB
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261108
 END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-116
+SUMMARY:EMAYA-Carrer Cardenal Rossell, 87
+DESCRIPTION:SOLICITUD DE OCUPACION:---CONDICIONS MOBILITAT:A partir de las 9.30h, tráfico alternativo mediante señalistas, permite paso EMT y otros vehículos pesados.
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-117
+SUMMARY:PRIVADO-C/ CALA MITJANA Nº 9
+DESCRIPTION:SOLICITUD DE OCUPACION:--Corte calle Cala Mitjana.-CONDICIONS MOBILITAT:Red local, no pasa EMT en este tramo de la calle.
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-118
+SUMMARY:ENLLUMENAT PUBLIC-C/ BISBE PERELLÓ Nº2
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajo cimentación de soporte e instalación del mismo, con ocupación de la zona peatonal y calzada (un carril de los dos) desde las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Red local, no pasa EMT en este tramo de la calle. Anotación sobre inicio horario a las 9.00h por ruidos.
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261024
+END:VEVENT
 END:VCALENDAR

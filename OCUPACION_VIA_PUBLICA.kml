@@ -303,7 +303,7 @@
 		<SimpleData name="ID">95</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6104679,39.5548571,0</coordinates></Point>
+      <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -614,6 +614,60 @@ El cruce de ambas callles se efectuará con tráfico alternativo.</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.7437584,39.525965,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.34">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Carrer Cardenal Rossell, 87</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">A partir de las 9.30h, tráfico alternativo mediante señalistas, permite paso EMT y otros vehículos pesados.</SimpleData>
+		<SimpleData name="f_inicio">20261021</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">116</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6976456,39.5512646,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.35">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVADO</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ CALA MITJANA Nº 9</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones">Corte calle Cala Mitjana.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Red local, no pasa EMT en este tramo de la calle.</SimpleData>
+		<SimpleData name="f_inicio">20261021</SimpleData>
+		<SimpleData name="f_fin">20261021</SimpleData>
+		<SimpleData name="ID">117</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6799889,39.5971296,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.36">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C/ BISBE PERELLÓ Nº2</SimpleData>
+		<SimpleData name="descripcion">Trabajo cimentación de soporte e instalación del mismo, con ocupación de la zona peatonal y calzada (un carril de los dos) desde las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano).</SimpleData>
+		<SimpleData name="condicions_mobilitat">Red local, no pasa EMT en este tramo de la calle. Anotación sobre inicio horario a las 9.00h por ruidos.</SimpleData>
+		<SimpleData name="f_inicio">20261022</SimpleData>
+		<SimpleData name="f_fin">20261023</SimpleData>
+		<SimpleData name="ID">118</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6548048,39.574689,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
