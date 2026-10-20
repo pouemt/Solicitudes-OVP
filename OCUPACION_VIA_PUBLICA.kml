@@ -283,9 +283,9 @@
 		<SimpleData name="f_inicio">20261013</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">95</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6083731,39.5570411,0</coordinates></Point>
+      <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.16">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -301,9 +301,9 @@
 		<SimpleData name="f_inicio">20261015</SimpleData>
 		<SimpleData name="f_fin">20261030</SimpleData>
 		<SimpleData name="ID">97</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.642937,39.5722853,0</coordinates></Point>
+      <Point><coordinates>2.6430241,39.5723658,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.17">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -391,9 +391,9 @@
 		<SimpleData name="f_inicio">20261019</SimpleData>
 		<SimpleData name="f_fin">20261020</SimpleData>
 		<SimpleData name="ID">104</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6097407,39.551576,0</coordinates></Point>
+      <Point><coordinates>-4.4372149,36.7336201,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.22">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -411,7 +411,7 @@
 		<SimpleData name="ID">105</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6065146,39.5532906,0</coordinates></Point>
+      <Point><coordinates>-4.4372149,36.7336201,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -427,9 +427,9 @@
 		<SimpleData name="f_inicio">20261022</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">106</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6035686,39.5527643,0</coordinates></Point>
+      <Point><coordinates>-4.4372149,36.7336201,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.24">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -445,9 +445,9 @@
 		<SimpleData name="f_inicio">20261026</SimpleData>
 		<SimpleData name="f_fin">20261030</SimpleData>
 		<SimpleData name="ID">107</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.611607,39.5501623,0</coordinates></Point>
+      <Point><coordinates>2.6105958,39.5511049,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.25">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -499,9 +499,9 @@
 		<SimpleData name="f_inicio">20261019</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">110</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6662918,39.57155,0</coordinates></Point>
+      <Point><coordinates>2.6662971,39.5714875,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.28">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -535,9 +535,9 @@
 		<SimpleData name="f_inicio">20261020</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">112</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.7524338,39.5043099,0</coordinates></Point>
+      <Point><coordinates>2.75247,39.5042828,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.30">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -553,9 +553,9 @@
 		<SimpleData name="f_inicio">20261020</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">113</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6708847,39.5857091,0</coordinates></Point>
+      <Point><coordinates>2.6708339,39.5857572,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.31">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -571,9 +571,9 @@
 		<SimpleData name="f_inicio">20261020</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">114</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6430534,39.571741,0</coordinates></Point>
+      <Point><coordinates>2.6430553,39.5718073,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.32">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -611,9 +611,9 @@ El cruce de ambas callles se efectuará con tráfico alternativo.</SimpleData>
 		<SimpleData name="f_inicio">20261021</SimpleData>
 		<SimpleData name="f_fin">20261023</SimpleData>
 		<SimpleData name="ID">116</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6976698,39.5513314,0</coordinates></Point>
+      <Point><coordinates>2.6976456,39.5512646,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.34">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -629,9 +629,9 @@ El cruce de ambas callles se efectuará con tráfico alternativo.</SimpleData>
 		<SimpleData name="f_inicio">20261021</SimpleData>
 		<SimpleData name="f_fin">20261021</SimpleData>
 		<SimpleData name="ID">117</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6807913,39.5974433,0</coordinates></Point>
+      <Point><coordinates>2.6799889,39.5971296,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.35">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
