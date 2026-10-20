@@ -883,8 +883,117 @@ END:VEVENT
 BEGIN:VEVENT
 UID:ocupacion-118
 SUMMARY:ENLLUMENAT PUBLIC-C/ BISBE PERELLÓ Nº2
-DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajo cimentación de soporte e instalación del mismo, con ocupación de la zona peatonal y calzada (un carril de los dos) desde las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Red local, no pasa EMT en este tramo de la calle. Anotación sobre inicio horario a las 9.00h por ruidos.
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajo cimentación de soporte e instalación del mismo, con ocupación de la zona peatonal y calzada (un carril de los dos) desde las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Red local, no pasa EMT en este tramo de la calle.
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-119
+SUMMARY:EMAYA-C/ VIA ROMA, 17
+DESCRIPTION:SOLICITUD DE OCUPACION:REPARAR SOCAVON EN CALZADA-TRABAJOS A REALIZAR EN CALZADA -SOCAVON-Trabajos en Domingo, precisara corte de carril de acceso a la Rambla de 11:00 h a 13:00 h. desvio EMT-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-120
+SUMMARY:EMAYA-C/ CAPUTXINES, 3 AL 9
+DESCRIPTION:SOLICITUD DE OCUPACION:REPARAR POZOS REGISTRO CON TAPAS SUELTAS-TRABAJOS A REALIZAR EN CALZADA-Trabajos en Domingo, precisara corte de carril con solo acceso al aparcamiento publico de 8:30 h a 14:00 h-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-121
+SUMMARY:Obras I Projectes de EMAYA.-C. Caro con C. Argentina
+DESCRIPTION:SOLICITUD DE OCUPACION:PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1-Ejecución red alcantarilado y red abastecimiento-Ocupación carril derecho en sentido del tráfico.
+
+La ejecución del cruce se fectuará en horario nocturno por fases para minimizar la afección al tráfico de c. Caro.
+
+En horario diurno se mantendrán al menos dos carriles de circulación en c. Caro.-CONDICIONS MOBILITAT:La ejecución del cruce se realizará en la noche del domingo y del lunes en horario nocturno.
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261031
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-122
+SUMMARY:ENLLUMENAT PUBLIC-C. FCO MANUEL DE LOS HERREROS. 5 A 7
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, corte carril ocupado, dando paso al tráfico en el otro carril de los dos existente de misma dirección con palista.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Circulación posible en ambos sentidos en todo momento, aunque sea con trafico alterno
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261029
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-123
+SUMMARY:ENLLUMENAT PUBLIC-C. FRANCESC MANUEL DE LOS HERREROS. 2 (tramo)
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, corte carril ocupado, dando paso al tráfico en el carril contrario de los dos existente con palista.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Circulación posible en ambos sentidos en todo momento, aunque sea con trafico alterno
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261029
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-124
+SUMMARY:ENLLUMENAT PUBLIC-C. FRANCESC MANUEL DE LOS HERREROS. PARADA 193 EMT
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, corte carril ocupado, dando paso al tráfico en el carril contrario de los dos existente con palista.  Se realizará entre las 09:30 y las 13:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Circulación posible en ambos sentidos en todo momento, aunque sea con trafico alterno
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-125
+SUMMARY:ENLLUMENAT PUBLIC-C. FRANCESC MANUEL DE LOS HERREROS. PARADA 209 EMT
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, corte carril ocupado, dando paso al tráfico en el carril de los dos existente con palista.  Se realizará entre las 09:30 y las 13:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Circulación posible en ambos sentidos en todo momento, aunque sea con trafico alterno
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-126
+SUMMARY:ENLLUMENAT PUBLIC-C. FRANCESC MANUEL DE LOS HERREROS. 1 a 35 y del 2 a 32.
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad, con ocupación temporal en zona aparcamientos y en calzada, alternando ambos carriles.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Circulación posible en ambos sentidos en todo momento, aunque sea con trafico alterno
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261029
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-127
+SUMMARY:EMAYA-MISSIO DE SAN DIEGO 9
+DESCRIPTION:SOLICITUD DE OCUPACION:PAVIMENTACION ASFALTICA-ASFALTADO, FRESADO y REPINTADO DE REPARACION, SE OCUPARA EL APARCAMIENTO, SERÁ NECESARIO EL CORTE DE LA CALLE,--CONDICIONS MOBILITAT:Red local, no pasa autobús.
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261027
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-128
+SUMMARY:EMAYA-GABRIEL ALOMAR I VILLALONGA 27
+DESCRIPTION:SOLICITUD DE OCUPACION:PAVIMENTACION ASFALTICA-ASFALTADO, FRESADO y REPINTADO DE REPARACION, SE OCUPARA EL APARCAMIENTO, SERÁ NECESARIO EL CORTE DE LA CALLE,--CONDICIONS MOBILITAT:Intersección mínimo dos carriles con inicio a partir de las 9.30h.
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-129
+SUMMARY:EMAYA-GABRIEL ALOMAR I VILLALONGA 29
+DESCRIPTION:SOLICITUD DE OCUPACION:PAVIMENTACION ASFALTICA-ASFALTADO, FRESADO y REPINTADO DE REPARACION, SE OCUPARA EL APARCAMIENTO, SERÁ NECESARIO EL CORTE DE LA CALLE,--CONDICIONS MOBILITAT:Intersección mínimo dos carriles con inicio a partir de las 9.30h.
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-130
+SUMMARY:ENLLUMENAT PUBLIC-C.SELVA, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA, CARRIL Y ZONA APARCAMIENTO.-Instalaciones de postensas de Navidad en acera. Con ocupación zona aparcamiento, se permitirá el paso al tráfico en la ocupación de aparcamiento con palistas. De 8 a 15h-Ocupación (ver plano)-CONDICIONS MOBILITAT:
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261024
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-131
+SUMMARY:ENLLUMENAT PUBLIC-C.SELVA, 3 PARADA 1205 EMT
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA, CARRIL Y ZONA APARCAMIENTO.-Instalación de postensa de Navidad en acera. Con ocupación zona aparcamiento, se permitirá el paso al tráfico en la ocupación de aparcamiento con palistas. De 9,30 a 12h.-Ocupación (ver plano)-CONDICIONS MOBILITAT:Informar a EMT en caso de cambio de fecha
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-132
+SUMMARY:ENLLUMENAT PUBLIC-C. GABRIEL LLABRES, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad (árboles), con ocupación temporal en zona aparcamientos y en calzada, alternando ambos carriles, con cortes puntuales.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones.-Ocupación (ver plano). Es posible realizarlo en un día-CONDICIONS MOBILITAT:Habilitar al menos un carril en todo momento
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261025
+END:VEVENT
+BEGIN:VEVENT
+UID:ocupacion-133
+SUMMARY:ENLLUMENAT PUBLIC-C. INDALECIO PRIETO, 1
+DESCRIPTION:SOLICITUD DE OCUPACION:OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.-Trabajos de montaje de elementos de Navidad (árboles), con ocupación temporal en calzada, alternando ambos carriles, con posibles cortes puntuales.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones. Se solicita presencia policial por seguridad.-Ocupación (ver plano).-CONDICIONS MOBILITAT:Circulación posible en ambos sentidos en todo momento, aunque sea con trafico alterno
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261030
 END:VEVENT
 END:VCALENDAR
