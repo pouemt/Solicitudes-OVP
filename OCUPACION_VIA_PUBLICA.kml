@@ -69,7 +69,7 @@
 		<SimpleData name="ID">75</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.645617,39.5763576,0</coordinates></Point>
+      <Point><coordinates>2.6466605,39.5762869,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.4">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
