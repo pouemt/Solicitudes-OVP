@@ -231,7 +231,7 @@
 		<SimpleData name="ID">95</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6104679,39.5548571,0</coordinates></Point>
+      <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.13">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -469,7 +469,7 @@ El cruce de ambas callles se efectuará con tráfico alternativo.</SimpleData>
 		<SimpleData name="ID">115</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.7437584,39.525965,0</coordinates></Point>
+      <Point><coordinates>2.7443439,39.5263735,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.26">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -689,7 +689,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="ID">128</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6572675,39.568466,0</coordinates></Point>
+      <Point><coordinates>2.6572707,39.5685162,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.38">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -870,6 +870,456 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6390805,39.5707978,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.48">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avda Joan Miró 229</SimpleData>
+		<SimpleData name="descripcion">Preparación conexiones</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">Ocupaciones puntuales para preparación de conexiones.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261103</SimpleData>
+		<SimpleData name="ID">140</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6126535,39.5518755,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.49">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avda Joan Miró -Saridakis</SimpleData>
+		<SimpleData name="descripcion">Preparación conexiones</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">Ocupaciones puntuales para preparación de conexiones.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261103</SimpleData>
+		<SimpleData name="ID">141</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.50">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avda Joan Miró 227 B</SimpleData>
+		<SimpleData name="descripcion">Preparación conexiones</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">Ocupaciones puntuales para preparación de conexiones.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261103</SimpleData>
+		<SimpleData name="ID">142</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6146693,39.5521812,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.51">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Gabriel Roca 54 A</SimpleData>
+		<SimpleData name="descripcion">Preparación conexiones</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">Ocupaciones puntuales para preparación de conexiones.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261103</SimpleData>
+		<SimpleData name="ID">143</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6210017,39.5513979,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.52">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Dique oeste 2A</SimpleData>
+		<SimpleData name="descripcion">Preparación conexiones</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">Ocupaciones puntuales para preparación de conexiones.</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261023</SimpleData>
+		<SimpleData name="f_fin">20261103</SimpleData>
+		<SimpleData name="ID">144</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6185204,39.5505577,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.53">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avda Joan Miró 229</SimpleData>
+		<SimpleData name="descripcion">Conexiones nocturnas</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">conexión noche 29/10/26</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">145</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6126535,39.5518755,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.54">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avda Joan Miró -Saridakis</SimpleData>
+		<SimpleData name="descripcion">Conexiones nocturnas</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">conexión noche 29/10/26</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">146</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.55">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Avda Joan Miró 227 B</SimpleData>
+		<SimpleData name="descripcion">Conexiones nocturnas</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">conexión noche 29/10/26</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">147</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6146693,39.5521812,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.56">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Gabriel Roca 54 A</SimpleData>
+		<SimpleData name="descripcion">Conexiones nocturnas</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">conexión noche 29/10/26</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">148</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6210017,39.5513979,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.57">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Dique oeste 2A</SimpleData>
+		<SimpleData name="descripcion">Conexiones nocturnas</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO DE RENOVACIÓN AGUA POTABLE Y COLECTOR DE GRAVEDAD EN AVDA. JOAN MIRÓ (TRAMO MARIVENT – AVDA. GABRIEL ROCA)</SimpleData>
+		<SimpleData name="observaciones">conexión noche 29/10/26</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">149</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6185204,39.5505577,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.58">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Saridakis &amp; Puig de Ranada</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261024</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">150</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6568551,39.5726541,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.59">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Saridakis &amp; Puig de Talaia</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261024</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">151</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6568551,39.5726541,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.60">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Saridakis &amp; Papa Gregori IX</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261024</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">152</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6076412,39.5567249,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.61">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Saridakis nº38</SimpleData>
+		<SimpleData name="descripcion">Ejecución de cruces de nueva red</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Cortes puntuales carril en horario laboral. Tráfico sentido alternativo</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261024</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">153</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6104679,39.5548571,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.62">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">VOPSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Saridakis 42-44</SimpleData>
+		<SimpleData name="descripcion">Apertura de zanja para ir a buscar red de conexión</SimpleData>
+		<SimpleData name="tipo_obra">PROYECTO RENOVACION DE REDES DE AGUA POTABLE EN Y ALCANTARILLADO ZONA C/SARIDAKIS</SimpleData>
+		<SimpleData name="observaciones">Corte carril - Sentido alternativo mediante semáforos</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261024</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">154</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.63">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">AGLOMSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">MISSIO DE SAN DIEGO 9</SimpleData>
+		<SimpleData name="descripcion">ASFALTADO, FRESADO y REPINTADO DE REPARACION, SE OCUPARA EL APARCAMIENTO, SERÁ NECESARIO EL CORTE DE LA CALLE,</SimpleData>
+		<SimpleData name="tipo_obra">PAVIMENTACION ASFALTICA</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Red local, no pasa autobús.</SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261026</SimpleData>
+		<SimpleData name="ID">155</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.7477526,39.5163825,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.64">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">AGLOMSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">GABRIEL ALOMAR I VILLALONGA 27</SimpleData>
+		<SimpleData name="descripcion">ASFALTADO, FRESADO y REPINTADO DE REPARACION, SE OCUPARA EL APARCAMIENTO, SERÁ NECESARIO EL CORTE DE LA CALLE,</SimpleData>
+		<SimpleData name="tipo_obra">PAVIMENTACION ASFALTICA</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Intersección mínimo dos carriles con inicio a partir de las 9.30h.</SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261026</SimpleData>
+		<SimpleData name="ID">156</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6572707,39.5685162,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.65">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">AGLOMSA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">GABRIEL ALOMAR I VILLALONGA 29</SimpleData>
+		<SimpleData name="descripcion">ASFALTADO, FRESADO y REPINTADO DE REPARACION, SE OCUPARA EL APARCAMIENTO, SERÁ NECESARIO EL CORTE DE LA CALLE,</SimpleData>
+		<SimpleData name="tipo_obra">PAVIMENTACION ASFALTICA</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Intersección mínimo dos carriles con inicio a partir de las 9.30h.</SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261026</SimpleData>
+		<SimpleData name="ID">157</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6574789,39.5680093,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.66">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C.SELVA, 1</SimpleData>
+		<SimpleData name="descripcion">Instalaciones de postensas de Navidad en acera. Con ocupación zona aparcamiento, se permitirá el paso al tráfico en la ocupación de aparcamiento con palistas. De 8 a 15h</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA, CARRIL Y ZONA APARCAMIENTO.</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano)</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">158</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6821292,39.583176,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.67">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C.SELVA, 3 PARADA 1205 EMT</SimpleData>
+		<SimpleData name="descripcion">Instalación de postensa de Navidad en acera. Con ocupación zona aparcamiento, se permitirá el paso al tráfico en la ocupación de aparcamiento con palistas. De 9,30 a 12h.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO, OCUPACIÓN CALZADA, CARRIL Y ZONA APARCAMIENTO.</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano)</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261030</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">159</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6818582,39.583024,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.68">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. GABRIEL LLABRES, 1</SimpleData>
+		<SimpleData name="descripcion">Trabajos de montaje de elementos de Navidad (árboles), con ocupación temporal en zona aparcamientos y en calzada, alternando ambos carriles, con cortes puntuales.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano). Es posible realizarlo en un día</SimpleData>
+		<SimpleData name="condicions_mobilitat">Mantener al menos un carril de circulación habilitado en todo momento (Pasa EMT)</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">160</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6653042,39.5743328,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.69">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EDISON NEXT</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">C. INDALECIO PRIETO, 1</SimpleData>
+		<SimpleData name="descripcion">Trabajos de montaje de elementos de Navidad (árboles), con ocupación temporal en calzada, alternando ambos carriles, con posibles cortes puntuales.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones. Se solicita presencia policial por seguridad.</SimpleData>
+		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.</SimpleData>
+		<SimpleData name="observaciones">Ocupación (ver plano).</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261102</SimpleData>
+		<SimpleData name="f_fin">20261110</SimpleData>
+		<SimpleData name="ID">161</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6749618,39.5794406,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.70">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Catalunya, 2</SimpleData>
+		<SimpleData name="descripcion">Ocupación de banda de estacionamiento y parcialmente un carril (se considera carril completo)</SimpleData>
+		<SimpleData name="tipo_obra">Carga de materiales con grua</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">La ocupació es podrà iniciar a partir de les 9:30, i es senyalitzarà amb antelació suficient</SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261029</SimpleData>
+		<SimpleData name="ID">162</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>1.9724677,41.4104807,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.71">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">GRUAS POL</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Gran Via Asima, 21</SimpleData>
+		<SimpleData name="descripcion">lo del rotulo de Porcelanosa. estacionamiento y un carril de circulación</SimpleData>
+		<SimpleData name="tipo_obra"></SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">La ocupació es podrà iniciar a partir de les 9:30 un carril disponible en tot moment.</SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261029</SimpleData>
+		<SimpleData name="ID">163</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6682532,39.606698,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.72">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Andrea Doria, 51</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Acera Son Dureta</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">S'han de mantenir al manco 2 carrils en sentit oest. Això implica que la tanca o cons no poden sobresortir més de 75 cm de la vorera</SimpleData>
+		<SimpleData name="f_inicio">20261026</SimpleData>
+		<SimpleData name="f_fin">20261214</SimpleData>
+		<SimpleData name="ID">164</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6221716,39.5718376,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
