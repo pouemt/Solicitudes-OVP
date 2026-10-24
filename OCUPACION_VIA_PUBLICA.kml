@@ -743,7 +743,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="ID">154</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
+      <Point><coordinates>2.6104679,39.5548571,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.41">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -779,7 +779,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="ID">156</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6572675,39.568466,0</coordinates></Point>
+      <Point><coordinates>2.6572707,39.5685162,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.43">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -849,9 +849,9 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="f_inicio">20261028</SimpleData>
 		<SimpleData name="f_fin">20261030</SimpleData>
 		<SimpleData name="ID">160</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6653272,39.5743601,0</coordinates></Point>
+      <Point><coordinates>2.6653042,39.5743328,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.47">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
