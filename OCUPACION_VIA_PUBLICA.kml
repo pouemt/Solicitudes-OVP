@@ -337,24 +337,6 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="tecnic"></SimpleData>
 		<SimpleData name="contratista">EDISON NEXT</SimpleData>
 		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">C. GABRIEL LLABRES, 1</SimpleData>
-		<SimpleData name="descripcion">Trabajos de montaje de elementos de Navidad (árboles), con ocupación temporal en zona aparcamientos y en calzada, alternando ambos carriles, con cortes puntuales.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones.</SimpleData>
-		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.</SimpleData>
-		<SimpleData name="observaciones">Ocupación (ver plano). Es posible realizarlo en un día</SimpleData>
-		<SimpleData name="condicions_mobilitat">Habilitar al menos un carril en todo momento</SimpleData>
-		<SimpleData name="f_inicio">20261021</SimpleData>
-		<SimpleData name="f_fin">20261024</SimpleData>
-		<SimpleData name="ID">132</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6653042,39.5743328,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.19">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">EDISON NEXT</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
 		<SimpleData name="emplazamiento">C. INDALECIO PRIETO, 1</SimpleData>
 		<SimpleData name="descripcion">Trabajos de montaje de elementos de Navidad (árboles), con ocupación temporal en calzada, alternando ambos carriles, con posibles cortes puntuales.  Se realizará entre las 08:00 y las 15:00 horas. Durante la ejecución de los trabajos se instalará la señalización y los elementos de protección necesarios para garantizar la seguridad de los peatones. Se solicita presencia policial por seguridad.</SimpleData>
 		<SimpleData name="tipo_obra">OCUPACIÓN VÍA PÚBLICA, TRABAJOS DE ALUMBRADO PÚBLICO.</SimpleData>
@@ -367,25 +349,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6749618,39.5794406,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.20">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">VOPSA</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista"></SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">camí Tranvia, 25</SimpleData>
-		<SimpleData name="descripcion"></SimpleData>
-		<SimpleData name="tipo_obra"></SimpleData>
-		<SimpleData name="observaciones">horario de 10.00 a 12.00h</SimpleData>
-		<SimpleData name="condicions_mobilitat">Realizar en fin de semana con horario 10.00 a 12.00h</SimpleData>
-		<SimpleData name="f_inicio">20261024</SimpleData>
-		<SimpleData name="f_fin">20261024</SimpleData>
-		<SimpleData name="ID">134</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6063542,39.5633143,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.21">
+  <Placemark id="ocupaciones_tramos.19">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -403,7 +367,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6403753,39.5725853,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.22">
+  <Placemark id="ocupaciones_tramos.20">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -421,7 +385,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6403753,39.5725853,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.23">
+  <Placemark id="ocupaciones_tramos.21">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Gruas Aguilar</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -439,7 +403,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6470639,39.5764744,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.24">
+  <Placemark id="ocupaciones_tramos.22">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -457,7 +421,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6401595,39.5720471,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.25">
+  <Placemark id="ocupaciones_tramos.23">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -475,7 +439,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6390805,39.5707978,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.26">
+  <Placemark id="ocupaciones_tramos.24">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -493,7 +457,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6126535,39.5518755,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.27">
+  <Placemark id="ocupaciones_tramos.25">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -511,7 +475,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.28">
+  <Placemark id="ocupaciones_tramos.26">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -529,7 +493,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6146693,39.5521812,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.29">
+  <Placemark id="ocupaciones_tramos.27">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -547,7 +511,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6210017,39.5513979,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.30">
+  <Placemark id="ocupaciones_tramos.28">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -565,7 +529,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6185204,39.5505577,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.31">
+  <Placemark id="ocupaciones_tramos.29">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -583,7 +547,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6126535,39.5518755,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.32">
+  <Placemark id="ocupaciones_tramos.30">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -601,7 +565,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6088339,39.5553117,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.33">
+  <Placemark id="ocupaciones_tramos.31">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -619,7 +583,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6146693,39.5521812,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.34">
+  <Placemark id="ocupaciones_tramos.32">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -637,7 +601,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6210017,39.5513979,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.35">
+  <Placemark id="ocupaciones_tramos.33">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -655,7 +619,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6185204,39.5505577,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.36">
+  <Placemark id="ocupaciones_tramos.34">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -673,7 +637,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6568551,39.5726541,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.37">
+  <Placemark id="ocupaciones_tramos.35">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -691,7 +655,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6568551,39.5726541,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.38">
+  <Placemark id="ocupaciones_tramos.36">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -709,7 +673,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6076412,39.5567249,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.39">
+  <Placemark id="ocupaciones_tramos.37">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -727,7 +691,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6066661,39.5616846,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.40">
+  <Placemark id="ocupaciones_tramos.38">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA. Obres i Projectes</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -745,7 +709,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6104679,39.5548571,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.41">
+  <Placemark id="ocupaciones_tramos.39">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -763,7 +727,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.7477526,39.5163825,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.42">
+  <Placemark id="ocupaciones_tramos.40">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -781,7 +745,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6572707,39.5685162,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.43">
+  <Placemark id="ocupaciones_tramos.41">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">EMAYA</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -799,7 +763,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6574789,39.5680093,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.44">
+  <Placemark id="ocupaciones_tramos.42">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -817,7 +781,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6821292,39.583176,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.45">
+  <Placemark id="ocupaciones_tramos.43">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -835,7 +799,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6818582,39.583024,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.46">
+  <Placemark id="ocupaciones_tramos.44">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -853,7 +817,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6653042,39.5743328,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.47">
+  <Placemark id="ocupaciones_tramos.45">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">ENLLUMENAT PUBLIC</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -871,7 +835,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6749618,39.5794406,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.48">
+  <Placemark id="ocupaciones_tramos.46">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -889,7 +853,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>1.9724677,41.4104807,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.49">
+  <Placemark id="ocupaciones_tramos.47">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">GRUAS POL</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
@@ -907,7 +871,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6682532,39.606698,0</coordinates></Point>
   </Placemark>
-  <Placemark id="ocupaciones_tramos.50">
+  <Placemark id="ocupaciones_tramos.48">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
