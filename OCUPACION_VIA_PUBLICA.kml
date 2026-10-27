@@ -51,7 +51,7 @@
 		<SimpleData name="ID">78</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6476296,39.5764557,0</coordinates></Point>
+      <Point><coordinates>2.647856,39.5759445,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -123,7 +123,7 @@
 		<SimpleData name="ID">99</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.7443439,39.5263735,0</coordinates></Point>
+      <Point><coordinates>2.7437584,39.525965,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.7">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -163,7 +163,7 @@ El cruce de ambas callles se efectuará con tráfico alternativo.</SimpleData>
 		<SimpleData name="ID">115</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.7443439,39.5263735,0</coordinates></Point>
+      <Point><coordinates>2.7437584,39.525965,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.9">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -581,7 +581,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="ID">152</SimpleData>
 		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6078431,39.5568148,0</coordinates></Point>
+      <Point><coordinates>2.6076412,39.5567249,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.32">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
@@ -744,6 +744,240 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6221716,39.5718376,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.41">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PRIVAT</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista"></SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">Joan Mascaró i Fornés, 119</SimpleData>
+		<SimpleData name="descripcion"></SimpleData>
+		<SimpleData name="tipo_obra">Camión de agua para cisterna</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Paso alterno con señalista, se permitira el paso por el espacio de calzada sin ocupar a todo tipo de vehiculos (incluido camiones y autobuses)</SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261029</SimpleData>
+		<SimpleData name="ID">165</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6310315,39.6131598,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.42">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">FRA FRANCESC CANTARELLAS</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">TALA Y PODA ARBOLADO ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">posible afección a Avenida Gabriel Alomar, inicio a partir de las 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">166</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.656528,39.5689872,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.43">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">REI JOAN CARLES I lado terrazas</SimpleData>
+		<SimpleData name="descripcion">OCUPACIÓ DE VORERA</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">167</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6473511,39.5713138,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.44">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">ANDALUCIA</SimpleData>
+		<SimpleData name="descripcion">OCUPACIÓ DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Zona colegios. inicio de la ocupación a partir de las 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">168</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-5.2840373,37.7015993,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.45">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CAMI DEL REIS de rotonda Son Rapinya a rotonda La Vileta</SimpleData>
+		<SimpleData name="descripcion">OCUPACIÓ DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Zona colegios. inicio de la ocupación a partir de las 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">169</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6181042,39.5848025,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.46">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CAMI DE SON RAPINYA lado colegio La Salle</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Zona colegios. inicio de la ocupación a partir de las 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">170</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6185393,39.5841961,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.47">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">CAMI DE SON RAPINYA lado colegio Montision</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL DE CIRCULACIO</SimpleData>
+		<SimpleData name="tipo_obra">PODA EN VERDE ARBOLADO DE ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Zona colegios. inicio de la ocupación a partir de las 9:30.</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">171</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6248909,39.5801804,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.48">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">EUSEBI ESTADA N 80</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">TALA POR RIESGO ARBOLADO ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Solo acera y banda de estacionamiento</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">172</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6549576,39.5773008,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.49">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">PARCS I JARDINS</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE ARBORICULTORES DE PALMA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">LLUIS VIVES</SimpleData>
+		<SimpleData name="descripcion">OCUPACIO DE VORERA I CARRIL D'APARCAMENT</SimpleData>
+		<SimpleData name="tipo_obra">TALA POR RIESGO ARBOLADO ALINEACIONES</SimpleData>
+		<SimpleData name="observaciones"></SimpleData>
+		<SimpleData name="condicions_mobilitat">Solo acera y banda de estacionamiento</SimpleData>
+		<SimpleData name="f_inicio">20261028</SimpleData>
+		<SimpleData name="f_fin">20261106</SimpleData>
+		<SimpleData name="ID">173</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6468261,39.5803689,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.50">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">UTE PASSEIG MARITIM</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE PASSEIG MARITIM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">AVDA. GABRIEL ROCA - Altura Auditorium</SimpleData>
+		<SimpleData name="descripcion">Necesidad de ocupación del carril pegado a la rotonda del auditórium, del carril más cercano a la mediana, del cambio de sentido, para la poda de una palmera alta, con un camión cesta elevadora.</SimpleData>
+		<SimpleData name="tipo_obra">Poda de palmera.</SimpleData>
+		<SimpleData name="observaciones">Desde las 7'30h a las 14'00h</SimpleData>
+		<SimpleData name="condicions_mobilitat"></SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261029</SimpleData>
+		<SimpleData name="ID">174</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6293141,39.5672008,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.51">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">UTE PASSEIG MARITIM</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">UTE PASSEIG MARITIM</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires</SimpleData>
+		<SimpleData name="descripcion">Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.</SimpleData>
+		<SimpleData name="tipo_obra">Revisión de tuberías, con cámara.</SimpleData>
+		<SimpleData name="observaciones">INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA APARCAMIENTO DEL LADO TIERRA</SimpleData>
+		<SimpleData name="condicions_mobilitat">Inicio a partir de las 9:30</SimpleData>
+		<SimpleData name="f_inicio">20261109</SimpleData>
+		<SimpleData name="f_fin">20261120</SimpleData>
+		<SimpleData name="ID">175</SimpleData>
+		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6405968,39.5733148,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.52">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">AV. GABRIEL ALOMAR I VILLALONGA (carril derecho-bus en ambos sentidos)</SimpleData>
+		<SimpleData name="descripcion">Matenimiento de imborlanes</SimpleData>
+		<SimpleData name="tipo_obra">Mantenimiento</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual móvil de carril derecho (bus) en ambos sentidos para limpieza de imbornales con 1 camión bomba.  La ocupacón irá avanzando conforme avancen los trabajos.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Inicio de la ocupación a las 9:30</SimpleData>
+		<SimpleData name="f_inicio">20261029</SimpleData>
+		<SimpleData name="f_fin">20261029</SimpleData>
+		<SimpleData name="ID">176</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6574266,39.5680168,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="ocupaciones_tramos.53">
+	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
+		<SimpleData name="servei">EMAYA</SimpleData>
+		<SimpleData name="tecnic"></SimpleData>
+		<SimpleData name="contratista">EMAYA</SimpleData>
+		<SimpleData name="cap_obra"></SimpleData>
+		<SimpleData name="emplazamiento">AV. GABRIEL ALOMAR I VILLALONGA (carril izquierdo-junto a mediana en ambos sentidos)</SimpleData>
+		<SimpleData name="descripcion">Matenimiento de imborlanes</SimpleData>
+		<SimpleData name="tipo_obra">Mantenimiento</SimpleData>
+		<SimpleData name="observaciones">Ocupación puntual móvil de carril izquierdo junto a mediana en ambos sentidos para limpieza de imbornales con 1 camión bomba.  La ocupacón irá avanzando conforme avancen los trabajos.</SimpleData>
+		<SimpleData name="condicions_mobilitat">Inicio de la ocupación a las 9:30</SimpleData>
+		<SimpleData name="f_inicio">20261030</SimpleData>
+		<SimpleData name="f_fin">20261030</SimpleData>
+		<SimpleData name="ID">177</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.6574266,39.5680168,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
