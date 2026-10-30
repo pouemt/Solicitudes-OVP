@@ -707,7 +707,7 @@ En horario diurno se mantendrán al menos dos carriles de circulación en c. Car
 		<SimpleData name="ID">172</SimpleData>
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6549576,39.5773008,0</coordinates></Point>
+      <Point><coordinates>2.6567784,39.5786138,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.39">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
