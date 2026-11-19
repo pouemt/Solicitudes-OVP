@@ -49,9 +49,9 @@
 		<SimpleData name="f_inicio">20261023</SimpleData>
 		<SimpleData name="f_fin">20261120</SimpleData>
 		<SimpleData name="ID">139</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
+		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6391447,39.5707923,0</coordinates></Point>
+      <Point><coordinates>2.6390805,39.5707978,0</coordinates></Point>
   </Placemark>
   <Placemark id="ocupaciones_tramos.3">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
