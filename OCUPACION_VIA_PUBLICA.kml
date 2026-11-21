@@ -19,42 +19,6 @@
 <Folder><name>ocupaciones_tramos</name>
   <Placemark id="ocupaciones_tramos.1">
 	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">Av. Argentina entre c. Fábrica y c. Caro</SimpleData>
-		<SimpleData name="descripcion">Zona acopio</SimpleData>
-		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
-		<SimpleData name="observaciones">Carril de estacionamiento para acopio.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261023</SimpleData>
-		<SimpleData name="f_fin">20261120</SimpleData>
-		<SimpleData name="ID">138</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6401595,39.5720471,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.2">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">Obras I Projectes de EMAYA.</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">MELCHOR MASCARÓ</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">C. Servet de nº 4 a 6</SimpleData>
-		<SimpleData name="descripcion">Ejecución red alcantarilado y red abastecimiento</SimpleData>
-		<SimpleData name="tipo_obra">PROYECTO DE RENOVACION DE RED DE AGUA POTABLE Y ALCANTARILLADO EN SANTA CATALINA - FASE 1</SimpleData>
-		<SimpleData name="observaciones">Ocupación carril estacionamiento para acopio de materiales.</SimpleData>
-		<SimpleData name="condicions_mobilitat"></SimpleData>
-		<SimpleData name="f_inicio">20261023</SimpleData>
-		<SimpleData name="f_fin">20261120</SimpleData>
-		<SimpleData name="ID">139</SimpleData>
-		<SimpleData name="estado_geo">EXACTO</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6390805,39.5707978,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.3">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
 		<SimpleData name="servei">PRIVAT</SimpleData>
 		<SimpleData name="tecnic"></SimpleData>
 		<SimpleData name="contratista"></SimpleData>
@@ -70,24 +34,6 @@
 		<SimpleData name="estado_geo">EXACTO</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>2.6221716,39.5718376,0</coordinates></Point>
-  </Placemark>
-  <Placemark id="ocupaciones_tramos.4">
-	<ExtendedData><SchemaData schemaUrl="#ocupaciones_tramos">
-		<SimpleData name="servei">UTE PASSEIG MARITIM</SimpleData>
-		<SimpleData name="tecnic"></SimpleData>
-		<SimpleData name="contratista">UTE PASSEIG MARITIM</SimpleData>
-		<SimpleData name="cap_obra"></SimpleData>
-		<SimpleData name="emplazamiento">AVDA. GABRIEL ROCA, desde Avda. Argentina hasta torre Pelaires</SimpleData>
-		<SimpleData name="descripcion">Necesitamos la ocupación de carril lado tierra, el más cercano a la banda de estacionamiento del lado tierra y aparcamientos, para la revisión de tuberías existentes, en tramos alternativamente de unos 5mts. que ocupara el camión de Osifar, que es la empresa que va ha revisar las tuberías. El horario se comprenderá entre las 07'00h y 18h.</SimpleData>
-		<SimpleData name="tipo_obra">Revisión de tuberías, con cámara.</SimpleData>
-		<SimpleData name="observaciones">INDISPENSABLE PAGATINAS PROHIBIDO APARCAR PARA APARCAMIENTO DEL LADO TIERRA</SimpleData>
-		<SimpleData name="condicions_mobilitat">Inicio a partir de las 9:30</SimpleData>
-		<SimpleData name="f_inicio">20261109</SimpleData>
-		<SimpleData name="f_fin">20261120</SimpleData>
-		<SimpleData name="ID">175</SimpleData>
-		<SimpleData name="estado_geo">EXACTO_GOOGLE</SimpleData>
-	</SchemaData></ExtendedData>
-      <Point><coordinates>2.6405968,39.5733148,0</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>
